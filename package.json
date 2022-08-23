@@ -19,6 +19,8 @@
   "dependencies": {
     "@osmonauts/helpers": "^0.4.1",
     "@osmonauts/lcd": "^0.3.11",
-    "protobufjs": "^7.0.0"
+    "protobufjs": "^7.0.0",
+    "tsc": "^2.0.4",
+    "typescript": "^4.7.4"
   }
 }
