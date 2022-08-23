@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/carina-labs/supernovajs/issues"
   },
-  "homepage": "https://github.com/carina-labs/supernovajs#readme"
+  "homepage": "https://github.com/carina-labs/supernovajs#readme",
+  "dependencies": {
+    "@osmonauts/helpers": "^0.4.1",
+    "@osmonauts/lcd": "^0.3.11",
+    "protobufjs": "^7.0.0"
+  }
 }
