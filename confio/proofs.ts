@@ -206,7 +206,7 @@ export function lengthOpToJSON(object: LengthOp): string {
 export interface ExistenceProof {
   key: Uint8Array;
   value: Uint8Array;
-  leaf: LeafOp;
+  leaf: LeafOp | undefined;
   path: InnerOp[];
 }
 
