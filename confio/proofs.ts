@@ -360,7 +360,7 @@ export interface CompressedBatchEntry {
 export interface CompressedExistenceProof {
   key: Uint8Array;
   value: Uint8Array;
-  leaf: LeafOp;
+  leaf: LeafOp | undefined;
 
   /** these are indexes into the lookup_inners table in CompressedBatchProof */
   path: number[];
