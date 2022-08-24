@@ -1,6 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
 import { isSet, DeepPartial, Long } from "@osmonauts/helpers";
-export const protobufPackage = "cosmos.mint.v1beta1";
 
 /** Minter represents the minting state. */
 export interface Minter {

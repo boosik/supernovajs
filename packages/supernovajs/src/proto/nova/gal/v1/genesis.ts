@@ -3,7 +3,6 @@ import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { isSet, DeepPartial, Long, toTimestamp, fromTimestamp, fromJsonTimestamp, isObject } from "@osmonauts/helpers";
-export const protobufPackage = "nova.gal.v1";
 
 /** GenesisState defines the gal module's genesis state. */
 export interface GenesisState {

@@ -1,7 +1,6 @@
 import { Coin } from "../../base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { isSet, DeepPartial } from "@osmonauts/helpers";
-export const protobufPackage = "cosmos.crisis.v1beta1";
 
 /** GenesisState defines the crisis module's genesis state. */
 export interface GenesisState {

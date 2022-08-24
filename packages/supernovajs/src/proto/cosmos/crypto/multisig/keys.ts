@@ -1,7 +1,6 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
 import { isSet, DeepPartial } from "@osmonauts/helpers";
-export const protobufPackage = "cosmos.crypto.multisig";
 
 /**
  * LegacyAminoPubKey specifies a public key type

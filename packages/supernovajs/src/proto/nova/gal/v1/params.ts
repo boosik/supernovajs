@@ -1,6 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
 import { isSet, DeepPartial, Long, isObject } from "@osmonauts/helpers";
-export const protobufPackage = "nova.gal.v1";
 export interface Params_WhiteListedTokenDenomsEntry {
   key: string;
   value: string;

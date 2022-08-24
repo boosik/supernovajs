@@ -13,9 +13,9 @@ export class LCDQueryClient extends LCDClient {
   }
 
   /* Params */
-  async params(params: QueryParamsRequest): Promise<QueryParamsResponse> {
+  async params(_params: QueryParamsRequest = {}): Promise<QueryParamsResponse> {
     const endpoint = `nova/gal/v1/params`;
-    return await this.request(endpoint);
+    return await this.request<QueryParamsResponse>(endpoint);
   }
 
   /* ClaimableAmount */
@@ -36,8 +36,8 @@ export class LCDQueryClient extends LCDClient {
       options.params.transfer_channel_id = params.transferChannelId;
     }
 
-    const endpoint = `nova/gal/v1/claimable_amount/${params.address}/${params.zone_id}`;
-    return await this.request(endpoint, options);
+    const endpoint = `nova/gal/v1/claimable_amount/${params.address}/${params.zoneId}`;
+    return await this.request<ClaimableAmountResponse>(endpoint, options);
   }
 
   /* PendingWithdrawals */
@@ -58,8 +58,8 @@ export class LCDQueryClient extends LCDClient {
       options.params.transfer_channel_id = params.transferChannelId;
     }
 
-    const endpoint = `nova/gal/v1/pending_withdrawals/${params.address}/${params.zone_id}`;
-    return await this.request(endpoint, options);
+    const endpoint = `nova/gal/v1/pending_withdrawals/${params.address}/${params.zoneId}`;
+    return await this.request<PendingWithdrawalsResponse>(endpoint, options);
   }
 
   /* ActiveWithdrawals */
@@ -80,8 +80,8 @@ export class LCDQueryClient extends LCDClient {
       options.params.transfer_channel_id = params.transferChannelId;
     }
 
-    const endpoint = `nova/gal/v1/active_withdrawals/${params.address}/${params.zone_id}`;
-    return await this.request(endpoint, options);
+    const endpoint = `nova/gal/v1/active_withdrawals/${params.address}/${params.zoneId}`;
+    return await this.request<ActiveWithdrawalsResponse>(endpoint, options);
   }
 
   /* DepositRecords */
@@ -94,8 +94,8 @@ export class LCDQueryClient extends LCDClient {
       options.params.zone_id = params.zoneId;
     }
 
-    const endpoint = `nova/gal/v1/deposit/${params.address}/${params.zone_id}`;
-    return await this.request(endpoint, options);
+    const endpoint = `nova/gal/v1/deposit/${params.address}/${params.zoneId}`;
+    return await this.request<QueryDepositRecordResponse>(endpoint, options);
   }
 
   /* UndelegateRecords */
@@ -108,8 +108,8 @@ export class LCDQueryClient extends LCDClient {
       options.params.zone_id = params.zoneId;
     }
 
-    const endpoint = `nova/get/v1/undelegate/${params.address}/${params.zone_id}`;
-    return await this.request(endpoint, options);
+    const endpoint = `nova/get/v1/undelegate/${params.address}/${params.zoneId}`;
+    return await this.request<QueryUndelegateRecordResponse>(endpoint, options);
   }
 
   /* WithdrawRecords */
@@ -122,8 +122,8 @@ export class LCDQueryClient extends LCDClient {
       options.params.zone_id = params.zoneId;
     }
 
-    const endpoint = `nova/get/v1/withdraw/${params.address}/${params.zone_id}`;
-    return await this.request(endpoint, options);
+    const endpoint = `nova/get/v1/withdraw/${params.address}/${params.zoneId}`;
+    return await this.request<QueryWithdrawRecordResponse>(endpoint, options);
   }
 
 }

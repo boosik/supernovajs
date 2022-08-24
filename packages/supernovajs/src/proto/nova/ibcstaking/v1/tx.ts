@@ -2,7 +2,6 @@ import { IcaConnectionInfo, IcaAccount } from "./genesis";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
-export const protobufPackage = "nova.ibcstaking.v1";
 
 /** MsgRegisterZone defines the payload for Msg/RegisterZone */
 export interface MsgRegisterZone {

@@ -1,6 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
-export const protobufPackage = "nova.oracle.v1";
 export interface Params {
   /** oracle operator's address. */
   oracleOperators: string[];

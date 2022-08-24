@@ -1,7 +1,6 @@
 import { RegisteredZone } from "./genesis";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
-export const protobufPackage = "nova.ibcstaking.v1";
 
 /** QueryAllZonesRequest is the request type for Query/AllZones. */
 export interface QueryAllZonesRequest {}

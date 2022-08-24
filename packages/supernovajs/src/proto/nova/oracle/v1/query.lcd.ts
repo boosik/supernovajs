@@ -12,9 +12,9 @@ export class LCDQueryClient extends LCDClient {
   }
 
   /* Params returns the total set of minting parameters. */
-  async params(params: QueryParamsRequest): Promise<QueryParamsResponse> {
+  async params(_params: QueryParamsRequest = {}): Promise<QueryParamsResponse> {
     const endpoint = `nova/oracle/v1/params`;
-    return await this.request(endpoint);
+    return await this.request<QueryParamsResponse>(endpoint);
   }
 
   /* State */
@@ -28,7 +28,7 @@ export class LCDQueryClient extends LCDClient {
     }
 
     const endpoint = `nova/oracle/v1/state`;
-    return await this.request(endpoint, options);
+    return await this.request<QueryStateResponse>(endpoint, options);
   }
 
 }

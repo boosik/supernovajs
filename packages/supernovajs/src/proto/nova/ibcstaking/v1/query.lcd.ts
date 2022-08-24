@@ -11,9 +11,9 @@ export class LCDQueryClient extends LCDClient {
   }
 
   /* AllZones returns all the zones registered. */
-  async allZones(params: QueryAllZonesRequest): Promise<QueryAllZonesResponse> {
+  async allZones(_params: QueryAllZonesRequest = {}): Promise<QueryAllZonesResponse> {
     const endpoint = `nova/ibcstaking/v1/zones/all`;
-    return await this.request(endpoint);
+    return await this.request<QueryAllZonesResponse>(endpoint);
   }
 
 }

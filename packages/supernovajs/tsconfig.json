@@ -5,6 +5,7 @@
     "emitDeclarationOnly": true,
     "isolatedModules": true,
     "allowJs": true,
+    "esModuleInterop": true,
     "lib": [
       "es2015"
     ]

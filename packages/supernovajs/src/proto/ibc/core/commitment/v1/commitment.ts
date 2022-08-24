@@ -1,7 +1,6 @@
 import { CommitmentProof } from "../../../../confio/proofs";
 import * as _m0 from "protobufjs/minimal";
 import { isSet, bytesFromBase64, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
-export const protobufPackage = "ibc.core.commitment.v1";
 
 /**
  * MerkleRoot defines a merkle root hash.

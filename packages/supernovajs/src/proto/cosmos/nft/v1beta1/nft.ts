@@ -1,7 +1,6 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
 import { isSet, DeepPartial } from "@osmonauts/helpers";
-export const protobufPackage = "cosmos.nft.v1beta1";
 
 /** Class defines the class of the nft type. */
 export interface Class {
