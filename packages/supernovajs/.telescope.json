@@ -1,0 +1,16 @@
+{
+  "protoDirs": [
+    "./proto"
+  ],
+  "outPath": "./src/proto",
+  "options": {
+    "includeAminos": true,
+    "includeLCDClients": true,
+    "includePackageVar": true,
+    "camelRpcMethods": true,
+    "includeRpcClients": true,
+    "useDate": "date",
+    "useDuration": "duration",
+    "useExact": false
+  }
+}
