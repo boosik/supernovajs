@@ -35,7 +35,7 @@ export const AminoConverter = {
         source_channel: sourceChannel,
         token: {
           denom: token.denom,
-          amount: Long.fromNumber(token.amount).toString()
+          amount: Long.fromString(token.amount).toString()
         },
         sender,
         receiver,

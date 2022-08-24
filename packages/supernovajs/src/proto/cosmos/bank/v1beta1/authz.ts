@@ -67,7 +67,7 @@ export const SendAuthorization = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SendAuthorization>): SendAuthorization {
+  fromPartial(object: Partial<SendAuthorization>): SendAuthorization {
     const message = createBaseSendAuthorization();
     message.spendLimit = object.spendLimit?.map(e => Coin.fromPartial(e)) || [];
     return message;

@@ -1,6 +1,5 @@
 import { Coin } from "../../base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * MsgSetWithdrawAddress sets the withdraw address for
  * a delegator (or validator self-delegation).
@@ -51,54 +50,54 @@ export declare const MsgSetWithdrawAddress: {
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgSetWithdrawAddress;
     fromJSON(object: any): MsgSetWithdrawAddress;
     toJSON(message: MsgSetWithdrawAddress): unknown;
-    fromPartial(object: DeepPartial<MsgSetWithdrawAddress>): MsgSetWithdrawAddress;
+    fromPartial(object: Partial<MsgSetWithdrawAddress>): MsgSetWithdrawAddress;
 };
 export declare const MsgSetWithdrawAddressResponse: {
     encode(_: MsgSetWithdrawAddressResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgSetWithdrawAddressResponse;
     fromJSON(_: any): MsgSetWithdrawAddressResponse;
     toJSON(_: MsgSetWithdrawAddressResponse): unknown;
-    fromPartial(_: DeepPartial<MsgSetWithdrawAddressResponse>): MsgSetWithdrawAddressResponse;
+    fromPartial(_: Partial<MsgSetWithdrawAddressResponse>): MsgSetWithdrawAddressResponse;
 };
 export declare const MsgWithdrawDelegatorReward: {
     encode(message: MsgWithdrawDelegatorReward, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgWithdrawDelegatorReward;
     fromJSON(object: any): MsgWithdrawDelegatorReward;
     toJSON(message: MsgWithdrawDelegatorReward): unknown;
-    fromPartial(object: DeepPartial<MsgWithdrawDelegatorReward>): MsgWithdrawDelegatorReward;
+    fromPartial(object: Partial<MsgWithdrawDelegatorReward>): MsgWithdrawDelegatorReward;
 };
 export declare const MsgWithdrawDelegatorRewardResponse: {
     encode(message: MsgWithdrawDelegatorRewardResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgWithdrawDelegatorRewardResponse;
     fromJSON(object: any): MsgWithdrawDelegatorRewardResponse;
     toJSON(message: MsgWithdrawDelegatorRewardResponse): unknown;
-    fromPartial(object: DeepPartial<MsgWithdrawDelegatorRewardResponse>): MsgWithdrawDelegatorRewardResponse;
+    fromPartial(object: Partial<MsgWithdrawDelegatorRewardResponse>): MsgWithdrawDelegatorRewardResponse;
 };
 export declare const MsgWithdrawValidatorCommission: {
     encode(message: MsgWithdrawValidatorCommission, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgWithdrawValidatorCommission;
     fromJSON(object: any): MsgWithdrawValidatorCommission;
     toJSON(message: MsgWithdrawValidatorCommission): unknown;
-    fromPartial(object: DeepPartial<MsgWithdrawValidatorCommission>): MsgWithdrawValidatorCommission;
+    fromPartial(object: Partial<MsgWithdrawValidatorCommission>): MsgWithdrawValidatorCommission;
 };
 export declare const MsgWithdrawValidatorCommissionResponse: {
     encode(message: MsgWithdrawValidatorCommissionResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgWithdrawValidatorCommissionResponse;
     fromJSON(object: any): MsgWithdrawValidatorCommissionResponse;
     toJSON(message: MsgWithdrawValidatorCommissionResponse): unknown;
-    fromPartial(object: DeepPartial<MsgWithdrawValidatorCommissionResponse>): MsgWithdrawValidatorCommissionResponse;
+    fromPartial(object: Partial<MsgWithdrawValidatorCommissionResponse>): MsgWithdrawValidatorCommissionResponse;
 };
 export declare const MsgFundCommunityPool: {
     encode(message: MsgFundCommunityPool, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgFundCommunityPool;
     fromJSON(object: any): MsgFundCommunityPool;
     toJSON(message: MsgFundCommunityPool): unknown;
-    fromPartial(object: DeepPartial<MsgFundCommunityPool>): MsgFundCommunityPool;
+    fromPartial(object: Partial<MsgFundCommunityPool>): MsgFundCommunityPool;
 };
 export declare const MsgFundCommunityPoolResponse: {
     encode(_: MsgFundCommunityPoolResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgFundCommunityPoolResponse;
     fromJSON(_: any): MsgFundCommunityPoolResponse;
     toJSON(_: MsgFundCommunityPoolResponse): unknown;
-    fromPartial(_: DeepPartial<MsgFundCommunityPoolResponse>): MsgFundCommunityPoolResponse;
+    fromPartial(_: Partial<MsgFundCommunityPoolResponse>): MsgFundCommunityPoolResponse;
 };

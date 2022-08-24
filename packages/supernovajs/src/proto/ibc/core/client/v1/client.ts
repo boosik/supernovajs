@@ -168,7 +168,7 @@ export const IdentifiedClientState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<IdentifiedClientState>): IdentifiedClientState {
+  fromPartial(object: Partial<IdentifiedClientState>): IdentifiedClientState {
     const message = createBaseIdentifiedClientState();
     message.clientId = object.clientId ?? "";
     message.clientState = object.clientState !== undefined && object.clientState !== null ? Any.fromPartial(object.clientState) : undefined;
@@ -237,7 +237,7 @@ export const ConsensusStateWithHeight = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ConsensusStateWithHeight>): ConsensusStateWithHeight {
+  fromPartial(object: Partial<ConsensusStateWithHeight>): ConsensusStateWithHeight {
     const message = createBaseConsensusStateWithHeight();
     message.height = object.height !== undefined && object.height !== null ? Height.fromPartial(object.height) : undefined;
     message.consensusState = object.consensusState !== undefined && object.consensusState !== null ? Any.fromPartial(object.consensusState) : undefined;
@@ -312,7 +312,7 @@ export const ClientConsensusStates = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClientConsensusStates>): ClientConsensusStates {
+  fromPartial(object: Partial<ClientConsensusStates>): ClientConsensusStates {
     const message = createBaseClientConsensusStates();
     message.clientId = object.clientId ?? "";
     message.consensusStates = object.consensusStates?.map(e => ConsensusStateWithHeight.fromPartial(e)) || [];
@@ -403,7 +403,7 @@ export const ClientUpdateProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClientUpdateProposal>): ClientUpdateProposal {
+  fromPartial(object: Partial<ClientUpdateProposal>): ClientUpdateProposal {
     const message = createBaseClientUpdateProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -496,7 +496,7 @@ export const UpgradeProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<UpgradeProposal>): UpgradeProposal {
+  fromPartial(object: Partial<UpgradeProposal>): UpgradeProposal {
     const message = createBaseUpgradeProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -567,7 +567,7 @@ export const Height = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Height>): Height {
+  fromPartial(object: Partial<Height>): Height {
     const message = createBaseHeight();
     message.revisionNumber = object.revisionNumber !== undefined && object.revisionNumber !== null ? Long.fromValue(object.revisionNumber) : Long.UZERO;
     message.revisionHeight = object.revisionHeight !== undefined && object.revisionHeight !== null ? Long.fromValue(object.revisionHeight) : Long.UZERO;
@@ -631,7 +631,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.allowedClients = object.allowedClients?.map(e => e) || [];
     return message;

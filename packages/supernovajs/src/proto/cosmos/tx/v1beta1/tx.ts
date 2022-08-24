@@ -390,7 +390,7 @@ export const Tx = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Tx>): Tx {
+  fromPartial(object: Partial<Tx>): Tx {
     const message = createBaseTx();
     message.body = object.body !== undefined && object.body !== null ? TxBody.fromPartial(object.body) : undefined;
     message.authInfo = object.authInfo !== undefined && object.authInfo !== null ? AuthInfo.fromPartial(object.authInfo) : undefined;
@@ -477,7 +477,7 @@ export const TxRaw = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<TxRaw>): TxRaw {
+  fromPartial(object: Partial<TxRaw>): TxRaw {
     const message = createBaseTxRaw();
     message.bodyBytes = object.bodyBytes ?? new Uint8Array();
     message.authInfoBytes = object.authInfoBytes ?? new Uint8Array();
@@ -569,7 +569,7 @@ export const SignDoc = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SignDoc>): SignDoc {
+  fromPartial(object: Partial<SignDoc>): SignDoc {
     const message = createBaseSignDoc();
     message.bodyBytes = object.bodyBytes ?? new Uint8Array();
     message.authInfoBytes = object.authInfoBytes ?? new Uint8Array();
@@ -684,7 +684,7 @@ export const SignDocDirectAux = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SignDocDirectAux>): SignDocDirectAux {
+  fromPartial(object: Partial<SignDocDirectAux>): SignDocDirectAux {
     const message = createBaseSignDocDirectAux();
     message.bodyBytes = object.bodyBytes ?? new Uint8Array();
     message.publicKey = object.publicKey !== undefined && object.publicKey !== null ? Any.fromPartial(object.publicKey) : undefined;
@@ -807,7 +807,7 @@ export const TxBody = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<TxBody>): TxBody {
+  fromPartial(object: Partial<TxBody>): TxBody {
     const message = createBaseTxBody();
     message.messages = object.messages?.map(e => Any.fromPartial(e)) || [];
     message.memo = object.memo ?? "";
@@ -896,7 +896,7 @@ export const AuthInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AuthInfo>): AuthInfo {
+  fromPartial(object: Partial<AuthInfo>): AuthInfo {
     const message = createBaseAuthInfo();
     message.signerInfos = object.signerInfos?.map(e => SignerInfo.fromPartial(e)) || [];
     message.fee = object.fee !== undefined && object.fee !== null ? Fee.fromPartial(object.fee) : undefined;
@@ -977,7 +977,7 @@ export const SignerInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SignerInfo>): SignerInfo {
+  fromPartial(object: Partial<SignerInfo>): SignerInfo {
     const message = createBaseSignerInfo();
     message.publicKey = object.publicKey !== undefined && object.publicKey !== null ? Any.fromPartial(object.publicKey) : undefined;
     message.modeInfo = object.modeInfo !== undefined && object.modeInfo !== null ? ModeInfo.fromPartial(object.modeInfo) : undefined;
@@ -1047,7 +1047,7 @@ export const ModeInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ModeInfo>): ModeInfo {
+  fromPartial(object: Partial<ModeInfo>): ModeInfo {
     const message = createBaseModeInfo();
     message.single = object.single !== undefined && object.single !== null ? ModeInfo_Single.fromPartial(object.single) : undefined;
     message.multi = object.multi !== undefined && object.multi !== null ? ModeInfo_Multi.fromPartial(object.multi) : undefined;
@@ -1105,7 +1105,7 @@ export const ModeInfo_Single = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ModeInfo_Single>): ModeInfo_Single {
+  fromPartial(object: Partial<ModeInfo_Single>): ModeInfo_Single {
     const message = createBaseModeInfo_Single();
     message.mode = object.mode ?? 0;
     return message;
@@ -1179,7 +1179,7 @@ export const ModeInfo_Multi = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ModeInfo_Multi>): ModeInfo_Multi {
+  fromPartial(object: Partial<ModeInfo_Multi>): ModeInfo_Multi {
     const message = createBaseModeInfo_Multi();
     message.bitarray = object.bitarray !== undefined && object.bitarray !== null ? CompactBitArray.fromPartial(object.bitarray) : undefined;
     message.modeInfos = object.modeInfos?.map(e => ModeInfo.fromPartial(e)) || [];
@@ -1276,7 +1276,7 @@ export const Fee = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Fee>): Fee {
+  fromPartial(object: Partial<Fee>): Fee {
     const message = createBaseFee();
     message.amount = object.amount?.map(e => Coin.fromPartial(e)) || [];
     message.gasLimit = object.gasLimit !== undefined && object.gasLimit !== null ? Long.fromValue(object.gasLimit) : Long.UZERO;
@@ -1353,7 +1353,7 @@ export const Tip = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Tip>): Tip {
+  fromPartial(object: Partial<Tip>): Tip {
     const message = createBaseTip();
     message.amount = object.amount?.map(e => Coin.fromPartial(e)) || [];
     message.tipper = object.tipper ?? "";
@@ -1444,7 +1444,7 @@ export const AuxSignerData = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AuxSignerData>): AuxSignerData {
+  fromPartial(object: Partial<AuxSignerData>): AuxSignerData {
     const message = createBaseAuxSignerData();
     message.address = object.address ?? "";
     message.signDoc = object.signDoc !== undefined && object.signDoc !== null ? SignDocDirectAux.fromPartial(object.signDoc) : undefined;

@@ -75,7 +75,7 @@ export const Capability = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Capability>): Capability {
+  fromPartial(object: Partial<Capability>): Capability {
     const message = createBaseCapability();
     message.index = object.index !== undefined && object.index !== null ? Long.fromValue(object.index) : Long.UZERO;
     return message;
@@ -143,7 +143,7 @@ export const Owner = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Owner>): Owner {
+  fromPartial(object: Partial<Owner>): Owner {
     const message = createBaseOwner();
     message.module = object.module ?? "";
     message.name = object.name ?? "";
@@ -207,7 +207,7 @@ export const CapabilityOwners = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CapabilityOwners>): CapabilityOwners {
+  fromPartial(object: Partial<CapabilityOwners>): CapabilityOwners {
     const message = createBaseCapabilityOwners();
     message.owners = object.owners?.map(e => Owner.fromPartial(e)) || [];
     return message;

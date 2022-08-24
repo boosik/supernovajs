@@ -1,6 +1,6 @@
 import { IdentifiedChannel, PacketState } from "./channel";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** GenesisState defines the ibc channel submodule's genesis state. */
 export interface GenesisState {
     channels: IdentifiedChannel[];
@@ -27,12 +27,12 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };
 export declare const PacketSequence: {
     encode(message: PacketSequence, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PacketSequence;
     fromJSON(object: any): PacketSequence;
     toJSON(message: PacketSequence): unknown;
-    fromPartial(object: DeepPartial<PacketSequence>): PacketSequence;
+    fromPartial(object: Partial<PacketSequence>): PacketSequence;
 };

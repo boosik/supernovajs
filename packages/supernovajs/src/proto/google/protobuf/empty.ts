@@ -50,7 +50,7 @@ export const Empty = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<Empty>): Empty {
+  fromPartial(_: Partial<Empty>): Empty {
     const message = createBaseEmpty();
     return message;
   }

@@ -284,7 +284,7 @@ export const ClientState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClientState>): ClientState {
+  fromPartial(object: Partial<ClientState>): ClientState {
     const message = createBaseClientState();
     message.chainId = object.chainId ?? "";
     message.trustLevel = object.trustLevel !== undefined && object.trustLevel !== null ? Fraction.fromPartial(object.trustLevel) : undefined;
@@ -373,7 +373,7 @@ export const ConsensusState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ConsensusState>): ConsensusState {
+  fromPartial(object: Partial<ConsensusState>): ConsensusState {
     const message = createBaseConsensusState();
     message.timestamp = object.timestamp ?? undefined;
     message.root = object.root !== undefined && object.root !== null ? MerkleRoot.fromPartial(object.root) : undefined;
@@ -454,7 +454,7 @@ export const Misbehaviour = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Misbehaviour>): Misbehaviour {
+  fromPartial(object: Partial<Misbehaviour>): Misbehaviour {
     const message = createBaseMisbehaviour();
     message.clientId = object.clientId ?? "";
     message.header_1 = object.header_1 !== undefined && object.header_1 !== null ? Header.fromPartial(object.header_1) : undefined;
@@ -546,7 +546,7 @@ export const Header = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Header>): Header {
+  fromPartial(object: Partial<Header>): Header {
     const message = createBaseHeader();
     message.signedHeader = object.signedHeader !== undefined && object.signedHeader !== null ? SignedHeader.fromPartial(object.signedHeader) : undefined;
     message.validatorSet = object.validatorSet !== undefined && object.validatorSet !== null ? ValidatorSet.fromPartial(object.validatorSet) : undefined;
@@ -617,7 +617,7 @@ export const Fraction = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Fraction>): Fraction {
+  fromPartial(object: Partial<Fraction>): Fraction {
     const message = createBaseFraction();
     message.numerator = object.numerator !== undefined && object.numerator !== null ? Long.fromValue(object.numerator) : Long.UZERO;
     message.denominator = object.denominator !== undefined && object.denominator !== null ? Long.fromValue(object.denominator) : Long.UZERO;

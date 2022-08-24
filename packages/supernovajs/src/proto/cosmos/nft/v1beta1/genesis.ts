@@ -89,7 +89,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.classes = object.classes?.map(e => Class.fromPartial(e)) || [];
     message.entries = object.entries?.map(e => Entry.fromPartial(e)) || [];
@@ -164,7 +164,7 @@ export const Entry = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Entry>): Entry {
+  fromPartial(object: Partial<Entry>): Entry {
     const message = createBaseEntry();
     message.owner = object.owner ?? "";
     message.nfts = object.nfts?.map(e => NFT.fromPartial(e)) || [];

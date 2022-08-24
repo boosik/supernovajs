@@ -100,7 +100,7 @@ export const StoreKVPair = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<StoreKVPair>): StoreKVPair {
+  fromPartial(object: Partial<StoreKVPair>): StoreKVPair {
     const message = createBaseStoreKVPair();
     message.storeKey = object.storeKey ?? "";
     message.delete = object.delete ?? false;

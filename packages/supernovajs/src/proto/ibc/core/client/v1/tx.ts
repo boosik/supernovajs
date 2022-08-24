@@ -160,7 +160,7 @@ export const MsgCreateClient = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgCreateClient>): MsgCreateClient {
+  fromPartial(object: Partial<MsgCreateClient>): MsgCreateClient {
     const message = createBaseMsgCreateClient();
     message.clientState = object.clientState !== undefined && object.clientState !== null ? Any.fromPartial(object.clientState) : undefined;
     message.consensusState = object.consensusState !== undefined && object.consensusState !== null ? Any.fromPartial(object.consensusState) : undefined;
@@ -206,7 +206,7 @@ export const MsgCreateClientResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgCreateClientResponse>): MsgCreateClientResponse {
+  fromPartial(_: Partial<MsgCreateClientResponse>): MsgCreateClientResponse {
     const message = createBaseMsgCreateClientResponse();
     return message;
   }
@@ -284,7 +284,7 @@ export const MsgUpdateClient = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUpdateClient>): MsgUpdateClient {
+  fromPartial(object: Partial<MsgUpdateClient>): MsgUpdateClient {
     const message = createBaseMsgUpdateClient();
     message.clientId = object.clientId ?? "";
     message.header = object.header !== undefined && object.header !== null ? Any.fromPartial(object.header) : undefined;
@@ -330,7 +330,7 @@ export const MsgUpdateClientResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgUpdateClientResponse>): MsgUpdateClientResponse {
+  fromPartial(_: Partial<MsgUpdateClientResponse>): MsgUpdateClientResponse {
     const message = createBaseMsgUpdateClientResponse();
     return message;
   }
@@ -441,7 +441,7 @@ export const MsgUpgradeClient = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUpgradeClient>): MsgUpgradeClient {
+  fromPartial(object: Partial<MsgUpgradeClient>): MsgUpgradeClient {
     const message = createBaseMsgUpgradeClient();
     message.clientId = object.clientId ?? "";
     message.clientState = object.clientState !== undefined && object.clientState !== null ? Any.fromPartial(object.clientState) : undefined;
@@ -490,7 +490,7 @@ export const MsgUpgradeClientResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgUpgradeClientResponse>): MsgUpgradeClientResponse {
+  fromPartial(_: Partial<MsgUpgradeClientResponse>): MsgUpgradeClientResponse {
     const message = createBaseMsgUpgradeClientResponse();
     return message;
   }
@@ -568,7 +568,7 @@ export const MsgSubmitMisbehaviour = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgSubmitMisbehaviour>): MsgSubmitMisbehaviour {
+  fromPartial(object: Partial<MsgSubmitMisbehaviour>): MsgSubmitMisbehaviour {
     const message = createBaseMsgSubmitMisbehaviour();
     message.clientId = object.clientId ?? "";
     message.misbehaviour = object.misbehaviour !== undefined && object.misbehaviour !== null ? Any.fromPartial(object.misbehaviour) : undefined;
@@ -614,7 +614,7 @@ export const MsgSubmitMisbehaviourResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgSubmitMisbehaviourResponse>): MsgSubmitMisbehaviourResponse {
+  fromPartial(_: Partial<MsgSubmitMisbehaviourResponse>): MsgSubmitMisbehaviourResponse {
     const message = createBaseMsgSubmitMisbehaviourResponse();
     return message;
   }

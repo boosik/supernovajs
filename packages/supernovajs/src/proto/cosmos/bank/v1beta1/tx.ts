@@ -99,7 +99,7 @@ export const MsgSend = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgSend>): MsgSend {
+  fromPartial(object: Partial<MsgSend>): MsgSend {
     const message = createBaseMsgSend();
     message.fromAddress = object.fromAddress ?? "";
     message.toAddress = object.toAddress ?? "";
@@ -145,7 +145,7 @@ export const MsgSendResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgSendResponse>): MsgSendResponse {
+  fromPartial(_: Partial<MsgSendResponse>): MsgSendResponse {
     const message = createBaseMsgSendResponse();
     return message;
   }
@@ -223,7 +223,7 @@ export const MsgMultiSend = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgMultiSend>): MsgMultiSend {
+  fromPartial(object: Partial<MsgMultiSend>): MsgMultiSend {
     const message = createBaseMsgMultiSend();
     message.inputs = object.inputs?.map(e => Input.fromPartial(e)) || [];
     message.outputs = object.outputs?.map(e => Output.fromPartial(e)) || [];
@@ -268,7 +268,7 @@ export const MsgMultiSendResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgMultiSendResponse>): MsgMultiSendResponse {
+  fromPartial(_: Partial<MsgMultiSendResponse>): MsgMultiSendResponse {
     const message = createBaseMsgMultiSendResponse();
     return message;
   }

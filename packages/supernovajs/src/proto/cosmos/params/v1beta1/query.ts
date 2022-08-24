@@ -100,7 +100,7 @@ export const QueryParamsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryParamsRequest>): QueryParamsRequest {
+  fromPartial(object: Partial<QueryParamsRequest>): QueryParamsRequest {
     const message = createBaseQueryParamsRequest();
     message.subspace = object.subspace ?? "";
     message.key = object.key ?? "";
@@ -158,7 +158,7 @@ export const QueryParamsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryParamsResponse>): QueryParamsResponse {
+  fromPartial(object: Partial<QueryParamsResponse>): QueryParamsResponse {
     const message = createBaseQueryParamsResponse();
     message.param = object.param !== undefined && object.param !== null ? ParamChange.fromPartial(object.param) : undefined;
     return message;
@@ -202,7 +202,7 @@ export const QuerySubspacesRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QuerySubspacesRequest>): QuerySubspacesRequest {
+  fromPartial(_: Partial<QuerySubspacesRequest>): QuerySubspacesRequest {
     const message = createBaseQuerySubspacesRequest();
     return message;
   }
@@ -264,7 +264,7 @@ export const QuerySubspacesResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QuerySubspacesResponse>): QuerySubspacesResponse {
+  fromPartial(object: Partial<QuerySubspacesResponse>): QuerySubspacesResponse {
     const message = createBaseQuerySubspacesResponse();
     message.subspaces = object.subspaces?.map(e => Subspace.fromPartial(e)) || [];
     return message;
@@ -338,7 +338,7 @@ export const Subspace = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Subspace>): Subspace {
+  fromPartial(object: Partial<Subspace>): Subspace {
     const message = createBaseSubspace();
     message.subspace = object.subspace ?? "";
     message.keys = object.keys?.map(e => e) || [];

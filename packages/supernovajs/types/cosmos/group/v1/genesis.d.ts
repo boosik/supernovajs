@@ -1,6 +1,6 @@
 import { GroupInfo, GroupMember, GroupPolicyInfo, Proposal, Vote } from "./types";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** GenesisState defines the group module's genesis state. */
 export interface GenesisState {
     /**
@@ -34,5 +34,5 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };

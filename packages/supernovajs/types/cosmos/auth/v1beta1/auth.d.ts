@@ -1,6 +1,6 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * BaseAccount defines a base account type. It contains all the necessary fields
  * for basic account functionality. Any custom account type should extend this
@@ -31,19 +31,19 @@ export declare const BaseAccount: {
     decode(input: _m0.Reader | Uint8Array, length?: number): BaseAccount;
     fromJSON(object: any): BaseAccount;
     toJSON(message: BaseAccount): unknown;
-    fromPartial(object: DeepPartial<BaseAccount>): BaseAccount;
+    fromPartial(object: Partial<BaseAccount>): BaseAccount;
 };
 export declare const ModuleAccount: {
     encode(message: ModuleAccount, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ModuleAccount;
     fromJSON(object: any): ModuleAccount;
     toJSON(message: ModuleAccount): unknown;
-    fromPartial(object: DeepPartial<ModuleAccount>): ModuleAccount;
+    fromPartial(object: Partial<ModuleAccount>): ModuleAccount;
 };
 export declare const Params: {
     encode(message: Params, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Params;
     fromJSON(object: any): Params;
     toJSON(message: Params): unknown;
-    fromPartial(object: DeepPartial<Params>): Params;
+    fromPartial(object: Partial<Params>): Params;
 };

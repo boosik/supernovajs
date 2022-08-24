@@ -89,7 +89,7 @@ export const Evidence = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Evidence>): Evidence {
+  fromPartial(object: Partial<Evidence>): Evidence {
     const message = createBaseEvidence();
     message.duplicateVoteEvidence = object.duplicateVoteEvidence !== undefined && object.duplicateVoteEvidence !== null ? DuplicateVoteEvidence.fromPartial(object.duplicateVoteEvidence) : undefined;
     message.lightClientAttackEvidence = object.lightClientAttackEvidence !== undefined && object.lightClientAttackEvidence !== null ? LightClientAttackEvidence.fromPartial(object.lightClientAttackEvidence) : undefined;
@@ -191,7 +191,7 @@ export const DuplicateVoteEvidence = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DuplicateVoteEvidence>): DuplicateVoteEvidence {
+  fromPartial(object: Partial<DuplicateVoteEvidence>): DuplicateVoteEvidence {
     const message = createBaseDuplicateVoteEvidence();
     message.voteA = object.voteA !== undefined && object.voteA !== null ? Vote.fromPartial(object.voteA) : undefined;
     message.voteB = object.voteB !== undefined && object.voteB !== null ? Vote.fromPartial(object.voteB) : undefined;
@@ -302,7 +302,7 @@ export const LightClientAttackEvidence = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<LightClientAttackEvidence>): LightClientAttackEvidence {
+  fromPartial(object: Partial<LightClientAttackEvidence>): LightClientAttackEvidence {
     const message = createBaseLightClientAttackEvidence();
     message.conflictingBlock = object.conflictingBlock !== undefined && object.conflictingBlock !== null ? LightBlock.fromPartial(object.conflictingBlock) : undefined;
     message.commonHeight = object.commonHeight !== undefined && object.commonHeight !== null ? Long.fromValue(object.commonHeight) : Long.ZERO;
@@ -369,7 +369,7 @@ export const EvidenceList = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EvidenceList>): EvidenceList {
+  fromPartial(object: Partial<EvidenceList>): EvidenceList {
     const message = createBaseEvidenceList();
     message.evidence = object.evidence?.map(e => Evidence.fromPartial(e)) || [];
     return message;

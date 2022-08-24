@@ -93,7 +93,7 @@ export const AminoConverter = {
         claimer,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         },
         transfer_port_id: transferPortId,
         transfer_channel_id: transferChannelId
@@ -184,7 +184,7 @@ export const AminoConverter = {
         withdrawer,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },
@@ -277,7 +277,10 @@ export const AminoConverter = {
         controller_address: controllerAddress,
         ica_transfer_port_id: icaTransferPortId,
         ica_transfer_channel_id: icaTransferChannelId,
-        chain_time: chainTime
+        chain_time: {
+          seconds: chainTime.getSeconds().toString(),
+          nanos: chainTime.getMilliseconds()
+        }
       };
     },
     fromAmino: ({

@@ -55,7 +55,7 @@ export const QueryParamsRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryParamsRequest>): QueryParamsRequest {
+  fromPartial(_: Partial<QueryParamsRequest>): QueryParamsRequest {
     const message = createBaseQueryParamsRequest();
     return message;
   }
@@ -111,7 +111,7 @@ export const QueryParamsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryParamsResponse>): QueryParamsResponse {
+  fromPartial(object: Partial<QueryParamsResponse>): QueryParamsResponse {
     const message = createBaseQueryParamsResponse();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     return message;
@@ -168,7 +168,7 @@ export const QueryStateRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryStateRequest>): QueryStateRequest {
+  fromPartial(object: Partial<QueryStateRequest>): QueryStateRequest {
     const message = createBaseQueryStateRequest();
     message.chainDenom = object.chainDenom ?? "";
     return message;
@@ -280,7 +280,7 @@ export const QueryStateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryStateResponse>): QueryStateResponse {
+  fromPartial(object: Partial<QueryStateResponse>): QueryStateResponse {
     const message = createBaseQueryStateResponse();
     message.coin = object.coin !== undefined && object.coin !== null ? Coin.fromPartial(object.coin) : undefined;
     message.operator = object.operator ?? "";

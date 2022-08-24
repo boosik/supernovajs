@@ -188,7 +188,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.channels = object.channels?.map(e => IdentifiedChannel.fromPartial(e)) || [];
     message.acknowledgements = object.acknowledgements?.map(e => PacketState.fromPartial(e)) || [];
@@ -274,7 +274,7 @@ export const PacketSequence = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PacketSequence>): PacketSequence {
+  fromPartial(object: Partial<PacketSequence>): PacketSequence {
     const message = createBasePacketSequence();
     message.portId = object.portId ?? "";
     message.channelId = object.channelId ?? "";

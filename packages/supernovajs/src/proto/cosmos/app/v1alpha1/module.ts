@@ -171,7 +171,7 @@ export const ModuleDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ModuleDescriptor>): ModuleDescriptor {
+  fromPartial(object: Partial<ModuleDescriptor>): ModuleDescriptor {
     const message = createBaseModuleDescriptor();
     message.goImport = object.goImport ?? "";
     message.usePackage = object.usePackage?.map(e => PackageReference.fromPartial(e)) || [];
@@ -241,7 +241,7 @@ export const PackageReference = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PackageReference>): PackageReference {
+  fromPartial(object: Partial<PackageReference>): PackageReference {
     const message = createBasePackageReference();
     message.name = object.name ?? "";
     message.revision = object.revision ?? 0;
@@ -299,7 +299,7 @@ export const MigrateFromInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MigrateFromInfo>): MigrateFromInfo {
+  fromPartial(object: Partial<MigrateFromInfo>): MigrateFromInfo {
     const message = createBaseMigrateFromInfo();
     message.module = object.module ?? "";
     return message;

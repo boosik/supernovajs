@@ -176,7 +176,7 @@ export const StakeAuthorization = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<StakeAuthorization>): StakeAuthorization {
+  fromPartial(object: Partial<StakeAuthorization>): StakeAuthorization {
     const message = createBaseStakeAuthorization();
     message.maxTokens = object.maxTokens !== undefined && object.maxTokens !== null ? Coin.fromPartial(object.maxTokens) : undefined;
     message.allowList = object.allowList !== undefined && object.allowList !== null ? StakeAuthorization_Validators.fromPartial(object.allowList) : undefined;
@@ -242,7 +242,7 @@ export const StakeAuthorization_Validators = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<StakeAuthorization_Validators>): StakeAuthorization_Validators {
+  fromPartial(object: Partial<StakeAuthorization_Validators>): StakeAuthorization_Validators {
     const message = createBaseStakeAuthorization_Validators();
     message.address = object.address?.map(e => e) || [];
     return message;

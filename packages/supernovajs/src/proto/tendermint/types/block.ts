@@ -91,7 +91,7 @@ export const Block = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Block>): Block {
+  fromPartial(object: Partial<Block>): Block {
     const message = createBaseBlock();
     message.header = object.header !== undefined && object.header !== null ? Header.fromPartial(object.header) : undefined;
     message.data = object.data !== undefined && object.data !== null ? Data.fromPartial(object.data) : undefined;

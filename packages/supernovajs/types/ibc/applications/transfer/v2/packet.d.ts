@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * FungibleTokenPacketData defines a struct for the packet payload
  * See FungibleTokenPacketData spec:
@@ -20,5 +19,5 @@ export declare const FungibleTokenPacketData: {
     decode(input: _m0.Reader | Uint8Array, length?: number): FungibleTokenPacketData;
     fromJSON(object: any): FungibleTokenPacketData;
     toJSON(message: FungibleTokenPacketData): unknown;
-    fromPartial(object: DeepPartial<FungibleTokenPacketData>): FungibleTokenPacketData;
+    fromPartial(object: Partial<FungibleTokenPacketData>): FungibleTokenPacketData;
 };

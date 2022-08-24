@@ -74,7 +74,7 @@ export const ClientState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClientState>): ClientState {
+  fromPartial(object: Partial<ClientState>): ClientState {
     const message = createBaseClientState();
     message.chainId = object.chainId ?? "";
     message.height = object.height !== undefined && object.height !== null ? Height.fromPartial(object.height) : undefined;

@@ -325,7 +325,7 @@ export const GetTxsEventRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetTxsEventRequest>): GetTxsEventRequest {
+  fromPartial(object: Partial<GetTxsEventRequest>): GetTxsEventRequest {
     const message = createBaseGetTxsEventRequest();
     message.events = object.events?.map(e => e) || [];
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageRequest.fromPartial(object.pagination) : undefined;
@@ -417,7 +417,7 @@ export const GetTxsEventResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetTxsEventResponse>): GetTxsEventResponse {
+  fromPartial(object: Partial<GetTxsEventResponse>): GetTxsEventResponse {
     const message = createBaseGetTxsEventResponse();
     message.txs = object.txs?.map(e => Tx.fromPartial(e)) || [];
     message.txResponses = object.txResponses?.map(e => TxResponse.fromPartial(e)) || [];
@@ -487,7 +487,7 @@ export const BroadcastTxRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BroadcastTxRequest>): BroadcastTxRequest {
+  fromPartial(object: Partial<BroadcastTxRequest>): BroadcastTxRequest {
     const message = createBaseBroadcastTxRequest();
     message.txBytes = object.txBytes ?? new Uint8Array();
     message.mode = object.mode ?? 0;
@@ -545,7 +545,7 @@ export const BroadcastTxResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BroadcastTxResponse>): BroadcastTxResponse {
+  fromPartial(object: Partial<BroadcastTxResponse>): BroadcastTxResponse {
     const message = createBaseBroadcastTxResponse();
     message.txResponse = object.txResponse !== undefined && object.txResponse !== null ? TxResponse.fromPartial(object.txResponse) : undefined;
     return message;
@@ -613,7 +613,7 @@ export const SimulateRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SimulateRequest>): SimulateRequest {
+  fromPartial(object: Partial<SimulateRequest>): SimulateRequest {
     const message = createBaseSimulateRequest();
     message.tx = object.tx !== undefined && object.tx !== null ? Tx.fromPartial(object.tx) : undefined;
     message.txBytes = object.txBytes ?? new Uint8Array();
@@ -682,7 +682,7 @@ export const SimulateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SimulateResponse>): SimulateResponse {
+  fromPartial(object: Partial<SimulateResponse>): SimulateResponse {
     const message = createBaseSimulateResponse();
     message.gasInfo = object.gasInfo !== undefined && object.gasInfo !== null ? GasInfo.fromPartial(object.gasInfo) : undefined;
     message.result = object.result !== undefined && object.result !== null ? Result.fromPartial(object.result) : undefined;
@@ -740,7 +740,7 @@ export const GetTxRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetTxRequest>): GetTxRequest {
+  fromPartial(object: Partial<GetTxRequest>): GetTxRequest {
     const message = createBaseGetTxRequest();
     message.hash = object.hash ?? "";
     return message;
@@ -808,7 +808,7 @@ export const GetTxResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetTxResponse>): GetTxResponse {
+  fromPartial(object: Partial<GetTxResponse>): GetTxResponse {
     const message = createBaseGetTxResponse();
     message.tx = object.tx !== undefined && object.tx !== null ? Tx.fromPartial(object.tx) : undefined;
     message.txResponse = object.txResponse !== undefined && object.txResponse !== null ? TxResponse.fromPartial(object.txResponse) : undefined;
@@ -877,7 +877,7 @@ export const GetBlockWithTxsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetBlockWithTxsRequest>): GetBlockWithTxsRequest {
+  fromPartial(object: Partial<GetBlockWithTxsRequest>): GetBlockWithTxsRequest {
     const message = createBaseGetBlockWithTxsRequest();
     message.height = object.height !== undefined && object.height !== null ? Long.fromValue(object.height) : Long.ZERO;
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageRequest.fromPartial(object.pagination) : undefined;
@@ -974,7 +974,7 @@ export const GetBlockWithTxsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetBlockWithTxsResponse>): GetBlockWithTxsResponse {
+  fromPartial(object: Partial<GetBlockWithTxsResponse>): GetBlockWithTxsResponse {
     const message = createBaseGetBlockWithTxsResponse();
     message.txs = object.txs?.map(e => Tx.fromPartial(e)) || [];
     message.blockId = object.blockId !== undefined && object.blockId !== null ? BlockID.fromPartial(object.blockId) : undefined;

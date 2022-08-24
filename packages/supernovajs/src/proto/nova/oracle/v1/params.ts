@@ -60,7 +60,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.oracleOperators = object.oracleOperators?.map(e => e) || [];
     return message;

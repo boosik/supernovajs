@@ -82,7 +82,7 @@ export const MsgVerifyInvariant = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgVerifyInvariant>): MsgVerifyInvariant {
+  fromPartial(object: Partial<MsgVerifyInvariant>): MsgVerifyInvariant {
     const message = createBaseMsgVerifyInvariant();
     message.sender = object.sender ?? "";
     message.invariantModuleName = object.invariantModuleName ?? "";
@@ -128,7 +128,7 @@ export const MsgVerifyInvariantResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgVerifyInvariantResponse>): MsgVerifyInvariantResponse {
+  fromPartial(_: Partial<MsgVerifyInvariantResponse>): MsgVerifyInvariantResponse {
     const message = createBaseMsgVerifyInvariantResponse();
     return message;
   }

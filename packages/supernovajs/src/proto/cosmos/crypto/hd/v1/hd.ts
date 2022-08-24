@@ -115,7 +115,7 @@ export const BIP44Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BIP44Params>): BIP44Params {
+  fromPartial(object: Partial<BIP44Params>): BIP44Params {
     const message = createBaseBIP44Params();
     message.purpose = object.purpose ?? 0;
     message.coinType = object.coinType ?? 0;

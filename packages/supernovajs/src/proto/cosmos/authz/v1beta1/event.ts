@@ -96,7 +96,7 @@ export const EventGrant = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventGrant>): EventGrant {
+  fromPartial(object: Partial<EventGrant>): EventGrant {
     const message = createBaseEventGrant();
     message.msgTypeUrl = object.msgTypeUrl ?? "";
     message.granter = object.granter ?? "";
@@ -177,7 +177,7 @@ export const EventRevoke = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventRevoke>): EventRevoke {
+  fromPartial(object: Partial<EventRevoke>): EventRevoke {
     const message = createBaseEventRevoke();
     message.msgTypeUrl = object.msgTypeUrl ?? "";
     message.granter = object.granter ?? "";

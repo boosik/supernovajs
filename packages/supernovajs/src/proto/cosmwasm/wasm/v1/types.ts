@@ -262,7 +262,7 @@ export const AccessTypeParam = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AccessTypeParam>): AccessTypeParam {
+  fromPartial(object: Partial<AccessTypeParam>): AccessTypeParam {
     const message = createBaseAccessTypeParam();
     message.value = object.value ?? 0;
     return message;
@@ -330,7 +330,7 @@ export const AccessConfig = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AccessConfig>): AccessConfig {
+  fromPartial(object: Partial<AccessConfig>): AccessConfig {
     const message = createBaseAccessConfig();
     message.permission = object.permission ?? 0;
     message.address = object.address ?? "";
@@ -410,7 +410,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.codeUploadAccess = object.codeUploadAccess !== undefined && object.codeUploadAccess !== null ? AccessConfig.fromPartial(object.codeUploadAccess) : undefined;
     message.instantiateDefaultPermission = object.instantiateDefaultPermission ?? 0;
@@ -491,7 +491,7 @@ export const CodeInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CodeInfo>): CodeInfo {
+  fromPartial(object: Partial<CodeInfo>): CodeInfo {
     const message = createBaseCodeInfo();
     message.codeHash = object.codeHash ?? new Uint8Array();
     message.creator = object.creator ?? "";
@@ -616,7 +616,7 @@ export const ContractInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ContractInfo>): ContractInfo {
+  fromPartial(object: Partial<ContractInfo>): ContractInfo {
     const message = createBaseContractInfo();
     message.codeId = object.codeId !== undefined && object.codeId !== null ? Long.fromValue(object.codeId) : Long.UZERO;
     message.creator = object.creator ?? "";
@@ -712,7 +712,7 @@ export const ContractCodeHistoryEntry = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ContractCodeHistoryEntry>): ContractCodeHistoryEntry {
+  fromPartial(object: Partial<ContractCodeHistoryEntry>): ContractCodeHistoryEntry {
     const message = createBaseContractCodeHistoryEntry();
     message.operation = object.operation ?? 0;
     message.codeId = object.codeId !== undefined && object.codeId !== null ? Long.fromValue(object.codeId) : Long.UZERO;
@@ -783,7 +783,7 @@ export const AbsoluteTxPosition = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AbsoluteTxPosition>): AbsoluteTxPosition {
+  fromPartial(object: Partial<AbsoluteTxPosition>): AbsoluteTxPosition {
     const message = createBaseAbsoluteTxPosition();
     message.blockHeight = object.blockHeight !== undefined && object.blockHeight !== null ? Long.fromValue(object.blockHeight) : Long.UZERO;
     message.txIndex = object.txIndex !== undefined && object.txIndex !== null ? Long.fromValue(object.txIndex) : Long.UZERO;
@@ -852,7 +852,7 @@ export const Model = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Model>): Model {
+  fromPartial(object: Partial<Model>): Model {
     const message = createBaseModel();
     message.key = object.key ?? new Uint8Array();
     message.value = object.value ?? new Uint8Array();

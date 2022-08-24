@@ -331,7 +331,7 @@ export const AppDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AppDescriptor>): AppDescriptor {
+  fromPartial(object: Partial<AppDescriptor>): AppDescriptor {
     const message = createBaseAppDescriptor();
     message.authn = object.authn !== undefined && object.authn !== null ? AuthnDescriptor.fromPartial(object.authn) : undefined;
     message.chain = object.chain !== undefined && object.chain !== null ? ChainDescriptor.fromPartial(object.chain) : undefined;
@@ -410,7 +410,7 @@ export const TxDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<TxDescriptor>): TxDescriptor {
+  fromPartial(object: Partial<TxDescriptor>): TxDescriptor {
     const message = createBaseTxDescriptor();
     message.fullname = object.fullname ?? "";
     message.msgs = object.msgs?.map(e => MsgDescriptor.fromPartial(e)) || [];
@@ -474,7 +474,7 @@ export const AuthnDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AuthnDescriptor>): AuthnDescriptor {
+  fromPartial(object: Partial<AuthnDescriptor>): AuthnDescriptor {
     const message = createBaseAuthnDescriptor();
     message.signModes = object.signModes?.map(e => SigningModeDescriptor.fromPartial(e)) || [];
     return message;
@@ -553,7 +553,7 @@ export const SigningModeDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SigningModeDescriptor>): SigningModeDescriptor {
+  fromPartial(object: Partial<SigningModeDescriptor>): SigningModeDescriptor {
     const message = createBaseSigningModeDescriptor();
     message.name = object.name ?? "";
     message.number = object.number ?? 0;
@@ -612,7 +612,7 @@ export const ChainDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ChainDescriptor>): ChainDescriptor {
+  fromPartial(object: Partial<ChainDescriptor>): ChainDescriptor {
     const message = createBaseChainDescriptor();
     message.id = object.id ?? "";
     return message;
@@ -675,7 +675,7 @@ export const CodecDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CodecDescriptor>): CodecDescriptor {
+  fromPartial(object: Partial<CodecDescriptor>): CodecDescriptor {
     const message = createBaseCodecDescriptor();
     message.interfaces = object.interfaces?.map(e => InterfaceDescriptor.fromPartial(e)) || [];
     return message;
@@ -765,7 +765,7 @@ export const InterfaceDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<InterfaceDescriptor>): InterfaceDescriptor {
+  fromPartial(object: Partial<InterfaceDescriptor>): InterfaceDescriptor {
     const message = createBaseInterfaceDescriptor();
     message.fullname = object.fullname ?? "";
     message.interfaceAcceptingMessages = object.interfaceAcceptingMessages?.map(e => InterfaceAcceptingMessageDescriptor.fromPartial(e)) || [];
@@ -835,7 +835,7 @@ export const InterfaceImplementerDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<InterfaceImplementerDescriptor>): InterfaceImplementerDescriptor {
+  fromPartial(object: Partial<InterfaceImplementerDescriptor>): InterfaceImplementerDescriptor {
     const message = createBaseInterfaceImplementerDescriptor();
     message.fullname = object.fullname ?? "";
     message.typeUrl = object.typeUrl ?? "";
@@ -910,7 +910,7 @@ export const InterfaceAcceptingMessageDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<InterfaceAcceptingMessageDescriptor>): InterfaceAcceptingMessageDescriptor {
+  fromPartial(object: Partial<InterfaceAcceptingMessageDescriptor>): InterfaceAcceptingMessageDescriptor {
     const message = createBaseInterfaceAcceptingMessageDescriptor();
     message.fullname = object.fullname ?? "";
     message.fieldDescriptorNames = object.fieldDescriptorNames?.map(e => e) || [];
@@ -968,7 +968,7 @@ export const ConfigurationDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ConfigurationDescriptor>): ConfigurationDescriptor {
+  fromPartial(object: Partial<ConfigurationDescriptor>): ConfigurationDescriptor {
     const message = createBaseConfigurationDescriptor();
     message.bech32AccountAddressPrefix = object.bech32AccountAddressPrefix ?? "";
     return message;
@@ -1025,7 +1025,7 @@ export const MsgDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgDescriptor>): MsgDescriptor {
+  fromPartial(object: Partial<MsgDescriptor>): MsgDescriptor {
     const message = createBaseMsgDescriptor();
     message.msgTypeUrl = object.msgTypeUrl ?? "";
     return message;
@@ -1069,7 +1069,7 @@ export const GetAuthnDescriptorRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<GetAuthnDescriptorRequest>): GetAuthnDescriptorRequest {
+  fromPartial(_: Partial<GetAuthnDescriptorRequest>): GetAuthnDescriptorRequest {
     const message = createBaseGetAuthnDescriptorRequest();
     return message;
   }
@@ -1125,7 +1125,7 @@ export const GetAuthnDescriptorResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetAuthnDescriptorResponse>): GetAuthnDescriptorResponse {
+  fromPartial(object: Partial<GetAuthnDescriptorResponse>): GetAuthnDescriptorResponse {
     const message = createBaseGetAuthnDescriptorResponse();
     message.authn = object.authn !== undefined && object.authn !== null ? AuthnDescriptor.fromPartial(object.authn) : undefined;
     return message;
@@ -1169,7 +1169,7 @@ export const GetChainDescriptorRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<GetChainDescriptorRequest>): GetChainDescriptorRequest {
+  fromPartial(_: Partial<GetChainDescriptorRequest>): GetChainDescriptorRequest {
     const message = createBaseGetChainDescriptorRequest();
     return message;
   }
@@ -1225,7 +1225,7 @@ export const GetChainDescriptorResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetChainDescriptorResponse>): GetChainDescriptorResponse {
+  fromPartial(object: Partial<GetChainDescriptorResponse>): GetChainDescriptorResponse {
     const message = createBaseGetChainDescriptorResponse();
     message.chain = object.chain !== undefined && object.chain !== null ? ChainDescriptor.fromPartial(object.chain) : undefined;
     return message;
@@ -1269,7 +1269,7 @@ export const GetCodecDescriptorRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<GetCodecDescriptorRequest>): GetCodecDescriptorRequest {
+  fromPartial(_: Partial<GetCodecDescriptorRequest>): GetCodecDescriptorRequest {
     const message = createBaseGetCodecDescriptorRequest();
     return message;
   }
@@ -1325,7 +1325,7 @@ export const GetCodecDescriptorResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetCodecDescriptorResponse>): GetCodecDescriptorResponse {
+  fromPartial(object: Partial<GetCodecDescriptorResponse>): GetCodecDescriptorResponse {
     const message = createBaseGetCodecDescriptorResponse();
     message.codec = object.codec !== undefined && object.codec !== null ? CodecDescriptor.fromPartial(object.codec) : undefined;
     return message;
@@ -1369,7 +1369,7 @@ export const GetConfigurationDescriptorRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<GetConfigurationDescriptorRequest>): GetConfigurationDescriptorRequest {
+  fromPartial(_: Partial<GetConfigurationDescriptorRequest>): GetConfigurationDescriptorRequest {
     const message = createBaseGetConfigurationDescriptorRequest();
     return message;
   }
@@ -1425,7 +1425,7 @@ export const GetConfigurationDescriptorResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetConfigurationDescriptorResponse>): GetConfigurationDescriptorResponse {
+  fromPartial(object: Partial<GetConfigurationDescriptorResponse>): GetConfigurationDescriptorResponse {
     const message = createBaseGetConfigurationDescriptorResponse();
     message.config = object.config !== undefined && object.config !== null ? ConfigurationDescriptor.fromPartial(object.config) : undefined;
     return message;
@@ -1469,7 +1469,7 @@ export const GetQueryServicesDescriptorRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<GetQueryServicesDescriptorRequest>): GetQueryServicesDescriptorRequest {
+  fromPartial(_: Partial<GetQueryServicesDescriptorRequest>): GetQueryServicesDescriptorRequest {
     const message = createBaseGetQueryServicesDescriptorRequest();
     return message;
   }
@@ -1525,7 +1525,7 @@ export const GetQueryServicesDescriptorResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetQueryServicesDescriptorResponse>): GetQueryServicesDescriptorResponse {
+  fromPartial(object: Partial<GetQueryServicesDescriptorResponse>): GetQueryServicesDescriptorResponse {
     const message = createBaseGetQueryServicesDescriptorResponse();
     message.queries = object.queries !== undefined && object.queries !== null ? QueryServicesDescriptor.fromPartial(object.queries) : undefined;
     return message;
@@ -1569,7 +1569,7 @@ export const GetTxDescriptorRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<GetTxDescriptorRequest>): GetTxDescriptorRequest {
+  fromPartial(_: Partial<GetTxDescriptorRequest>): GetTxDescriptorRequest {
     const message = createBaseGetTxDescriptorRequest();
     return message;
   }
@@ -1625,7 +1625,7 @@ export const GetTxDescriptorResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GetTxDescriptorResponse>): GetTxDescriptorResponse {
+  fromPartial(object: Partial<GetTxDescriptorResponse>): GetTxDescriptorResponse {
     const message = createBaseGetTxDescriptorResponse();
     message.tx = object.tx !== undefined && object.tx !== null ? TxDescriptor.fromPartial(object.tx) : undefined;
     return message;
@@ -1688,7 +1688,7 @@ export const QueryServicesDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryServicesDescriptor>): QueryServicesDescriptor {
+  fromPartial(object: Partial<QueryServicesDescriptor>): QueryServicesDescriptor {
     const message = createBaseQueryServicesDescriptor();
     message.queryServices = object.queryServices?.map(e => QueryServiceDescriptor.fromPartial(e)) || [];
     return message;
@@ -1773,7 +1773,7 @@ export const QueryServiceDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryServiceDescriptor>): QueryServiceDescriptor {
+  fromPartial(object: Partial<QueryServiceDescriptor>): QueryServiceDescriptor {
     const message = createBaseQueryServiceDescriptor();
     message.fullname = object.fullname ?? "";
     message.isModule = object.isModule ?? false;
@@ -1843,7 +1843,7 @@ export const QueryMethodDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryMethodDescriptor>): QueryMethodDescriptor {
+  fromPartial(object: Partial<QueryMethodDescriptor>): QueryMethodDescriptor {
     const message = createBaseQueryMethodDescriptor();
     message.name = object.name ?? "";
     message.fullQueryPath = object.fullQueryPath ?? "";

@@ -13,37 +13,29 @@ import * as _146 from "./oracle/v1/genesis";
 import * as _147 from "./oracle/v1/params";
 import * as _148 from "./oracle/v1/query";
 import * as _149 from "./oracle/v1/tx";
-import * as _262 from "./gal/v1/tx.amino";
-import * as _263 from "./ibcstaking/v1/tx.amino";
-import * as _264 from "./oracle/v1/tx.amino";
-import * as _265 from "./gal/v1/tx.registry";
-import * as _266 from "./ibcstaking/v1/tx.registry";
-import * as _267 from "./oracle/v1/tx.registry";
-import * as _268 from "./gal/v1/query.lcd";
-import * as _269 from "./ibcstaking/v1/query.lcd";
-import * as _270 from "./mint/v1/query.lcd";
-import * as _271 from "./oracle/v1/query.lcd";
-import * as _272 from "./gal/v1/query.rpc.query";
-import * as _273 from "./ibcstaking/v1/query.rpc.query";
-import * as _274 from "./mint/v1/query.rpc.query";
-import * as _275 from "./oracle/v1/query.rpc.query";
-import * as _276 from "./gal/v1/tx.rpc.msg";
-import * as _277 from "./ibcstaking/v1/tx.rpc.msg";
-import * as _278 from "./oracle/v1/tx.rpc.msg";
-import * as _288 from "./lcd";
-import * as _289 from "./rpc.query";
-import * as _290 from "./rpc.tx";
+import * as _224 from "./gal/v1/query.lcd";
+import * as _225 from "./ibcstaking/v1/query.lcd";
+import * as _226 from "./mint/v1/query.lcd";
+import * as _227 from "./oracle/v1/query.lcd";
+import * as _228 from "./gal/v1/query.rpc.query";
+import * as _229 from "./ibcstaking/v1/query.rpc.query";
+import * as _230 from "./mint/v1/query.rpc.query";
+import * as _231 from "./oracle/v1/query.rpc.query";
+import * as _232 from "./gal/v1/tx.rpc.msg";
+import * as _233 from "./ibcstaking/v1/tx.rpc.msg";
+import * as _234 from "./oracle/v1/tx.rpc.msg";
+import * as _244 from "./lcd";
+import * as _245 from "./rpc.query";
+import * as _246 from "./rpc.tx";
 export namespace nova {
   export namespace gal {
     export const v1 = { ..._135,
       ..._136,
       ..._137,
       ..._138,
-      ..._262,
-      ..._265,
-      ..._268,
-      ..._272,
-      ..._276
+      ..._224,
+      ..._228,
+      ..._232
     };
   }
   export namespace ibcstaking {
@@ -51,19 +43,17 @@ export namespace nova {
       ..._140,
       ..._141,
       ..._142,
-      ..._263,
-      ..._266,
-      ..._269,
-      ..._273,
-      ..._277
+      ..._225,
+      ..._229,
+      ..._233
     };
   }
   export namespace mint {
     export const v1 = { ..._143,
       ..._144,
       ..._145,
-      ..._270,
-      ..._274
+      ..._226,
+      ..._230
     };
   }
   export namespace oracle {
@@ -71,15 +61,13 @@ export namespace nova {
       ..._147,
       ..._148,
       ..._149,
-      ..._264,
-      ..._267,
-      ..._271,
-      ..._275,
-      ..._278
+      ..._227,
+      ..._231,
+      ..._234
     };
   }
-  export const ClientFactory = { ..._288,
-    ..._289,
-    ..._290
+  export const ClientFactory = { ..._244,
+    ..._245,
+    ..._246
   };
 }

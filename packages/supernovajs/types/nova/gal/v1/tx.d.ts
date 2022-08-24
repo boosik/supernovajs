@@ -1,6 +1,5 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** MsgDeposit defines user who deposit and amount of coins. */
 export interface MsgDeposit {
     zoneId: string;
@@ -82,96 +81,96 @@ export declare const MsgDeposit: {
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgDeposit;
     fromJSON(object: any): MsgDeposit;
     toJSON(message: MsgDeposit): unknown;
-    fromPartial(object: DeepPartial<MsgDeposit>): MsgDeposit;
+    fromPartial(object: Partial<MsgDeposit>): MsgDeposit;
 };
 export declare const MsgDepositResponse: {
     encode(message: MsgDepositResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgDepositResponse;
     fromJSON(object: any): MsgDepositResponse;
     toJSON(message: MsgDepositResponse): unknown;
-    fromPartial(object: DeepPartial<MsgDepositResponse>): MsgDepositResponse;
+    fromPartial(object: Partial<MsgDepositResponse>): MsgDepositResponse;
 };
 export declare const MsgDelegate: {
     encode(message: MsgDelegate, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgDelegate;
     fromJSON(object: any): MsgDelegate;
     toJSON(message: MsgDelegate): unknown;
-    fromPartial(object: DeepPartial<MsgDelegate>): MsgDelegate;
+    fromPartial(object: Partial<MsgDelegate>): MsgDelegate;
 };
 export declare const MsgDelegateResponse: {
     encode(_: MsgDelegateResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgDelegateResponse;
     fromJSON(_: any): MsgDelegateResponse;
     toJSON(_: MsgDelegateResponse): unknown;
-    fromPartial(_: DeepPartial<MsgDelegateResponse>): MsgDelegateResponse;
+    fromPartial(_: Partial<MsgDelegateResponse>): MsgDelegateResponse;
 };
 export declare const MsgUndelegate: {
     encode(message: MsgUndelegate, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgUndelegate;
     fromJSON(object: any): MsgUndelegate;
     toJSON(message: MsgUndelegate): unknown;
-    fromPartial(object: DeepPartial<MsgUndelegate>): MsgUndelegate;
+    fromPartial(object: Partial<MsgUndelegate>): MsgUndelegate;
 };
 export declare const MsgUndelegateResponse: {
     encode(message: MsgUndelegateResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgUndelegateResponse;
     fromJSON(object: any): MsgUndelegateResponse;
     toJSON(message: MsgUndelegateResponse): unknown;
-    fromPartial(object: DeepPartial<MsgUndelegateResponse>): MsgUndelegateResponse;
+    fromPartial(object: Partial<MsgUndelegateResponse>): MsgUndelegateResponse;
 };
 export declare const MsgPendingUndelegate: {
     encode(message: MsgPendingUndelegate, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgPendingUndelegate;
     fromJSON(object: any): MsgPendingUndelegate;
     toJSON(message: MsgPendingUndelegate): unknown;
-    fromPartial(object: DeepPartial<MsgPendingUndelegate>): MsgPendingUndelegate;
+    fromPartial(object: Partial<MsgPendingUndelegate>): MsgPendingUndelegate;
 };
 export declare const MsgPendingUndelegateResponse: {
     encode(message: MsgPendingUndelegateResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgPendingUndelegateResponse;
     fromJSON(object: any): MsgPendingUndelegateResponse;
     toJSON(message: MsgPendingUndelegateResponse): unknown;
-    fromPartial(object: DeepPartial<MsgPendingUndelegateResponse>): MsgPendingUndelegateResponse;
+    fromPartial(object: Partial<MsgPendingUndelegateResponse>): MsgPendingUndelegateResponse;
 };
 export declare const MsgWithdraw: {
     encode(message: MsgWithdraw, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgWithdraw;
     fromJSON(object: any): MsgWithdraw;
     toJSON(message: MsgWithdraw): unknown;
-    fromPartial(object: DeepPartial<MsgWithdraw>): MsgWithdraw;
+    fromPartial(object: Partial<MsgWithdraw>): MsgWithdraw;
 };
 export declare const MsgWithdrawResponse: {
     encode(message: MsgWithdrawResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgWithdrawResponse;
     fromJSON(object: any): MsgWithdrawResponse;
     toJSON(message: MsgWithdrawResponse): unknown;
-    fromPartial(object: DeepPartial<MsgWithdrawResponse>): MsgWithdrawResponse;
+    fromPartial(object: Partial<MsgWithdrawResponse>): MsgWithdrawResponse;
 };
 export declare const MsgClaimSnAsset: {
     encode(message: MsgClaimSnAsset, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgClaimSnAsset;
     fromJSON(object: any): MsgClaimSnAsset;
     toJSON(message: MsgClaimSnAsset): unknown;
-    fromPartial(object: DeepPartial<MsgClaimSnAsset>): MsgClaimSnAsset;
+    fromPartial(object: Partial<MsgClaimSnAsset>): MsgClaimSnAsset;
 };
 export declare const MsgClaimSnAssetResponse: {
     encode(message: MsgClaimSnAssetResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgClaimSnAssetResponse;
     fromJSON(object: any): MsgClaimSnAssetResponse;
     toJSON(message: MsgClaimSnAssetResponse): unknown;
-    fromPartial(object: DeepPartial<MsgClaimSnAssetResponse>): MsgClaimSnAssetResponse;
+    fromPartial(object: Partial<MsgClaimSnAssetResponse>): MsgClaimSnAssetResponse;
 };
 export declare const MsgPendingWithdraw: {
     encode(message: MsgPendingWithdraw, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgPendingWithdraw;
     fromJSON(object: any): MsgPendingWithdraw;
     toJSON(message: MsgPendingWithdraw): unknown;
-    fromPartial(object: DeepPartial<MsgPendingWithdraw>): MsgPendingWithdraw;
+    fromPartial(object: Partial<MsgPendingWithdraw>): MsgPendingWithdraw;
 };
 export declare const MsgPendingWithdrawResponse: {
     encode(_: MsgPendingWithdrawResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgPendingWithdrawResponse;
     fromJSON(_: any): MsgPendingWithdrawResponse;
     toJSON(_: MsgPendingWithdrawResponse): unknown;
-    fromPartial(_: DeepPartial<MsgPendingWithdrawResponse>): MsgPendingWithdrawResponse;
+    fromPartial(_: Partial<MsgPendingWithdrawResponse>): MsgPendingWithdrawResponse;
 };

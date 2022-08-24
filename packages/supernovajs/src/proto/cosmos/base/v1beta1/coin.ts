@@ -93,7 +93,7 @@ export const Coin = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Coin>): Coin {
+  fromPartial(object: Partial<Coin>): Coin {
     const message = createBaseCoin();
     message.denom = object.denom ?? "";
     message.amount = object.amount ?? "";
@@ -162,7 +162,7 @@ export const DecCoin = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DecCoin>): DecCoin {
+  fromPartial(object: Partial<DecCoin>): DecCoin {
     const message = createBaseDecCoin();
     message.denom = object.denom ?? "";
     message.amount = object.amount ?? "";
@@ -220,7 +220,7 @@ export const IntProto = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<IntProto>): IntProto {
+  fromPartial(object: Partial<IntProto>): IntProto {
     const message = createBaseIntProto();
     message.int = object.int ?? "";
     return message;
@@ -277,7 +277,7 @@ export const DecProto = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DecProto>): DecProto {
+  fromPartial(object: Partial<DecProto>): DecProto {
     const message = createBaseDecProto();
     message.dec = object.dec ?? "";
     return message;

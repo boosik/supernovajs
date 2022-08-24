@@ -179,7 +179,7 @@ export const QueryConnectionRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionRequest>): QueryConnectionRequest {
+  fromPartial(object: Partial<QueryConnectionRequest>): QueryConnectionRequest {
     const message = createBaseQueryConnectionRequest();
     message.connectionId = object.connectionId ?? "";
     return message;
@@ -258,7 +258,7 @@ export const QueryConnectionResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionResponse>): QueryConnectionResponse {
+  fromPartial(object: Partial<QueryConnectionResponse>): QueryConnectionResponse {
     const message = createBaseQueryConnectionResponse();
     message.connection = object.connection !== undefined && object.connection !== null ? ConnectionEnd.fromPartial(object.connection) : undefined;
     message.proof = object.proof ?? new Uint8Array();
@@ -317,7 +317,7 @@ export const QueryConnectionsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionsRequest>): QueryConnectionsRequest {
+  fromPartial(object: Partial<QueryConnectionsRequest>): QueryConnectionsRequest {
     const message = createBaseQueryConnectionsRequest();
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageRequest.fromPartial(object.pagination) : undefined;
     return message;
@@ -402,7 +402,7 @@ export const QueryConnectionsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionsResponse>): QueryConnectionsResponse {
+  fromPartial(object: Partial<QueryConnectionsResponse>): QueryConnectionsResponse {
     const message = createBaseQueryConnectionsResponse();
     message.connections = object.connections?.map(e => IdentifiedConnection.fromPartial(e)) || [];
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageResponse.fromPartial(object.pagination) : undefined;
@@ -461,7 +461,7 @@ export const QueryClientConnectionsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryClientConnectionsRequest>): QueryClientConnectionsRequest {
+  fromPartial(object: Partial<QueryClientConnectionsRequest>): QueryClientConnectionsRequest {
     const message = createBaseQueryClientConnectionsRequest();
     message.clientId = object.clientId ?? "";
     return message;
@@ -546,7 +546,7 @@ export const QueryClientConnectionsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryClientConnectionsResponse>): QueryClientConnectionsResponse {
+  fromPartial(object: Partial<QueryClientConnectionsResponse>): QueryClientConnectionsResponse {
     const message = createBaseQueryClientConnectionsResponse();
     message.connectionPaths = object.connectionPaths?.map(e => e) || [];
     message.proof = object.proof ?? new Uint8Array();
@@ -605,7 +605,7 @@ export const QueryConnectionClientStateRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionClientStateRequest>): QueryConnectionClientStateRequest {
+  fromPartial(object: Partial<QueryConnectionClientStateRequest>): QueryConnectionClientStateRequest {
     const message = createBaseQueryConnectionClientStateRequest();
     message.connectionId = object.connectionId ?? "";
     return message;
@@ -684,7 +684,7 @@ export const QueryConnectionClientStateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionClientStateResponse>): QueryConnectionClientStateResponse {
+  fromPartial(object: Partial<QueryConnectionClientStateResponse>): QueryConnectionClientStateResponse {
     const message = createBaseQueryConnectionClientStateResponse();
     message.identifiedClientState = object.identifiedClientState !== undefined && object.identifiedClientState !== null ? IdentifiedClientState.fromPartial(object.identifiedClientState) : undefined;
     message.proof = object.proof ?? new Uint8Array();
@@ -765,7 +765,7 @@ export const QueryConnectionConsensusStateRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionConsensusStateRequest>): QueryConnectionConsensusStateRequest {
+  fromPartial(object: Partial<QueryConnectionConsensusStateRequest>): QueryConnectionConsensusStateRequest {
     const message = createBaseQueryConnectionConsensusStateRequest();
     message.connectionId = object.connectionId ?? "";
     message.revisionNumber = object.revisionNumber !== undefined && object.revisionNumber !== null ? Long.fromValue(object.revisionNumber) : Long.UZERO;
@@ -857,7 +857,7 @@ export const QueryConnectionConsensusStateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConnectionConsensusStateResponse>): QueryConnectionConsensusStateResponse {
+  fromPartial(object: Partial<QueryConnectionConsensusStateResponse>): QueryConnectionConsensusStateResponse {
     const message = createBaseQueryConnectionConsensusStateResponse();
     message.consensusState = object.consensusState !== undefined && object.consensusState !== null ? Any.fromPartial(object.consensusState) : undefined;
     message.clientId = object.clientId ?? "";

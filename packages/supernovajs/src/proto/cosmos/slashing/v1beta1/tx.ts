@@ -58,7 +58,7 @@ export const MsgUnjail = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUnjail>): MsgUnjail {
+  fromPartial(object: Partial<MsgUnjail>): MsgUnjail {
     const message = createBaseMsgUnjail();
     message.validatorAddr = object.validatorAddr ?? "";
     return message;
@@ -102,7 +102,7 @@ export const MsgUnjailResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgUnjailResponse>): MsgUnjailResponse {
+  fromPartial(_: Partial<MsgUnjailResponse>): MsgUnjailResponse {
     const message = createBaseMsgUnjailResponse();
     return message;
   }

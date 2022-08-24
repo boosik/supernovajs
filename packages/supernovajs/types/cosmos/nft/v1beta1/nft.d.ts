@@ -1,6 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** Class defines the class of the nft type. */
 export interface Class {
     /** id defines the unique identifier of the NFT classification, similar to the contract address of ERC721 */
@@ -36,12 +35,12 @@ export declare const Class: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Class;
     fromJSON(object: any): Class;
     toJSON(message: Class): unknown;
-    fromPartial(object: DeepPartial<Class>): Class;
+    fromPartial(object: Partial<Class>): Class;
 };
 export declare const NFT: {
     encode(message: NFT, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): NFT;
     fromJSON(object: any): NFT;
     toJSON(message: NFT): unknown;
-    fromPartial(object: DeepPartial<NFT>): NFT;
+    fromPartial(object: Partial<NFT>): NFT;
 };

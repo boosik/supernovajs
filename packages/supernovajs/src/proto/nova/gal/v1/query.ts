@@ -109,7 +109,7 @@ export const QueryParamsRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryParamsRequest>): QueryParamsRequest {
+  fromPartial(_: Partial<QueryParamsRequest>): QueryParamsRequest {
     const message = createBaseQueryParamsRequest();
     return message;
   }
@@ -165,7 +165,7 @@ export const QueryParamsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryParamsResponse>): QueryParamsResponse {
+  fromPartial(object: Partial<QueryParamsResponse>): QueryParamsResponse {
     const message = createBaseQueryParamsResponse();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     return message;
@@ -255,7 +255,7 @@ export const ClaimableAmountRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClaimableAmountRequest>): ClaimableAmountRequest {
+  fromPartial(object: Partial<ClaimableAmountRequest>): ClaimableAmountRequest {
     const message = createBaseClaimableAmountRequest();
     message.zoneId = object.zoneId ?? "";
     message.address = object.address ?? "";
@@ -315,7 +315,7 @@ export const ClaimableAmountResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClaimableAmountResponse>): ClaimableAmountResponse {
+  fromPartial(object: Partial<ClaimableAmountResponse>): ClaimableAmountResponse {
     const message = createBaseClaimableAmountResponse();
     message.amount = object.amount !== undefined && object.amount !== null ? Coin.fromPartial(object.amount) : undefined;
     return message;
@@ -405,7 +405,7 @@ export const PendingWithdrawalsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PendingWithdrawalsRequest>): PendingWithdrawalsRequest {
+  fromPartial(object: Partial<PendingWithdrawalsRequest>): PendingWithdrawalsRequest {
     const message = createBasePendingWithdrawalsRequest();
     message.zoneId = object.zoneId ?? "";
     message.address = object.address ?? "";
@@ -465,7 +465,7 @@ export const PendingWithdrawalsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PendingWithdrawalsResponse>): PendingWithdrawalsResponse {
+  fromPartial(object: Partial<PendingWithdrawalsResponse>): PendingWithdrawalsResponse {
     const message = createBasePendingWithdrawalsResponse();
     message.amount = object.amount !== undefined && object.amount !== null ? Coin.fromPartial(object.amount) : undefined;
     return message;
@@ -555,7 +555,7 @@ export const ActiveWithdrawalsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ActiveWithdrawalsRequest>): ActiveWithdrawalsRequest {
+  fromPartial(object: Partial<ActiveWithdrawalsRequest>): ActiveWithdrawalsRequest {
     const message = createBaseActiveWithdrawalsRequest();
     message.zoneId = object.zoneId ?? "";
     message.address = object.address ?? "";
@@ -615,7 +615,7 @@ export const ActiveWithdrawalsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ActiveWithdrawalsResponse>): ActiveWithdrawalsResponse {
+  fromPartial(object: Partial<ActiveWithdrawalsResponse>): ActiveWithdrawalsResponse {
     const message = createBaseActiveWithdrawalsResponse();
     message.amount = object.amount !== undefined && object.amount !== null ? Coin.fromPartial(object.amount) : undefined;
     return message;
@@ -683,7 +683,7 @@ export const QueryDepositRecordRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryDepositRecordRequest>): QueryDepositRecordRequest {
+  fromPartial(object: Partial<QueryDepositRecordRequest>): QueryDepositRecordRequest {
     const message = createBaseQueryDepositRecordRequest();
     message.zoneId = object.zoneId ?? "";
     message.address = object.address ?? "";
@@ -741,7 +741,7 @@ export const QueryDepositRecordResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryDepositRecordResponse>): QueryDepositRecordResponse {
+  fromPartial(object: Partial<QueryDepositRecordResponse>): QueryDepositRecordResponse {
     const message = createBaseQueryDepositRecordResponse();
     message.depositRecord = object.depositRecord !== undefined && object.depositRecord !== null ? DepositRecord.fromPartial(object.depositRecord) : undefined;
     return message;
@@ -809,7 +809,7 @@ export const QueryUndelegateRecordRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryUndelegateRecordRequest>): QueryUndelegateRecordRequest {
+  fromPartial(object: Partial<QueryUndelegateRecordRequest>): QueryUndelegateRecordRequest {
     const message = createBaseQueryUndelegateRecordRequest();
     message.zoneId = object.zoneId ?? "";
     message.address = object.address ?? "";
@@ -867,7 +867,7 @@ export const QueryUndelegateRecordResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryUndelegateRecordResponse>): QueryUndelegateRecordResponse {
+  fromPartial(object: Partial<QueryUndelegateRecordResponse>): QueryUndelegateRecordResponse {
     const message = createBaseQueryUndelegateRecordResponse();
     message.undelegateRecord = object.undelegateRecord !== undefined && object.undelegateRecord !== null ? UndelegateRecord.fromPartial(object.undelegateRecord) : undefined;
     return message;
@@ -935,7 +935,7 @@ export const QueryWithdrawRecordRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryWithdrawRecordRequest>): QueryWithdrawRecordRequest {
+  fromPartial(object: Partial<QueryWithdrawRecordRequest>): QueryWithdrawRecordRequest {
     const message = createBaseQueryWithdrawRecordRequest();
     message.zoneId = object.zoneId ?? "";
     message.address = object.address ?? "";
@@ -993,7 +993,7 @@ export const QueryWithdrawRecordResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryWithdrawRecordResponse>): QueryWithdrawRecordResponse {
+  fromPartial(object: Partial<QueryWithdrawRecordResponse>): QueryWithdrawRecordResponse {
     const message = createBaseQueryWithdrawRecordResponse();
     message.withdrawRecord = object.withdrawRecord !== undefined && object.withdrawRecord !== null ? WithdrawRecord.fromPartial(object.withdrawRecord) : undefined;
     return message;

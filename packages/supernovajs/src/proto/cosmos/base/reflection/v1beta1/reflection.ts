@@ -63,7 +63,7 @@ export const ListAllInterfacesRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<ListAllInterfacesRequest>): ListAllInterfacesRequest {
+  fromPartial(_: Partial<ListAllInterfacesRequest>): ListAllInterfacesRequest {
     const message = createBaseListAllInterfacesRequest();
     return message;
   }
@@ -125,7 +125,7 @@ export const ListAllInterfacesResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ListAllInterfacesResponse>): ListAllInterfacesResponse {
+  fromPartial(object: Partial<ListAllInterfacesResponse>): ListAllInterfacesResponse {
     const message = createBaseListAllInterfacesResponse();
     message.interfaceNames = object.interfaceNames?.map(e => e) || [];
     return message;
@@ -182,7 +182,7 @@ export const ListImplementationsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ListImplementationsRequest>): ListImplementationsRequest {
+  fromPartial(object: Partial<ListImplementationsRequest>): ListImplementationsRequest {
     const message = createBaseListImplementationsRequest();
     message.interfaceName = object.interfaceName ?? "";
     return message;
@@ -245,7 +245,7 @@ export const ListImplementationsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ListImplementationsResponse>): ListImplementationsResponse {
+  fromPartial(object: Partial<ListImplementationsResponse>): ListImplementationsResponse {
     const message = createBaseListImplementationsResponse();
     message.implementationMessageNames = object.implementationMessageNames?.map(e => e) || [];
     return message;

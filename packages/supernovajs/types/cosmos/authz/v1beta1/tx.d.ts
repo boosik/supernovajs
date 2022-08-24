@@ -1,7 +1,6 @@
 import { Grant } from "./authz";
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * MsgGrant is a request type for Grant method. It declares authorization to the grantee
  * on behalf of the granter with the provided expiration time.
@@ -49,40 +48,40 @@ export declare const MsgGrant: {
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgGrant;
     fromJSON(object: any): MsgGrant;
     toJSON(message: MsgGrant): unknown;
-    fromPartial(object: DeepPartial<MsgGrant>): MsgGrant;
+    fromPartial(object: Partial<MsgGrant>): MsgGrant;
 };
 export declare const MsgExecResponse: {
     encode(message: MsgExecResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgExecResponse;
     fromJSON(object: any): MsgExecResponse;
     toJSON(message: MsgExecResponse): unknown;
-    fromPartial(object: DeepPartial<MsgExecResponse>): MsgExecResponse;
+    fromPartial(object: Partial<MsgExecResponse>): MsgExecResponse;
 };
 export declare const MsgExec: {
     encode(message: MsgExec, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgExec;
     fromJSON(object: any): MsgExec;
     toJSON(message: MsgExec): unknown;
-    fromPartial(object: DeepPartial<MsgExec>): MsgExec;
+    fromPartial(object: Partial<MsgExec>): MsgExec;
 };
 export declare const MsgGrantResponse: {
     encode(_: MsgGrantResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgGrantResponse;
     fromJSON(_: any): MsgGrantResponse;
     toJSON(_: MsgGrantResponse): unknown;
-    fromPartial(_: DeepPartial<MsgGrantResponse>): MsgGrantResponse;
+    fromPartial(_: Partial<MsgGrantResponse>): MsgGrantResponse;
 };
 export declare const MsgRevoke: {
     encode(message: MsgRevoke, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgRevoke;
     fromJSON(object: any): MsgRevoke;
     toJSON(message: MsgRevoke): unknown;
-    fromPartial(object: DeepPartial<MsgRevoke>): MsgRevoke;
+    fromPartial(object: Partial<MsgRevoke>): MsgRevoke;
 };
 export declare const MsgRevokeResponse: {
     encode(_: MsgRevokeResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgRevokeResponse;
     fromJSON(_: any): MsgRevokeResponse;
     toJSON(_: MsgRevokeResponse): unknown;
-    fromPartial(_: DeepPartial<MsgRevokeResponse>): MsgRevokeResponse;
+    fromPartial(_: Partial<MsgRevokeResponse>): MsgRevokeResponse;
 };

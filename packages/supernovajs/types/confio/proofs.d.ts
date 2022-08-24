@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 export declare enum HashOp {
     /** NO_HASH - NO_HASH is the default if no data passed. Note this is an illegal argument some places. */
     NO_HASH = 0,
@@ -221,89 +220,89 @@ export declare const ExistenceProof: {
     decode(input: _m0.Reader | Uint8Array, length?: number): ExistenceProof;
     fromJSON(object: any): ExistenceProof;
     toJSON(message: ExistenceProof): unknown;
-    fromPartial(object: DeepPartial<ExistenceProof>): ExistenceProof;
+    fromPartial(object: Partial<ExistenceProof>): ExistenceProof;
 };
 export declare const NonExistenceProof: {
     encode(message: NonExistenceProof, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): NonExistenceProof;
     fromJSON(object: any): NonExistenceProof;
     toJSON(message: NonExistenceProof): unknown;
-    fromPartial(object: DeepPartial<NonExistenceProof>): NonExistenceProof;
+    fromPartial(object: Partial<NonExistenceProof>): NonExistenceProof;
 };
 export declare const CommitmentProof: {
     encode(message: CommitmentProof, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): CommitmentProof;
     fromJSON(object: any): CommitmentProof;
     toJSON(message: CommitmentProof): unknown;
-    fromPartial(object: DeepPartial<CommitmentProof>): CommitmentProof;
+    fromPartial(object: Partial<CommitmentProof>): CommitmentProof;
 };
 export declare const LeafOp: {
     encode(message: LeafOp, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): LeafOp;
     fromJSON(object: any): LeafOp;
     toJSON(message: LeafOp): unknown;
-    fromPartial(object: DeepPartial<LeafOp>): LeafOp;
+    fromPartial(object: Partial<LeafOp>): LeafOp;
 };
 export declare const InnerOp: {
     encode(message: InnerOp, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): InnerOp;
     fromJSON(object: any): InnerOp;
     toJSON(message: InnerOp): unknown;
-    fromPartial(object: DeepPartial<InnerOp>): InnerOp;
+    fromPartial(object: Partial<InnerOp>): InnerOp;
 };
 export declare const ProofSpec: {
     encode(message: ProofSpec, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ProofSpec;
     fromJSON(object: any): ProofSpec;
     toJSON(message: ProofSpec): unknown;
-    fromPartial(object: DeepPartial<ProofSpec>): ProofSpec;
+    fromPartial(object: Partial<ProofSpec>): ProofSpec;
 };
 export declare const InnerSpec: {
     encode(message: InnerSpec, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): InnerSpec;
     fromJSON(object: any): InnerSpec;
     toJSON(message: InnerSpec): unknown;
-    fromPartial(object: DeepPartial<InnerSpec>): InnerSpec;
+    fromPartial(object: Partial<InnerSpec>): InnerSpec;
 };
 export declare const BatchProof: {
     encode(message: BatchProof, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): BatchProof;
     fromJSON(object: any): BatchProof;
     toJSON(message: BatchProof): unknown;
-    fromPartial(object: DeepPartial<BatchProof>): BatchProof;
+    fromPartial(object: Partial<BatchProof>): BatchProof;
 };
 export declare const BatchEntry: {
     encode(message: BatchEntry, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): BatchEntry;
     fromJSON(object: any): BatchEntry;
     toJSON(message: BatchEntry): unknown;
-    fromPartial(object: DeepPartial<BatchEntry>): BatchEntry;
+    fromPartial(object: Partial<BatchEntry>): BatchEntry;
 };
 export declare const CompressedBatchProof: {
     encode(message: CompressedBatchProof, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): CompressedBatchProof;
     fromJSON(object: any): CompressedBatchProof;
     toJSON(message: CompressedBatchProof): unknown;
-    fromPartial(object: DeepPartial<CompressedBatchProof>): CompressedBatchProof;
+    fromPartial(object: Partial<CompressedBatchProof>): CompressedBatchProof;
 };
 export declare const CompressedBatchEntry: {
     encode(message: CompressedBatchEntry, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): CompressedBatchEntry;
     fromJSON(object: any): CompressedBatchEntry;
     toJSON(message: CompressedBatchEntry): unknown;
-    fromPartial(object: DeepPartial<CompressedBatchEntry>): CompressedBatchEntry;
+    fromPartial(object: Partial<CompressedBatchEntry>): CompressedBatchEntry;
 };
 export declare const CompressedExistenceProof: {
     encode(message: CompressedExistenceProof, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): CompressedExistenceProof;
     fromJSON(object: any): CompressedExistenceProof;
     toJSON(message: CompressedExistenceProof): unknown;
-    fromPartial(object: DeepPartial<CompressedExistenceProof>): CompressedExistenceProof;
+    fromPartial(object: Partial<CompressedExistenceProof>): CompressedExistenceProof;
 };
 export declare const CompressedNonExistenceProof: {
     encode(message: CompressedNonExistenceProof, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): CompressedNonExistenceProof;
     fromJSON(object: any): CompressedNonExistenceProof;
     toJSON(message: CompressedNonExistenceProof): unknown;
-    fromPartial(object: DeepPartial<CompressedNonExistenceProof>): CompressedNonExistenceProof;
+    fromPartial(object: Partial<CompressedNonExistenceProof>): CompressedNonExistenceProof;
 };

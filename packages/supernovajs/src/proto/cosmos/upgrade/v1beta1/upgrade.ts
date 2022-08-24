@@ -180,7 +180,7 @@ export const Plan = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Plan>): Plan {
+  fromPartial(object: Partial<Plan>): Plan {
     const message = createBasePlan();
     message.name = object.name ?? "";
     message.time = object.time ?? undefined;
@@ -263,7 +263,7 @@ export const SoftwareUpgradeProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SoftwareUpgradeProposal>): SoftwareUpgradeProposal {
+  fromPartial(object: Partial<SoftwareUpgradeProposal>): SoftwareUpgradeProposal {
     const message = createBaseSoftwareUpgradeProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -333,7 +333,7 @@ export const CancelSoftwareUpgradeProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CancelSoftwareUpgradeProposal>): CancelSoftwareUpgradeProposal {
+  fromPartial(object: Partial<CancelSoftwareUpgradeProposal>): CancelSoftwareUpgradeProposal {
     const message = createBaseCancelSoftwareUpgradeProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -402,7 +402,7 @@ export const ModuleVersion = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ModuleVersion>): ModuleVersion {
+  fromPartial(object: Partial<ModuleVersion>): ModuleVersion {
     const message = createBaseModuleVersion();
     message.name = object.name ?? "";
     message.version = object.version !== undefined && object.version !== null ? Long.fromValue(object.version) : Long.UZERO;

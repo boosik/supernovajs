@@ -1,7 +1,7 @@
 import { BaseAccount } from "../../auth/v1beta1/auth";
 import { Coin } from "../../base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * BaseVestingAccount implements the VestingAccount interface. It contains all
  * the necessary fields needed for any vesting account implementation.
@@ -58,40 +58,40 @@ export declare const BaseVestingAccount: {
     decode(input: _m0.Reader | Uint8Array, length?: number): BaseVestingAccount;
     fromJSON(object: any): BaseVestingAccount;
     toJSON(message: BaseVestingAccount): unknown;
-    fromPartial(object: DeepPartial<BaseVestingAccount>): BaseVestingAccount;
+    fromPartial(object: Partial<BaseVestingAccount>): BaseVestingAccount;
 };
 export declare const ContinuousVestingAccount: {
     encode(message: ContinuousVestingAccount, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ContinuousVestingAccount;
     fromJSON(object: any): ContinuousVestingAccount;
     toJSON(message: ContinuousVestingAccount): unknown;
-    fromPartial(object: DeepPartial<ContinuousVestingAccount>): ContinuousVestingAccount;
+    fromPartial(object: Partial<ContinuousVestingAccount>): ContinuousVestingAccount;
 };
 export declare const DelayedVestingAccount: {
     encode(message: DelayedVestingAccount, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DelayedVestingAccount;
     fromJSON(object: any): DelayedVestingAccount;
     toJSON(message: DelayedVestingAccount): unknown;
-    fromPartial(object: DeepPartial<DelayedVestingAccount>): DelayedVestingAccount;
+    fromPartial(object: Partial<DelayedVestingAccount>): DelayedVestingAccount;
 };
 export declare const Period: {
     encode(message: Period, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Period;
     fromJSON(object: any): Period;
     toJSON(message: Period): unknown;
-    fromPartial(object: DeepPartial<Period>): Period;
+    fromPartial(object: Partial<Period>): Period;
 };
 export declare const PeriodicVestingAccount: {
     encode(message: PeriodicVestingAccount, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PeriodicVestingAccount;
     fromJSON(object: any): PeriodicVestingAccount;
     toJSON(message: PeriodicVestingAccount): unknown;
-    fromPartial(object: DeepPartial<PeriodicVestingAccount>): PeriodicVestingAccount;
+    fromPartial(object: Partial<PeriodicVestingAccount>): PeriodicVestingAccount;
 };
 export declare const PermanentLockedAccount: {
     encode(message: PermanentLockedAccount, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PermanentLockedAccount;
     fromJSON(object: any): PermanentLockedAccount;
     toJSON(message: PermanentLockedAccount): unknown;
-    fromPartial(object: DeepPartial<PermanentLockedAccount>): PermanentLockedAccount;
+    fromPartial(object: Partial<PermanentLockedAccount>): PermanentLockedAccount;
 };

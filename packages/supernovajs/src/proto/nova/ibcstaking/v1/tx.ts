@@ -168,7 +168,7 @@ export const MsgRegisterZone = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgRegisterZone>): MsgRegisterZone {
+  fromPartial(object: Partial<MsgRegisterZone>): MsgRegisterZone {
     const message = createBaseMsgRegisterZone();
     message.zoneId = object.zoneId ?? "";
     message.icaInfo = object.icaInfo !== undefined && object.icaInfo !== null ? IcaConnectionInfo.fromPartial(object.icaInfo) : undefined;
@@ -217,7 +217,7 @@ export const MsgRegisterZoneResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgRegisterZoneResponse>): MsgRegisterZoneResponse {
+  fromPartial(_: Partial<MsgRegisterZoneResponse>): MsgRegisterZoneResponse {
     const message = createBaseMsgRegisterZoneResponse();
     return message;
   }
@@ -328,7 +328,7 @@ export const MsgChangeRegisteredZoneInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgChangeRegisteredZoneInfo>): MsgChangeRegisteredZoneInfo {
+  fromPartial(object: Partial<MsgChangeRegisteredZoneInfo>): MsgChangeRegisteredZoneInfo {
     const message = createBaseMsgChangeRegisteredZoneInfo();
     message.zoneId = object.zoneId ?? "";
     message.icaInfo = object.icaInfo !== undefined && object.icaInfo !== null ? IcaConnectionInfo.fromPartial(object.icaInfo) : undefined;
@@ -377,7 +377,7 @@ export const MsgChangeRegisteredZoneInfoResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgChangeRegisteredZoneInfoResponse>): MsgChangeRegisteredZoneInfoResponse {
+  fromPartial(_: Partial<MsgChangeRegisteredZoneInfoResponse>): MsgChangeRegisteredZoneInfoResponse {
     const message = createBaseMsgChangeRegisteredZoneInfoResponse();
     return message;
   }
@@ -444,7 +444,7 @@ export const MsgDeleteRegisteredZone = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgDeleteRegisteredZone>): MsgDeleteRegisteredZone {
+  fromPartial(object: Partial<MsgDeleteRegisteredZone>): MsgDeleteRegisteredZone {
     const message = createBaseMsgDeleteRegisteredZone();
     message.zoneId = object.zoneId ?? "";
     message.daomodifierAddress = object.daomodifierAddress ?? "";
@@ -489,7 +489,7 @@ export const MsgDeleteRegisteredZoneResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgDeleteRegisteredZoneResponse>): MsgDeleteRegisteredZoneResponse {
+  fromPartial(_: Partial<MsgDeleteRegisteredZoneResponse>): MsgDeleteRegisteredZoneResponse {
     const message = createBaseMsgDeleteRegisteredZoneResponse();
     return message;
   }
@@ -578,7 +578,7 @@ export const MsgIcaDelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgIcaDelegate>): MsgIcaDelegate {
+  fromPartial(object: Partial<MsgIcaDelegate>): MsgIcaDelegate {
     const message = createBaseMsgIcaDelegate();
     message.zoneId = object.zoneId ?? "";
     message.hostAddress = object.hostAddress ?? "";
@@ -625,7 +625,7 @@ export const MsgIcaDelegateResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgIcaDelegateResponse>): MsgIcaDelegateResponse {
+  fromPartial(_: Partial<MsgIcaDelegateResponse>): MsgIcaDelegateResponse {
     const message = createBaseMsgIcaDelegateResponse();
     return message;
   }
@@ -714,7 +714,7 @@ export const MsgIcaUndelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgIcaUndelegate>): MsgIcaUndelegate {
+  fromPartial(object: Partial<MsgIcaUndelegate>): MsgIcaUndelegate {
     const message = createBaseMsgIcaUndelegate();
     message.zoneId = object.zoneId ?? "";
     message.hostAddress = object.hostAddress ?? "";
@@ -761,7 +761,7 @@ export const MsgIcaUndelegateResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgIcaUndelegateResponse>): MsgIcaUndelegateResponse {
+  fromPartial(_: Partial<MsgIcaUndelegateResponse>): MsgIcaUndelegateResponse {
     const message = createBaseMsgIcaUndelegateResponse();
     return message;
   }
@@ -850,7 +850,7 @@ export const MsgIcaAutoStaking = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgIcaAutoStaking>): MsgIcaAutoStaking {
+  fromPartial(object: Partial<MsgIcaAutoStaking>): MsgIcaAutoStaking {
     const message = createBaseMsgIcaAutoStaking();
     message.zoneId = object.zoneId ?? "";
     message.hostAddress = object.hostAddress ?? "";
@@ -897,7 +897,7 @@ export const MsgIcaAutoStakingResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgIcaAutoStakingResponse>): MsgIcaAutoStakingResponse {
+  fromPartial(_: Partial<MsgIcaAutoStakingResponse>): MsgIcaAutoStakingResponse {
     const message = createBaseMsgIcaAutoStakingResponse();
     return message;
   }
@@ -1019,7 +1019,7 @@ export const MsgIcaTransfer = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgIcaTransfer>): MsgIcaTransfer {
+  fromPartial(object: Partial<MsgIcaTransfer>): MsgIcaTransfer {
     const message = createBaseMsgIcaTransfer();
     message.zoneId = object.zoneId ?? "";
     message.hostAddress = object.hostAddress ?? "";
@@ -1069,7 +1069,7 @@ export const MsgIcaTransferResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgIcaTransferResponse>): MsgIcaTransferResponse {
+  fromPartial(_: Partial<MsgIcaTransferResponse>): MsgIcaTransferResponse {
     const message = createBaseMsgIcaTransferResponse();
     return message;
   }
@@ -1136,7 +1136,7 @@ export const MsgRegisterHostAccount = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgRegisterHostAccount>): MsgRegisterHostAccount {
+  fromPartial(object: Partial<MsgRegisterHostAccount>): MsgRegisterHostAccount {
     const message = createBaseMsgRegisterHostAccount();
     message.zoneId = object.zoneId ?? "";
     message.accountInfo = object.accountInfo !== undefined && object.accountInfo !== null ? IcaAccount.fromPartial(object.accountInfo) : undefined;
@@ -1181,7 +1181,7 @@ export const MsgRegisterHostAccountResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgRegisterHostAccountResponse>): MsgRegisterHostAccountResponse {
+  fromPartial(_: Partial<MsgRegisterHostAccountResponse>): MsgRegisterHostAccountResponse {
     const message = createBaseMsgRegisterHostAccountResponse();
     return message;
   }

@@ -180,7 +180,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     message.depositAccounts = object.depositAccounts?.map(e => DepositAccount.fromPartial(e)) || [];
@@ -279,7 +279,7 @@ export const DepositAccount = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DepositAccount>): DepositAccount {
+  fromPartial(object: Partial<DepositAccount>): DepositAccount {
     const message = createBaseDepositAccount();
     message.denom = object.denom ?? "";
     message.depositInfos = object.depositInfos?.map(e => DepositInfo.fromPartial(e)) || [];
@@ -361,7 +361,7 @@ export const DepositInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DepositInfo>): DepositInfo {
+  fromPartial(object: Partial<DepositInfo>): DepositInfo {
     const message = createBaseDepositInfo();
     message.address = object.address ?? "";
     message.share = object.share !== undefined && object.share !== null ? Long.fromValue(object.share) : Long.ZERO;
@@ -453,7 +453,7 @@ export const WithdrawInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<WithdrawInfo>): WithdrawInfo {
+  fromPartial(object: Partial<WithdrawInfo>): WithdrawInfo {
     const message = createBaseWithdrawInfo();
     message.address = object.address ?? "";
     message.denom = object.denom ?? "";
@@ -546,7 +546,7 @@ export const RecordInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<RecordInfo>): RecordInfo {
+  fromPartial(object: Partial<RecordInfo>): RecordInfo {
     const message = createBaseRecordInfo();
     message.zoneId = object.zoneId ?? "";
     message.delegateVersion = object.delegateVersion !== undefined && object.delegateVersion !== null ? Long.fromValue(object.delegateVersion) : Long.UZERO;
@@ -634,7 +634,7 @@ export const DepositRecord = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DepositRecord>): DepositRecord {
+  fromPartial(object: Partial<DepositRecord>): DepositRecord {
     const message = createBaseDepositRecord();
     message.zoneId = object.zoneId ?? "";
     message.claimer = object.claimer ?? "";
@@ -737,7 +737,7 @@ export const DepositRecordContent = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DepositRecordContent>): DepositRecordContent {
+  fromPartial(object: Partial<DepositRecordContent>): DepositRecordContent {
     const message = createBaseDepositRecordContent();
     message.depositor = object.depositor ?? "";
     message.amount = object.amount !== undefined && object.amount !== null ? Coin.fromPartial(object.amount) : undefined;
@@ -826,7 +826,7 @@ export const UndelegateRecord = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<UndelegateRecord>): UndelegateRecord {
+  fromPartial(object: Partial<UndelegateRecord>): UndelegateRecord {
     const message = createBaseUndelegateRecord();
     message.zoneId = object.zoneId ?? "";
     message.delegator = object.delegator ?? "";
@@ -940,7 +940,7 @@ export const UndelegateRecordContent = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<UndelegateRecordContent>): UndelegateRecordContent {
+  fromPartial(object: Partial<UndelegateRecordContent>): UndelegateRecordContent {
     const message = createBaseUndelegateRecordContent();
     message.withdrawer = object.withdrawer ?? "";
     message.snAssetAmount = object.snAssetAmount !== undefined && object.snAssetAmount !== null ? Coin.fromPartial(object.snAssetAmount) : undefined;
@@ -1013,7 +1013,7 @@ export const WithdrawRecord_RecordsEntry = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<WithdrawRecord_RecordsEntry>): WithdrawRecord_RecordsEntry {
+  fromPartial(object: Partial<WithdrawRecord_RecordsEntry>): WithdrawRecord_RecordsEntry {
     const message = createBaseWithdrawRecord_RecordsEntry();
     message.key = object.key !== undefined && object.key !== null ? Long.fromValue(object.key) : Long.UZERO;
     message.value = object.value !== undefined && object.value !== null ? WithdrawRecordContent.fromPartial(object.value) : undefined;
@@ -1112,7 +1112,7 @@ export const WithdrawRecord = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<WithdrawRecord>): WithdrawRecord {
+  fromPartial(object: Partial<WithdrawRecord>): WithdrawRecord {
     const message = createBaseWithdrawRecord();
     message.zoneId = object.zoneId ?? "";
     message.withdrawer = object.withdrawer ?? "";
@@ -1223,7 +1223,7 @@ export const WithdrawRecordContent = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<WithdrawRecordContent>): WithdrawRecordContent {
+  fromPartial(object: Partial<WithdrawRecordContent>): WithdrawRecordContent {
     const message = createBaseWithdrawRecordContent();
     message.amount = object.amount ?? "";
     message.state = object.state !== undefined && object.state !== null ? Long.fromValue(object.state) : Long.ZERO;

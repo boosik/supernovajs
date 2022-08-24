@@ -358,7 +358,7 @@ export const Channel = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Channel>): Channel {
+  fromPartial(object: Partial<Channel>): Channel {
     const message = createBaseChannel();
     message.state = object.state ?? 0;
     message.ordering = object.ordering ?? 0;
@@ -491,7 +491,7 @@ export const IdentifiedChannel = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<IdentifiedChannel>): IdentifiedChannel {
+  fromPartial(object: Partial<IdentifiedChannel>): IdentifiedChannel {
     const message = createBaseIdentifiedChannel();
     message.state = object.state ?? 0;
     message.ordering = object.ordering ?? 0;
@@ -565,7 +565,7 @@ export const Counterparty = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Counterparty>): Counterparty {
+  fromPartial(object: Partial<Counterparty>): Counterparty {
     const message = createBaseCounterparty();
     message.portId = object.portId ?? "";
     message.channelId = object.channelId ?? "";
@@ -700,7 +700,7 @@ export const Packet = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Packet>): Packet {
+  fromPartial(object: Partial<Packet>): Packet {
     const message = createBasePacket();
     message.sequence = object.sequence !== undefined && object.sequence !== null ? Long.fromValue(object.sequence) : Long.UZERO;
     message.sourcePort = object.sourcePort ?? "";
@@ -797,7 +797,7 @@ export const PacketState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PacketState>): PacketState {
+  fromPartial(object: Partial<PacketState>): PacketState {
     const message = createBasePacketState();
     message.portId = object.portId ?? "";
     message.channelId = object.channelId ?? "";
@@ -868,7 +868,7 @@ export const Acknowledgement = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Acknowledgement>): Acknowledgement {
+  fromPartial(object: Partial<Acknowledgement>): Acknowledgement {
     const message = createBaseAcknowledgement();
     message.result = object.result ?? undefined;
     message.error = object.error ?? undefined;

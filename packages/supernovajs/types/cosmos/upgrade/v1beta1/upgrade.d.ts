@@ -1,6 +1,6 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** Plan specifies information about a planned upgrade and when it should occur. */
 export interface Plan {
     /**
@@ -77,26 +77,26 @@ export declare const Plan: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Plan;
     fromJSON(object: any): Plan;
     toJSON(message: Plan): unknown;
-    fromPartial(object: DeepPartial<Plan>): Plan;
+    fromPartial(object: Partial<Plan>): Plan;
 };
 export declare const SoftwareUpgradeProposal: {
     encode(message: SoftwareUpgradeProposal, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): SoftwareUpgradeProposal;
     fromJSON(object: any): SoftwareUpgradeProposal;
     toJSON(message: SoftwareUpgradeProposal): unknown;
-    fromPartial(object: DeepPartial<SoftwareUpgradeProposal>): SoftwareUpgradeProposal;
+    fromPartial(object: Partial<SoftwareUpgradeProposal>): SoftwareUpgradeProposal;
 };
 export declare const CancelSoftwareUpgradeProposal: {
     encode(message: CancelSoftwareUpgradeProposal, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): CancelSoftwareUpgradeProposal;
     fromJSON(object: any): CancelSoftwareUpgradeProposal;
     toJSON(message: CancelSoftwareUpgradeProposal): unknown;
-    fromPartial(object: DeepPartial<CancelSoftwareUpgradeProposal>): CancelSoftwareUpgradeProposal;
+    fromPartial(object: Partial<CancelSoftwareUpgradeProposal>): CancelSoftwareUpgradeProposal;
 };
 export declare const ModuleVersion: {
     encode(message: ModuleVersion, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ModuleVersion;
     fromJSON(object: any): ModuleVersion;
     toJSON(message: ModuleVersion): unknown;
-    fromPartial(object: DeepPartial<ModuleVersion>): ModuleVersion;
+    fromPartial(object: Partial<ModuleVersion>): ModuleVersion;
 };

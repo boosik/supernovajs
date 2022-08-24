@@ -1,7 +1,6 @@
 import { PageRequest, PageResponse } from "../../../../cosmos/base/query/v1beta1/pagination";
 import { DenomTrace, Params } from "./transfer";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * QueryDenomTraceRequest is the request type for the Query/DenomTrace RPC
  * method
@@ -49,40 +48,40 @@ export declare const QueryDenomTraceRequest: {
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryDenomTraceRequest;
     fromJSON(object: any): QueryDenomTraceRequest;
     toJSON(message: QueryDenomTraceRequest): unknown;
-    fromPartial(object: DeepPartial<QueryDenomTraceRequest>): QueryDenomTraceRequest;
+    fromPartial(object: Partial<QueryDenomTraceRequest>): QueryDenomTraceRequest;
 };
 export declare const QueryDenomTraceResponse: {
     encode(message: QueryDenomTraceResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryDenomTraceResponse;
     fromJSON(object: any): QueryDenomTraceResponse;
     toJSON(message: QueryDenomTraceResponse): unknown;
-    fromPartial(object: DeepPartial<QueryDenomTraceResponse>): QueryDenomTraceResponse;
+    fromPartial(object: Partial<QueryDenomTraceResponse>): QueryDenomTraceResponse;
 };
 export declare const QueryDenomTracesRequest: {
     encode(message: QueryDenomTracesRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryDenomTracesRequest;
     fromJSON(object: any): QueryDenomTracesRequest;
     toJSON(message: QueryDenomTracesRequest): unknown;
-    fromPartial(object: DeepPartial<QueryDenomTracesRequest>): QueryDenomTracesRequest;
+    fromPartial(object: Partial<QueryDenomTracesRequest>): QueryDenomTracesRequest;
 };
 export declare const QueryDenomTracesResponse: {
     encode(message: QueryDenomTracesResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryDenomTracesResponse;
     fromJSON(object: any): QueryDenomTracesResponse;
     toJSON(message: QueryDenomTracesResponse): unknown;
-    fromPartial(object: DeepPartial<QueryDenomTracesResponse>): QueryDenomTracesResponse;
+    fromPartial(object: Partial<QueryDenomTracesResponse>): QueryDenomTracesResponse;
 };
 export declare const QueryParamsRequest: {
     encode(_: QueryParamsRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryParamsRequest;
     fromJSON(_: any): QueryParamsRequest;
     toJSON(_: QueryParamsRequest): unknown;
-    fromPartial(_: DeepPartial<QueryParamsRequest>): QueryParamsRequest;
+    fromPartial(_: Partial<QueryParamsRequest>): QueryParamsRequest;
 };
 export declare const QueryParamsResponse: {
     encode(message: QueryParamsResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryParamsResponse;
     fromJSON(object: any): QueryParamsResponse;
     toJSON(message: QueryParamsResponse): unknown;
-    fromPartial(object: DeepPartial<QueryParamsResponse>): QueryParamsResponse;
+    fromPartial(object: Partial<QueryParamsResponse>): QueryParamsResponse;
 };

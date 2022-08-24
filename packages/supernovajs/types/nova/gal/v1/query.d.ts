@@ -2,7 +2,6 @@ import { Params } from "./params";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { DepositRecord, UndelegateRecord, WithdrawRecord } from "./genesis";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** QueryParamsRequest is the request type for the Query/Params RPC method. */
 export interface QueryParamsRequest {
 }
@@ -70,96 +69,96 @@ export declare const QueryParamsRequest: {
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryParamsRequest;
     fromJSON(_: any): QueryParamsRequest;
     toJSON(_: QueryParamsRequest): unknown;
-    fromPartial(_: DeepPartial<QueryParamsRequest>): QueryParamsRequest;
+    fromPartial(_: Partial<QueryParamsRequest>): QueryParamsRequest;
 };
 export declare const QueryParamsResponse: {
     encode(message: QueryParamsResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryParamsResponse;
     fromJSON(object: any): QueryParamsResponse;
     toJSON(message: QueryParamsResponse): unknown;
-    fromPartial(object: DeepPartial<QueryParamsResponse>): QueryParamsResponse;
+    fromPartial(object: Partial<QueryParamsResponse>): QueryParamsResponse;
 };
 export declare const ClaimableAmountRequest: {
     encode(message: ClaimableAmountRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ClaimableAmountRequest;
     fromJSON(object: any): ClaimableAmountRequest;
     toJSON(message: ClaimableAmountRequest): unknown;
-    fromPartial(object: DeepPartial<ClaimableAmountRequest>): ClaimableAmountRequest;
+    fromPartial(object: Partial<ClaimableAmountRequest>): ClaimableAmountRequest;
 };
 export declare const ClaimableAmountResponse: {
     encode(message: ClaimableAmountResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ClaimableAmountResponse;
     fromJSON(object: any): ClaimableAmountResponse;
     toJSON(message: ClaimableAmountResponse): unknown;
-    fromPartial(object: DeepPartial<ClaimableAmountResponse>): ClaimableAmountResponse;
+    fromPartial(object: Partial<ClaimableAmountResponse>): ClaimableAmountResponse;
 };
 export declare const PendingWithdrawalsRequest: {
     encode(message: PendingWithdrawalsRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PendingWithdrawalsRequest;
     fromJSON(object: any): PendingWithdrawalsRequest;
     toJSON(message: PendingWithdrawalsRequest): unknown;
-    fromPartial(object: DeepPartial<PendingWithdrawalsRequest>): PendingWithdrawalsRequest;
+    fromPartial(object: Partial<PendingWithdrawalsRequest>): PendingWithdrawalsRequest;
 };
 export declare const PendingWithdrawalsResponse: {
     encode(message: PendingWithdrawalsResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PendingWithdrawalsResponse;
     fromJSON(object: any): PendingWithdrawalsResponse;
     toJSON(message: PendingWithdrawalsResponse): unknown;
-    fromPartial(object: DeepPartial<PendingWithdrawalsResponse>): PendingWithdrawalsResponse;
+    fromPartial(object: Partial<PendingWithdrawalsResponse>): PendingWithdrawalsResponse;
 };
 export declare const ActiveWithdrawalsRequest: {
     encode(message: ActiveWithdrawalsRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ActiveWithdrawalsRequest;
     fromJSON(object: any): ActiveWithdrawalsRequest;
     toJSON(message: ActiveWithdrawalsRequest): unknown;
-    fromPartial(object: DeepPartial<ActiveWithdrawalsRequest>): ActiveWithdrawalsRequest;
+    fromPartial(object: Partial<ActiveWithdrawalsRequest>): ActiveWithdrawalsRequest;
 };
 export declare const ActiveWithdrawalsResponse: {
     encode(message: ActiveWithdrawalsResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ActiveWithdrawalsResponse;
     fromJSON(object: any): ActiveWithdrawalsResponse;
     toJSON(message: ActiveWithdrawalsResponse): unknown;
-    fromPartial(object: DeepPartial<ActiveWithdrawalsResponse>): ActiveWithdrawalsResponse;
+    fromPartial(object: Partial<ActiveWithdrawalsResponse>): ActiveWithdrawalsResponse;
 };
 export declare const QueryDepositRecordRequest: {
     encode(message: QueryDepositRecordRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryDepositRecordRequest;
     fromJSON(object: any): QueryDepositRecordRequest;
     toJSON(message: QueryDepositRecordRequest): unknown;
-    fromPartial(object: DeepPartial<QueryDepositRecordRequest>): QueryDepositRecordRequest;
+    fromPartial(object: Partial<QueryDepositRecordRequest>): QueryDepositRecordRequest;
 };
 export declare const QueryDepositRecordResponse: {
     encode(message: QueryDepositRecordResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryDepositRecordResponse;
     fromJSON(object: any): QueryDepositRecordResponse;
     toJSON(message: QueryDepositRecordResponse): unknown;
-    fromPartial(object: DeepPartial<QueryDepositRecordResponse>): QueryDepositRecordResponse;
+    fromPartial(object: Partial<QueryDepositRecordResponse>): QueryDepositRecordResponse;
 };
 export declare const QueryUndelegateRecordRequest: {
     encode(message: QueryUndelegateRecordRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryUndelegateRecordRequest;
     fromJSON(object: any): QueryUndelegateRecordRequest;
     toJSON(message: QueryUndelegateRecordRequest): unknown;
-    fromPartial(object: DeepPartial<QueryUndelegateRecordRequest>): QueryUndelegateRecordRequest;
+    fromPartial(object: Partial<QueryUndelegateRecordRequest>): QueryUndelegateRecordRequest;
 };
 export declare const QueryUndelegateRecordResponse: {
     encode(message: QueryUndelegateRecordResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryUndelegateRecordResponse;
     fromJSON(object: any): QueryUndelegateRecordResponse;
     toJSON(message: QueryUndelegateRecordResponse): unknown;
-    fromPartial(object: DeepPartial<QueryUndelegateRecordResponse>): QueryUndelegateRecordResponse;
+    fromPartial(object: Partial<QueryUndelegateRecordResponse>): QueryUndelegateRecordResponse;
 };
 export declare const QueryWithdrawRecordRequest: {
     encode(message: QueryWithdrawRecordRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryWithdrawRecordRequest;
     fromJSON(object: any): QueryWithdrawRecordRequest;
     toJSON(message: QueryWithdrawRecordRequest): unknown;
-    fromPartial(object: DeepPartial<QueryWithdrawRecordRequest>): QueryWithdrawRecordRequest;
+    fromPartial(object: Partial<QueryWithdrawRecordRequest>): QueryWithdrawRecordRequest;
 };
 export declare const QueryWithdrawRecordResponse: {
     encode(message: QueryWithdrawRecordResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryWithdrawRecordResponse;
     fromJSON(object: any): QueryWithdrawRecordResponse;
     toJSON(message: QueryWithdrawRecordResponse): unknown;
-    fromPartial(object: DeepPartial<QueryWithdrawRecordResponse>): QueryWithdrawRecordResponse;
+    fromPartial(object: Partial<QueryWithdrawRecordResponse>): QueryWithdrawRecordResponse;
 };

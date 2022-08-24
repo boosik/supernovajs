@@ -5,10 +5,10 @@
   "outPath": "./src/proto",
   "options": {
     "includeAminos": true,
-    "includeLCDClients": true,
-    "includePackageVar": true,
+    "includeLCDClients": false,
+    "includePackageVar": false,
     "camelRpcMethods": true,
-    "includeRpcClients": true,
+    "includeRpcClients": false,
     "useDate": "date",
     "useDuration": "duration",
     "useExact": false

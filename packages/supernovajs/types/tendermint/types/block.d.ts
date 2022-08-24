@@ -1,7 +1,6 @@
 import { Header, Data, Commit } from "./types";
 import { EvidenceList } from "./evidence";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 export interface Block {
     header: Header;
     data: Data;
@@ -13,5 +12,5 @@ export declare const Block: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Block;
     fromJSON(object: any): Block;
     toJSON(message: Block): unknown;
-    fromPartial(object: DeepPartial<Block>): Block;
+    fromPartial(object: Partial<Block>): Block;
 };

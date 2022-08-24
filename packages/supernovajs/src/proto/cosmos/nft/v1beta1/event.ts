@@ -105,7 +105,7 @@ export const EventSend = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventSend>): EventSend {
+  fromPartial(object: Partial<EventSend>): EventSend {
     const message = createBaseEventSend();
     message.classId = object.classId ?? "";
     message.id = object.id ?? "";
@@ -187,7 +187,7 @@ export const EventMint = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventMint>): EventMint {
+  fromPartial(object: Partial<EventMint>): EventMint {
     const message = createBaseEventMint();
     message.classId = object.classId ?? "";
     message.id = object.id ?? "";
@@ -268,7 +268,7 @@ export const EventBurn = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventBurn>): EventBurn {
+  fromPartial(object: Partial<EventBurn>): EventBurn {
     const message = createBaseEventBurn();
     message.classId = object.classId ?? "";
     message.id = object.id ?? "";

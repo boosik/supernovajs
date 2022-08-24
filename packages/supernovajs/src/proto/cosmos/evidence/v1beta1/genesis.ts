@@ -63,7 +63,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.evidence = object.evidence?.map(e => Any.fromPartial(e)) || [];
     return message;

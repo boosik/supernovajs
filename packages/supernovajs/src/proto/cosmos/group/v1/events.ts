@@ -111,7 +111,7 @@ export const EventCreateGroup = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventCreateGroup>): EventCreateGroup {
+  fromPartial(object: Partial<EventCreateGroup>): EventCreateGroup {
     const message = createBaseEventCreateGroup();
     message.groupId = object.groupId !== undefined && object.groupId !== null ? Long.fromValue(object.groupId) : Long.UZERO;
     return message;
@@ -168,7 +168,7 @@ export const EventUpdateGroup = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventUpdateGroup>): EventUpdateGroup {
+  fromPartial(object: Partial<EventUpdateGroup>): EventUpdateGroup {
     const message = createBaseEventUpdateGroup();
     message.groupId = object.groupId !== undefined && object.groupId !== null ? Long.fromValue(object.groupId) : Long.UZERO;
     return message;
@@ -225,7 +225,7 @@ export const EventCreateGroupPolicy = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventCreateGroupPolicy>): EventCreateGroupPolicy {
+  fromPartial(object: Partial<EventCreateGroupPolicy>): EventCreateGroupPolicy {
     const message = createBaseEventCreateGroupPolicy();
     message.address = object.address ?? "";
     return message;
@@ -282,7 +282,7 @@ export const EventUpdateGroupPolicy = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventUpdateGroupPolicy>): EventUpdateGroupPolicy {
+  fromPartial(object: Partial<EventUpdateGroupPolicy>): EventUpdateGroupPolicy {
     const message = createBaseEventUpdateGroupPolicy();
     message.address = object.address ?? "";
     return message;
@@ -339,7 +339,7 @@ export const EventSubmitProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventSubmitProposal>): EventSubmitProposal {
+  fromPartial(object: Partial<EventSubmitProposal>): EventSubmitProposal {
     const message = createBaseEventSubmitProposal();
     message.proposalId = object.proposalId !== undefined && object.proposalId !== null ? Long.fromValue(object.proposalId) : Long.UZERO;
     return message;
@@ -396,7 +396,7 @@ export const EventWithdrawProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventWithdrawProposal>): EventWithdrawProposal {
+  fromPartial(object: Partial<EventWithdrawProposal>): EventWithdrawProposal {
     const message = createBaseEventWithdrawProposal();
     message.proposalId = object.proposalId !== undefined && object.proposalId !== null ? Long.fromValue(object.proposalId) : Long.UZERO;
     return message;
@@ -453,7 +453,7 @@ export const EventVote = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventVote>): EventVote {
+  fromPartial(object: Partial<EventVote>): EventVote {
     const message = createBaseEventVote();
     message.proposalId = object.proposalId !== undefined && object.proposalId !== null ? Long.fromValue(object.proposalId) : Long.UZERO;
     return message;
@@ -521,7 +521,7 @@ export const EventExec = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventExec>): EventExec {
+  fromPartial(object: Partial<EventExec>): EventExec {
     const message = createBaseEventExec();
     message.proposalId = object.proposalId !== undefined && object.proposalId !== null ? Long.fromValue(object.proposalId) : Long.UZERO;
     message.result = object.result ?? 0;
@@ -590,7 +590,7 @@ export const EventLeaveGroup = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EventLeaveGroup>): EventLeaveGroup {
+  fromPartial(object: Partial<EventLeaveGroup>): EventLeaveGroup {
     const message = createBaseEventLeaveGroup();
     message.groupId = object.groupId !== undefined && object.groupId !== null ? Long.fromValue(object.groupId) : Long.UZERO;
     message.address = object.address ?? "";

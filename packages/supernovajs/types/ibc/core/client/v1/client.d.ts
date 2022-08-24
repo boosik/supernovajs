@@ -1,7 +1,7 @@
 import { Any } from "../../../../google/protobuf/any";
 import { Plan } from "../../../../cosmos/upgrade/v1beta1/upgrade";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * IdentifiedClientState defines a client state with an additional client
  * identifier field.
@@ -97,47 +97,47 @@ export declare const IdentifiedClientState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): IdentifiedClientState;
     fromJSON(object: any): IdentifiedClientState;
     toJSON(message: IdentifiedClientState): unknown;
-    fromPartial(object: DeepPartial<IdentifiedClientState>): IdentifiedClientState;
+    fromPartial(object: Partial<IdentifiedClientState>): IdentifiedClientState;
 };
 export declare const ConsensusStateWithHeight: {
     encode(message: ConsensusStateWithHeight, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ConsensusStateWithHeight;
     fromJSON(object: any): ConsensusStateWithHeight;
     toJSON(message: ConsensusStateWithHeight): unknown;
-    fromPartial(object: DeepPartial<ConsensusStateWithHeight>): ConsensusStateWithHeight;
+    fromPartial(object: Partial<ConsensusStateWithHeight>): ConsensusStateWithHeight;
 };
 export declare const ClientConsensusStates: {
     encode(message: ClientConsensusStates, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ClientConsensusStates;
     fromJSON(object: any): ClientConsensusStates;
     toJSON(message: ClientConsensusStates): unknown;
-    fromPartial(object: DeepPartial<ClientConsensusStates>): ClientConsensusStates;
+    fromPartial(object: Partial<ClientConsensusStates>): ClientConsensusStates;
 };
 export declare const ClientUpdateProposal: {
     encode(message: ClientUpdateProposal, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ClientUpdateProposal;
     fromJSON(object: any): ClientUpdateProposal;
     toJSON(message: ClientUpdateProposal): unknown;
-    fromPartial(object: DeepPartial<ClientUpdateProposal>): ClientUpdateProposal;
+    fromPartial(object: Partial<ClientUpdateProposal>): ClientUpdateProposal;
 };
 export declare const UpgradeProposal: {
     encode(message: UpgradeProposal, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): UpgradeProposal;
     fromJSON(object: any): UpgradeProposal;
     toJSON(message: UpgradeProposal): unknown;
-    fromPartial(object: DeepPartial<UpgradeProposal>): UpgradeProposal;
+    fromPartial(object: Partial<UpgradeProposal>): UpgradeProposal;
 };
 export declare const Height: {
     encode(message: Height, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Height;
     fromJSON(object: any): Height;
     toJSON(message: Height): unknown;
-    fromPartial(object: DeepPartial<Height>): Height;
+    fromPartial(object: Partial<Height>): Height;
 };
 export declare const Params: {
     encode(message: Params, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Params;
     fromJSON(object: any): Params;
     toJSON(message: Params): unknown;
-    fromPartial(object: DeepPartial<Params>): Params;
+    fromPartial(object: Partial<Params>): Params;
 };

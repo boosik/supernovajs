@@ -1,7 +1,7 @@
 import { MsgStoreCode, MsgInstantiateContract, MsgExecuteContract } from "./tx";
 import { Params, CodeInfo, ContractInfo, Model } from "./types";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** GenesisState - genesis state of x/wasm */
 export interface GenesisState {
     params: Params;
@@ -43,33 +43,33 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };
 export declare const GenesisState_GenMsgs: {
     encode(message: GenesisState_GenMsgs, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState_GenMsgs;
     fromJSON(object: any): GenesisState_GenMsgs;
     toJSON(message: GenesisState_GenMsgs): unknown;
-    fromPartial(object: DeepPartial<GenesisState_GenMsgs>): GenesisState_GenMsgs;
+    fromPartial(object: Partial<GenesisState_GenMsgs>): GenesisState_GenMsgs;
 };
 export declare const Code: {
     encode(message: Code, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Code;
     fromJSON(object: any): Code;
     toJSON(message: Code): unknown;
-    fromPartial(object: DeepPartial<Code>): Code;
+    fromPartial(object: Partial<Code>): Code;
 };
 export declare const Contract: {
     encode(message: Contract, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Contract;
     fromJSON(object: any): Contract;
     toJSON(message: Contract): unknown;
-    fromPartial(object: DeepPartial<Contract>): Contract;
+    fromPartial(object: Partial<Contract>): Contract;
 };
 export declare const Sequence: {
     encode(message: Sequence, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Sequence;
     fromJSON(object: any): Sequence;
     toJSON(message: Sequence): unknown;
-    fromPartial(object: DeepPartial<Sequence>): Sequence;
+    fromPartial(object: Partial<Sequence>): Sequence;
 };

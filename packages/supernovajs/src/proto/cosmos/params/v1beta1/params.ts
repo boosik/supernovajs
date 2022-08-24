@@ -95,7 +95,7 @@ export const ParameterChangeProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ParameterChangeProposal>): ParameterChangeProposal {
+  fromPartial(object: Partial<ParameterChangeProposal>): ParameterChangeProposal {
     const message = createBaseParameterChangeProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -176,7 +176,7 @@ export const ParamChange = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ParamChange>): ParamChange {
+  fromPartial(object: Partial<ParamChange>): ParamChange {
     const message = createBaseParamChange();
     message.subspace = object.subspace ?? "";
     message.key = object.key ?? "";

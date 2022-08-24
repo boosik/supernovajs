@@ -1,7 +1,7 @@
 import { Params } from "./params";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 export interface GenesisState {
     /** params defines all the parameters of module. */
     params: Params;
@@ -26,12 +26,12 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };
 export declare const ChainInfo: {
     encode(message: ChainInfo, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ChainInfo;
     fromJSON(object: any): ChainInfo;
     toJSON(message: ChainInfo): unknown;
-    fromPartial(object: DeepPartial<ChainInfo>): ChainInfo;
+    fromPartial(object: Partial<ChainInfo>): ChainInfo;
 };

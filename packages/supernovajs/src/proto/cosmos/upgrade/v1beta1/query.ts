@@ -138,7 +138,7 @@ export const QueryCurrentPlanRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryCurrentPlanRequest>): QueryCurrentPlanRequest {
+  fromPartial(_: Partial<QueryCurrentPlanRequest>): QueryCurrentPlanRequest {
     const message = createBaseQueryCurrentPlanRequest();
     return message;
   }
@@ -194,7 +194,7 @@ export const QueryCurrentPlanResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryCurrentPlanResponse>): QueryCurrentPlanResponse {
+  fromPartial(object: Partial<QueryCurrentPlanResponse>): QueryCurrentPlanResponse {
     const message = createBaseQueryCurrentPlanResponse();
     message.plan = object.plan !== undefined && object.plan !== null ? Plan.fromPartial(object.plan) : undefined;
     return message;
@@ -251,7 +251,7 @@ export const QueryAppliedPlanRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryAppliedPlanRequest>): QueryAppliedPlanRequest {
+  fromPartial(object: Partial<QueryAppliedPlanRequest>): QueryAppliedPlanRequest {
     const message = createBaseQueryAppliedPlanRequest();
     message.name = object.name ?? "";
     return message;
@@ -308,7 +308,7 @@ export const QueryAppliedPlanResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryAppliedPlanResponse>): QueryAppliedPlanResponse {
+  fromPartial(object: Partial<QueryAppliedPlanResponse>): QueryAppliedPlanResponse {
     const message = createBaseQueryAppliedPlanResponse();
     message.height = object.height !== undefined && object.height !== null ? Long.fromValue(object.height) : Long.ZERO;
     return message;
@@ -365,7 +365,7 @@ export const QueryUpgradedConsensusStateRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryUpgradedConsensusStateRequest>): QueryUpgradedConsensusStateRequest {
+  fromPartial(object: Partial<QueryUpgradedConsensusStateRequest>): QueryUpgradedConsensusStateRequest {
     const message = createBaseQueryUpgradedConsensusStateRequest();
     message.lastHeight = object.lastHeight !== undefined && object.lastHeight !== null ? Long.fromValue(object.lastHeight) : Long.ZERO;
     return message;
@@ -422,7 +422,7 @@ export const QueryUpgradedConsensusStateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryUpgradedConsensusStateResponse>): QueryUpgradedConsensusStateResponse {
+  fromPartial(object: Partial<QueryUpgradedConsensusStateResponse>): QueryUpgradedConsensusStateResponse {
     const message = createBaseQueryUpgradedConsensusStateResponse();
     message.upgradedConsensusState = object.upgradedConsensusState ?? new Uint8Array();
     return message;
@@ -479,7 +479,7 @@ export const QueryModuleVersionsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryModuleVersionsRequest>): QueryModuleVersionsRequest {
+  fromPartial(object: Partial<QueryModuleVersionsRequest>): QueryModuleVersionsRequest {
     const message = createBaseQueryModuleVersionsRequest();
     message.moduleName = object.moduleName ?? "";
     return message;
@@ -542,7 +542,7 @@ export const QueryModuleVersionsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryModuleVersionsResponse>): QueryModuleVersionsResponse {
+  fromPartial(object: Partial<QueryModuleVersionsResponse>): QueryModuleVersionsResponse {
     const message = createBaseQueryModuleVersionsResponse();
     message.moduleVersions = object.moduleVersions?.map(e => ModuleVersion.fromPartial(e)) || [];
     return message;
@@ -586,7 +586,7 @@ export const QueryAuthorityRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryAuthorityRequest>): QueryAuthorityRequest {
+  fromPartial(_: Partial<QueryAuthorityRequest>): QueryAuthorityRequest {
     const message = createBaseQueryAuthorityRequest();
     return message;
   }
@@ -642,7 +642,7 @@ export const QueryAuthorityResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryAuthorityResponse>): QueryAuthorityResponse {
+  fromPartial(object: Partial<QueryAuthorityResponse>): QueryAuthorityResponse {
     const message = createBaseQueryAuthorityResponse();
     message.address = object.address ?? "";
     return message;

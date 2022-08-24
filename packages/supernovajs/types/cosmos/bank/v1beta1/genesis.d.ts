@@ -1,7 +1,6 @@
 import { Params, Metadata } from "./bank";
 import { Coin } from "../../base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** GenesisState defines the bank module's genesis state. */
 export interface GenesisState {
     /** params defines all the paramaters of the module. */
@@ -31,12 +30,12 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };
 export declare const Balance: {
     encode(message: Balance, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Balance;
     fromJSON(object: any): Balance;
     toJSON(message: Balance): unknown;
-    fromPartial(object: DeepPartial<Balance>): Balance;
+    fromPartial(object: Partial<Balance>): Balance;
 };

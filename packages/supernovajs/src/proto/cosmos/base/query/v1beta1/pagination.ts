@@ -164,7 +164,7 @@ export const PageRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PageRequest>): PageRequest {
+  fromPartial(object: Partial<PageRequest>): PageRequest {
     const message = createBasePageRequest();
     message.key = object.key ?? new Uint8Array();
     message.offset = object.offset !== undefined && object.offset !== null ? Long.fromValue(object.offset) : Long.UZERO;
@@ -236,7 +236,7 @@ export const PageResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PageResponse>): PageResponse {
+  fromPartial(object: Partial<PageResponse>): PageResponse {
     const message = createBasePageResponse();
     message.nextKey = object.nextKey ?? new Uint8Array();
     message.total = object.total !== undefined && object.total !== null ? Long.fromValue(object.total) : Long.UZERO;

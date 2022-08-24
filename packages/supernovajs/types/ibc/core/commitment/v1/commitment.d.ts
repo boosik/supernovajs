@@ -1,6 +1,5 @@
 import { CommitmentProof } from "../../../../confio/proofs";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * MerkleRoot defines a merkle root hash.
  * In the Cosmos SDK, the AppHash of a block header becomes the root.
@@ -39,26 +38,26 @@ export declare const MerkleRoot: {
     decode(input: _m0.Reader | Uint8Array, length?: number): MerkleRoot;
     fromJSON(object: any): MerkleRoot;
     toJSON(message: MerkleRoot): unknown;
-    fromPartial(object: DeepPartial<MerkleRoot>): MerkleRoot;
+    fromPartial(object: Partial<MerkleRoot>): MerkleRoot;
 };
 export declare const MerklePrefix: {
     encode(message: MerklePrefix, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MerklePrefix;
     fromJSON(object: any): MerklePrefix;
     toJSON(message: MerklePrefix): unknown;
-    fromPartial(object: DeepPartial<MerklePrefix>): MerklePrefix;
+    fromPartial(object: Partial<MerklePrefix>): MerklePrefix;
 };
 export declare const MerklePath: {
     encode(message: MerklePath, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MerklePath;
     fromJSON(object: any): MerklePath;
     toJSON(message: MerklePath): unknown;
-    fromPartial(object: DeepPartial<MerklePath>): MerklePath;
+    fromPartial(object: Partial<MerklePath>): MerklePath;
 };
 export declare const MerkleProof: {
     encode(message: MerkleProof, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MerkleProof;
     fromJSON(object: any): MerkleProof;
     toJSON(message: MerkleProof): unknown;
-    fromPartial(object: DeepPartial<MerkleProof>): MerkleProof;
+    fromPartial(object: Partial<MerkleProof>): MerkleProof;
 };

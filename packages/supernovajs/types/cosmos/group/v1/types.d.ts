@@ -1,7 +1,7 @@
 import { Duration } from "../../../google/protobuf/duration";
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** VoteOption enumerates the valid vote options for a given proposal. */
 export declare enum VoteOption {
     /** VOTE_OPTION_UNSPECIFIED - VOTE_OPTION_UNSPECIFIED defines a no-op vote option. */
@@ -250,75 +250,75 @@ export declare const Member: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Member;
     fromJSON(object: any): Member;
     toJSON(message: Member): unknown;
-    fromPartial(object: DeepPartial<Member>): Member;
+    fromPartial(object: Partial<Member>): Member;
 };
 export declare const Members: {
     encode(message: Members, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Members;
     fromJSON(object: any): Members;
     toJSON(message: Members): unknown;
-    fromPartial(object: DeepPartial<Members>): Members;
+    fromPartial(object: Partial<Members>): Members;
 };
 export declare const ThresholdDecisionPolicy: {
     encode(message: ThresholdDecisionPolicy, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ThresholdDecisionPolicy;
     fromJSON(object: any): ThresholdDecisionPolicy;
     toJSON(message: ThresholdDecisionPolicy): unknown;
-    fromPartial(object: DeepPartial<ThresholdDecisionPolicy>): ThresholdDecisionPolicy;
+    fromPartial(object: Partial<ThresholdDecisionPolicy>): ThresholdDecisionPolicy;
 };
 export declare const PercentageDecisionPolicy: {
     encode(message: PercentageDecisionPolicy, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PercentageDecisionPolicy;
     fromJSON(object: any): PercentageDecisionPolicy;
     toJSON(message: PercentageDecisionPolicy): unknown;
-    fromPartial(object: DeepPartial<PercentageDecisionPolicy>): PercentageDecisionPolicy;
+    fromPartial(object: Partial<PercentageDecisionPolicy>): PercentageDecisionPolicy;
 };
 export declare const DecisionPolicyWindows: {
     encode(message: DecisionPolicyWindows, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DecisionPolicyWindows;
     fromJSON(object: any): DecisionPolicyWindows;
     toJSON(message: DecisionPolicyWindows): unknown;
-    fromPartial(object: DeepPartial<DecisionPolicyWindows>): DecisionPolicyWindows;
+    fromPartial(object: Partial<DecisionPolicyWindows>): DecisionPolicyWindows;
 };
 export declare const GroupInfo: {
     encode(message: GroupInfo, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): GroupInfo;
     fromJSON(object: any): GroupInfo;
     toJSON(message: GroupInfo): unknown;
-    fromPartial(object: DeepPartial<GroupInfo>): GroupInfo;
+    fromPartial(object: Partial<GroupInfo>): GroupInfo;
 };
 export declare const GroupMember: {
     encode(message: GroupMember, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): GroupMember;
     fromJSON(object: any): GroupMember;
     toJSON(message: GroupMember): unknown;
-    fromPartial(object: DeepPartial<GroupMember>): GroupMember;
+    fromPartial(object: Partial<GroupMember>): GroupMember;
 };
 export declare const GroupPolicyInfo: {
     encode(message: GroupPolicyInfo, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): GroupPolicyInfo;
     fromJSON(object: any): GroupPolicyInfo;
     toJSON(message: GroupPolicyInfo): unknown;
-    fromPartial(object: DeepPartial<GroupPolicyInfo>): GroupPolicyInfo;
+    fromPartial(object: Partial<GroupPolicyInfo>): GroupPolicyInfo;
 };
 export declare const Proposal: {
     encode(message: Proposal, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Proposal;
     fromJSON(object: any): Proposal;
     toJSON(message: Proposal): unknown;
-    fromPartial(object: DeepPartial<Proposal>): Proposal;
+    fromPartial(object: Partial<Proposal>): Proposal;
 };
 export declare const TallyResult: {
     encode(message: TallyResult, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): TallyResult;
     fromJSON(object: any): TallyResult;
     toJSON(message: TallyResult): unknown;
-    fromPartial(object: DeepPartial<TallyResult>): TallyResult;
+    fromPartial(object: Partial<TallyResult>): TallyResult;
 };
 export declare const Vote: {
     encode(message: Vote, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Vote;
     fromJSON(object: any): Vote;
     toJSON(message: Vote): unknown;
-    fromPartial(object: DeepPartial<Vote>): Vote;
+    fromPartial(object: Partial<Vote>): Vote;
 };

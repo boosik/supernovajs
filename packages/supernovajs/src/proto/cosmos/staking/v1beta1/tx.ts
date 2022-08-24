@@ -196,7 +196,7 @@ export const MsgCreateValidator = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgCreateValidator>): MsgCreateValidator {
+  fromPartial(object: Partial<MsgCreateValidator>): MsgCreateValidator {
     const message = createBaseMsgCreateValidator();
     message.description = object.description !== undefined && object.description !== null ? Description.fromPartial(object.description) : undefined;
     message.commission = object.commission !== undefined && object.commission !== null ? CommissionRates.fromPartial(object.commission) : undefined;
@@ -246,7 +246,7 @@ export const MsgCreateValidatorResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgCreateValidatorResponse>): MsgCreateValidatorResponse {
+  fromPartial(_: Partial<MsgCreateValidatorResponse>): MsgCreateValidatorResponse {
     const message = createBaseMsgCreateValidatorResponse();
     return message;
   }
@@ -335,7 +335,7 @@ export const MsgEditValidator = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgEditValidator>): MsgEditValidator {
+  fromPartial(object: Partial<MsgEditValidator>): MsgEditValidator {
     const message = createBaseMsgEditValidator();
     message.description = object.description !== undefined && object.description !== null ? Description.fromPartial(object.description) : undefined;
     message.validatorAddress = object.validatorAddress ?? "";
@@ -382,7 +382,7 @@ export const MsgEditValidatorResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgEditValidatorResponse>): MsgEditValidatorResponse {
+  fromPartial(_: Partial<MsgEditValidatorResponse>): MsgEditValidatorResponse {
     const message = createBaseMsgEditValidatorResponse();
     return message;
   }
@@ -460,7 +460,7 @@ export const MsgDelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgDelegate>): MsgDelegate {
+  fromPartial(object: Partial<MsgDelegate>): MsgDelegate {
     const message = createBaseMsgDelegate();
     message.delegatorAddress = object.delegatorAddress ?? "";
     message.validatorAddress = object.validatorAddress ?? "";
@@ -506,7 +506,7 @@ export const MsgDelegateResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgDelegateResponse>): MsgDelegateResponse {
+  fromPartial(_: Partial<MsgDelegateResponse>): MsgDelegateResponse {
     const message = createBaseMsgDelegateResponse();
     return message;
   }
@@ -595,7 +595,7 @@ export const MsgBeginRedelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgBeginRedelegate>): MsgBeginRedelegate {
+  fromPartial(object: Partial<MsgBeginRedelegate>): MsgBeginRedelegate {
     const message = createBaseMsgBeginRedelegate();
     message.delegatorAddress = object.delegatorAddress ?? "";
     message.validatorSrcAddress = object.validatorSrcAddress ?? "";
@@ -655,7 +655,7 @@ export const MsgBeginRedelegateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgBeginRedelegateResponse>): MsgBeginRedelegateResponse {
+  fromPartial(object: Partial<MsgBeginRedelegateResponse>): MsgBeginRedelegateResponse {
     const message = createBaseMsgBeginRedelegateResponse();
     message.completionTime = object.completionTime ?? undefined;
     return message;
@@ -734,7 +734,7 @@ export const MsgUndelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUndelegate>): MsgUndelegate {
+  fromPartial(object: Partial<MsgUndelegate>): MsgUndelegate {
     const message = createBaseMsgUndelegate();
     message.delegatorAddress = object.delegatorAddress ?? "";
     message.validatorAddress = object.validatorAddress ?? "";
@@ -793,7 +793,7 @@ export const MsgUndelegateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUndelegateResponse>): MsgUndelegateResponse {
+  fromPartial(object: Partial<MsgUndelegateResponse>): MsgUndelegateResponse {
     const message = createBaseMsgUndelegateResponse();
     message.completionTime = object.completionTime ?? undefined;
     return message;

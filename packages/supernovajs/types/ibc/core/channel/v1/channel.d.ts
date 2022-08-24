@@ -1,6 +1,6 @@
 import { Height } from "../../client/v1/client";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * State defines if a channel is in one of the following states:
  * CLOSED, INIT, TRYOPEN, OPEN or UNINITIALIZED.
@@ -148,40 +148,40 @@ export declare const Channel: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Channel;
     fromJSON(object: any): Channel;
     toJSON(message: Channel): unknown;
-    fromPartial(object: DeepPartial<Channel>): Channel;
+    fromPartial(object: Partial<Channel>): Channel;
 };
 export declare const IdentifiedChannel: {
     encode(message: IdentifiedChannel, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): IdentifiedChannel;
     fromJSON(object: any): IdentifiedChannel;
     toJSON(message: IdentifiedChannel): unknown;
-    fromPartial(object: DeepPartial<IdentifiedChannel>): IdentifiedChannel;
+    fromPartial(object: Partial<IdentifiedChannel>): IdentifiedChannel;
 };
 export declare const Counterparty: {
     encode(message: Counterparty, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Counterparty;
     fromJSON(object: any): Counterparty;
     toJSON(message: Counterparty): unknown;
-    fromPartial(object: DeepPartial<Counterparty>): Counterparty;
+    fromPartial(object: Partial<Counterparty>): Counterparty;
 };
 export declare const Packet: {
     encode(message: Packet, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Packet;
     fromJSON(object: any): Packet;
     toJSON(message: Packet): unknown;
-    fromPartial(object: DeepPartial<Packet>): Packet;
+    fromPartial(object: Partial<Packet>): Packet;
 };
 export declare const PacketState: {
     encode(message: PacketState, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PacketState;
     fromJSON(object: any): PacketState;
     toJSON(message: PacketState): unknown;
-    fromPartial(object: DeepPartial<PacketState>): PacketState;
+    fromPartial(object: Partial<PacketState>): PacketState;
 };
 export declare const Acknowledgement: {
     encode(message: Acknowledgement, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Acknowledgement;
     fromJSON(object: any): Acknowledgement;
     toJSON(message: Acknowledgement): unknown;
-    fromPartial(object: DeepPartial<Acknowledgement>): Acknowledgement;
+    fromPartial(object: Partial<Acknowledgement>): Acknowledgement;
 };

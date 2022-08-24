@@ -1,6 +1,5 @@
 import { Plan } from "./upgrade";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * MsgSoftwareUpgrade is the Msg/SoftwareUpgrade request type.
  *
@@ -40,26 +39,26 @@ export declare const MsgSoftwareUpgrade: {
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgSoftwareUpgrade;
     fromJSON(object: any): MsgSoftwareUpgrade;
     toJSON(message: MsgSoftwareUpgrade): unknown;
-    fromPartial(object: DeepPartial<MsgSoftwareUpgrade>): MsgSoftwareUpgrade;
+    fromPartial(object: Partial<MsgSoftwareUpgrade>): MsgSoftwareUpgrade;
 };
 export declare const MsgSoftwareUpgradeResponse: {
     encode(_: MsgSoftwareUpgradeResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgSoftwareUpgradeResponse;
     fromJSON(_: any): MsgSoftwareUpgradeResponse;
     toJSON(_: MsgSoftwareUpgradeResponse): unknown;
-    fromPartial(_: DeepPartial<MsgSoftwareUpgradeResponse>): MsgSoftwareUpgradeResponse;
+    fromPartial(_: Partial<MsgSoftwareUpgradeResponse>): MsgSoftwareUpgradeResponse;
 };
 export declare const MsgCancelUpgrade: {
     encode(message: MsgCancelUpgrade, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgCancelUpgrade;
     fromJSON(object: any): MsgCancelUpgrade;
     toJSON(message: MsgCancelUpgrade): unknown;
-    fromPartial(object: DeepPartial<MsgCancelUpgrade>): MsgCancelUpgrade;
+    fromPartial(object: Partial<MsgCancelUpgrade>): MsgCancelUpgrade;
 };
 export declare const MsgCancelUpgradeResponse: {
     encode(_: MsgCancelUpgradeResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgCancelUpgradeResponse;
     fromJSON(_: any): MsgCancelUpgradeResponse;
     toJSON(_: MsgCancelUpgradeResponse): unknown;
-    fromPartial(_: DeepPartial<MsgCancelUpgradeResponse>): MsgCancelUpgradeResponse;
+    fromPartial(_: Partial<MsgCancelUpgradeResponse>): MsgCancelUpgradeResponse;
 };

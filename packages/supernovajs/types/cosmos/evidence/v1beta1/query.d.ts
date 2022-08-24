@@ -1,7 +1,6 @@
 import { PageRequest, PageResponse } from "../../base/query/v1beta1/pagination";
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** QueryEvidenceRequest is the request type for the Query/Evidence RPC method. */
 export interface QueryEvidenceRequest {
     /** evidence_hash defines the hash of the requested evidence. */
@@ -35,26 +34,26 @@ export declare const QueryEvidenceRequest: {
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryEvidenceRequest;
     fromJSON(object: any): QueryEvidenceRequest;
     toJSON(message: QueryEvidenceRequest): unknown;
-    fromPartial(object: DeepPartial<QueryEvidenceRequest>): QueryEvidenceRequest;
+    fromPartial(object: Partial<QueryEvidenceRequest>): QueryEvidenceRequest;
 };
 export declare const QueryEvidenceResponse: {
     encode(message: QueryEvidenceResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryEvidenceResponse;
     fromJSON(object: any): QueryEvidenceResponse;
     toJSON(message: QueryEvidenceResponse): unknown;
-    fromPartial(object: DeepPartial<QueryEvidenceResponse>): QueryEvidenceResponse;
+    fromPartial(object: Partial<QueryEvidenceResponse>): QueryEvidenceResponse;
 };
 export declare const QueryAllEvidenceRequest: {
     encode(message: QueryAllEvidenceRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryAllEvidenceRequest;
     fromJSON(object: any): QueryAllEvidenceRequest;
     toJSON(message: QueryAllEvidenceRequest): unknown;
-    fromPartial(object: DeepPartial<QueryAllEvidenceRequest>): QueryAllEvidenceRequest;
+    fromPartial(object: Partial<QueryAllEvidenceRequest>): QueryAllEvidenceRequest;
 };
 export declare const QueryAllEvidenceResponse: {
     encode(message: QueryAllEvidenceResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryAllEvidenceResponse;
     fromJSON(object: any): QueryAllEvidenceResponse;
     toJSON(message: QueryAllEvidenceResponse): unknown;
-    fromPartial(object: DeepPartial<QueryAllEvidenceResponse>): QueryAllEvidenceResponse;
+    fromPartial(object: Partial<QueryAllEvidenceResponse>): QueryAllEvidenceResponse;
 };

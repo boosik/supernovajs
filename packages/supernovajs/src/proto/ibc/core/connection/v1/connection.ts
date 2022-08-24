@@ -277,7 +277,7 @@ export const ConnectionEnd = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ConnectionEnd>): ConnectionEnd {
+  fromPartial(object: Partial<ConnectionEnd>): ConnectionEnd {
     const message = createBaseConnectionEnd();
     message.clientId = object.clientId ?? "";
     message.versions = object.versions?.map(e => Version.fromPartial(e)) || [];
@@ -399,7 +399,7 @@ export const IdentifiedConnection = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<IdentifiedConnection>): IdentifiedConnection {
+  fromPartial(object: Partial<IdentifiedConnection>): IdentifiedConnection {
     const message = createBaseIdentifiedConnection();
     message.id = object.id ?? "";
     message.clientId = object.clientId ?? "";
@@ -483,7 +483,7 @@ export const Counterparty = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Counterparty>): Counterparty {
+  fromPartial(object: Partial<Counterparty>): Counterparty {
     const message = createBaseCounterparty();
     message.clientId = object.clientId ?? "";
     message.connectionId = object.connectionId ?? "";
@@ -548,7 +548,7 @@ export const ClientPaths = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClientPaths>): ClientPaths {
+  fromPartial(object: Partial<ClientPaths>): ClientPaths {
     const message = createBaseClientPaths();
     message.paths = object.paths?.map(e => e) || [];
     return message;
@@ -622,7 +622,7 @@ export const ConnectionPaths = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ConnectionPaths>): ConnectionPaths {
+  fromPartial(object: Partial<ConnectionPaths>): ConnectionPaths {
     const message = createBaseConnectionPaths();
     message.clientId = object.clientId ?? "";
     message.paths = object.paths?.map(e => e) || [];
@@ -697,7 +697,7 @@ export const Version = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Version>): Version {
+  fromPartial(object: Partial<Version>): Version {
     const message = createBaseVersion();
     message.identifier = object.identifier ?? "";
     message.features = object.features?.map(e => e) || [];
@@ -755,7 +755,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.maxExpectedTimePerBlock = object.maxExpectedTimePerBlock !== undefined && object.maxExpectedTimePerBlock !== null ? Long.fromValue(object.maxExpectedTimePerBlock) : Long.UZERO;
     return message;

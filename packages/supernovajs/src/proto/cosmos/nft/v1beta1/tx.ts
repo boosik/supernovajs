@@ -101,7 +101,7 @@ export const MsgSend = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgSend>): MsgSend {
+  fromPartial(object: Partial<MsgSend>): MsgSend {
     const message = createBaseMsgSend();
     message.classId = object.classId ?? "";
     message.id = object.id ?? "";
@@ -148,7 +148,7 @@ export const MsgSendResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgSendResponse>): MsgSendResponse {
+  fromPartial(_: Partial<MsgSendResponse>): MsgSendResponse {
     const message = createBaseMsgSendResponse();
     return message;
   }

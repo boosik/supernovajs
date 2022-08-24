@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * Equivocation implements the Evidence interface and defines evidence of double
  * signing misbehavior.
@@ -15,5 +15,5 @@ export declare const Equivocation: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Equivocation;
     fromJSON(object: any): Equivocation;
     toJSON(message: Equivocation): unknown;
-    fromPartial(object: DeepPartial<Equivocation>): Equivocation;
+    fromPartial(object: Partial<Equivocation>): Equivocation;
 };

@@ -95,7 +95,7 @@ export const Equivocation = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Equivocation>): Equivocation {
+  fromPartial(object: Partial<Equivocation>): Equivocation {
     const message = createBaseEquivocation();
     message.height = object.height !== undefined && object.height !== null ? Long.fromValue(object.height) : Long.ZERO;
     message.time = object.time ?? undefined;

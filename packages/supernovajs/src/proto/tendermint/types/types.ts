@@ -296,7 +296,7 @@ export const PartSetHeader = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PartSetHeader>): PartSetHeader {
+  fromPartial(object: Partial<PartSetHeader>): PartSetHeader {
     const message = createBasePartSetHeader();
     message.total = object.total ?? 0;
     message.hash = object.hash ?? new Uint8Array();
@@ -376,7 +376,7 @@ export const Part = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Part>): Part {
+  fromPartial(object: Partial<Part>): Part {
     const message = createBasePart();
     message.index = object.index ?? 0;
     message.bytes = object.bytes ?? new Uint8Array();
@@ -446,7 +446,7 @@ export const BlockID = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BlockID>): BlockID {
+  fromPartial(object: Partial<BlockID>): BlockID {
     const message = createBaseBlockID();
     message.hash = object.hash ?? new Uint8Array();
     message.partSetHeader = object.partSetHeader !== undefined && object.partSetHeader !== null ? PartSetHeader.fromPartial(object.partSetHeader) : undefined;
@@ -647,7 +647,7 @@ export const Header = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Header>): Header {
+  fromPartial(object: Partial<Header>): Header {
     const message = createBaseHeader();
     message.version = object.version !== undefined && object.version !== null ? Consensus.fromPartial(object.version) : undefined;
     message.chainId = object.chainId ?? "";
@@ -723,7 +723,7 @@ export const Data = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Data>): Data {
+  fromPartial(object: Partial<Data>): Data {
     const message = createBaseData();
     message.txs = object.txs?.map(e => e) || [];
     return message;
@@ -857,7 +857,7 @@ export const Vote = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Vote>): Vote {
+  fromPartial(object: Partial<Vote>): Vote {
     const message = createBaseVote();
     message.type = object.type ?? 0;
     message.height = object.height !== undefined && object.height !== null ? Long.fromValue(object.height) : Long.ZERO;
@@ -960,7 +960,7 @@ export const Commit = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Commit>): Commit {
+  fromPartial(object: Partial<Commit>): Commit {
     const message = createBaseCommit();
     message.height = object.height !== undefined && object.height !== null ? Long.fromValue(object.height) : Long.ZERO;
     message.round = object.round ?? 0;
@@ -1053,7 +1053,7 @@ export const CommitSig = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CommitSig>): CommitSig {
+  fromPartial(object: Partial<CommitSig>): CommitSig {
     const message = createBaseCommitSig();
     message.blockIdFlag = object.blockIdFlag ?? 0;
     message.validatorAddress = object.validatorAddress ?? new Uint8Array();
@@ -1179,7 +1179,7 @@ export const Proposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Proposal>): Proposal {
+  fromPartial(object: Partial<Proposal>): Proposal {
     const message = createBaseProposal();
     message.type = object.type ?? 0;
     message.height = object.height !== undefined && object.height !== null ? Long.fromValue(object.height) : Long.ZERO;
@@ -1253,7 +1253,7 @@ export const SignedHeader = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SignedHeader>): SignedHeader {
+  fromPartial(object: Partial<SignedHeader>): SignedHeader {
     const message = createBaseSignedHeader();
     message.header = object.header !== undefined && object.header !== null ? Header.fromPartial(object.header) : undefined;
     message.commit = object.commit !== undefined && object.commit !== null ? Commit.fromPartial(object.commit) : undefined;
@@ -1322,7 +1322,7 @@ export const LightBlock = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<LightBlock>): LightBlock {
+  fromPartial(object: Partial<LightBlock>): LightBlock {
     const message = createBaseLightBlock();
     message.signedHeader = object.signedHeader !== undefined && object.signedHeader !== null ? SignedHeader.fromPartial(object.signedHeader) : undefined;
     message.validatorSet = object.validatorSet !== undefined && object.validatorSet !== null ? ValidatorSet.fromPartial(object.validatorSet) : undefined;
@@ -1413,7 +1413,7 @@ export const BlockMeta = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BlockMeta>): BlockMeta {
+  fromPartial(object: Partial<BlockMeta>): BlockMeta {
     const message = createBaseBlockMeta();
     message.blockId = object.blockId !== undefined && object.blockId !== null ? BlockID.fromPartial(object.blockId) : undefined;
     message.blockSize = object.blockSize !== undefined && object.blockSize !== null ? Long.fromValue(object.blockSize) : Long.ZERO;
@@ -1495,7 +1495,7 @@ export const TxProof = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<TxProof>): TxProof {
+  fromPartial(object: Partial<TxProof>): TxProof {
     const message = createBaseTxProof();
     message.rootHash = object.rootHash ?? new Uint8Array();
     message.data = object.data ?? new Uint8Array();

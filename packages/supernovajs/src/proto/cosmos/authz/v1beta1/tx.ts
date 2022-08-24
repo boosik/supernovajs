@@ -121,7 +121,7 @@ export const MsgGrant = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgGrant>): MsgGrant {
+  fromPartial(object: Partial<MsgGrant>): MsgGrant {
     const message = createBaseMsgGrant();
     message.granter = object.granter ?? "";
     message.grantee = object.grantee ?? "";
@@ -186,7 +186,7 @@ export const MsgExecResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgExecResponse>): MsgExecResponse {
+  fromPartial(object: Partial<MsgExecResponse>): MsgExecResponse {
     const message = createBaseMsgExecResponse();
     message.results = object.results?.map(e => e) || [];
     return message;
@@ -260,7 +260,7 @@ export const MsgExec = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgExec>): MsgExec {
+  fromPartial(object: Partial<MsgExec>): MsgExec {
     const message = createBaseMsgExec();
     message.grantee = object.grantee ?? "";
     message.msgs = object.msgs?.map(e => Any.fromPartial(e)) || [];
@@ -305,7 +305,7 @@ export const MsgGrantResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgGrantResponse>): MsgGrantResponse {
+  fromPartial(_: Partial<MsgGrantResponse>): MsgGrantResponse {
     const message = createBaseMsgGrantResponse();
     return message;
   }
@@ -383,7 +383,7 @@ export const MsgRevoke = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgRevoke>): MsgRevoke {
+  fromPartial(object: Partial<MsgRevoke>): MsgRevoke {
     const message = createBaseMsgRevoke();
     message.granter = object.granter ?? "";
     message.grantee = object.grantee ?? "";
@@ -429,7 +429,7 @@ export const MsgRevokeResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgRevokeResponse>): MsgRevokeResponse {
+  fromPartial(_: Partial<MsgRevokeResponse>): MsgRevokeResponse {
     const message = createBaseMsgRevokeResponse();
     return message;
   }

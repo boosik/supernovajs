@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** ModuleDescriptor describes an app module. */
 export interface ModuleDescriptor {
     /**
@@ -87,19 +86,19 @@ export declare const ModuleDescriptor: {
     decode(input: _m0.Reader | Uint8Array, length?: number): ModuleDescriptor;
     fromJSON(object: any): ModuleDescriptor;
     toJSON(message: ModuleDescriptor): unknown;
-    fromPartial(object: DeepPartial<ModuleDescriptor>): ModuleDescriptor;
+    fromPartial(object: Partial<ModuleDescriptor>): ModuleDescriptor;
 };
 export declare const PackageReference: {
     encode(message: PackageReference, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PackageReference;
     fromJSON(object: any): PackageReference;
     toJSON(message: PackageReference): unknown;
-    fromPartial(object: DeepPartial<PackageReference>): PackageReference;
+    fromPartial(object: Partial<PackageReference>): PackageReference;
 };
 export declare const MigrateFromInfo: {
     encode(message: MigrateFromInfo, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MigrateFromInfo;
     fromJSON(object: any): MigrateFromInfo;
     toJSON(message: MigrateFromInfo): unknown;
-    fromPartial(object: DeepPartial<MigrateFromInfo>): MigrateFromInfo;
+    fromPartial(object: Partial<MigrateFromInfo>): MigrateFromInfo;
 };

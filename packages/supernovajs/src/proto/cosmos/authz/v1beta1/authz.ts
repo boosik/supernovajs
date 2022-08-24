@@ -93,7 +93,7 @@ export const GenericAuthorization = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenericAuthorization>): GenericAuthorization {
+  fromPartial(object: Partial<GenericAuthorization>): GenericAuthorization {
     const message = createBaseGenericAuthorization();
     message.msg = object.msg ?? "";
     return message;
@@ -161,7 +161,7 @@ export const Grant = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Grant>): Grant {
+  fromPartial(object: Partial<Grant>): Grant {
     const message = createBaseGrant();
     message.authorization = object.authorization !== undefined && object.authorization !== null ? Any.fromPartial(object.authorization) : undefined;
     message.expiration = object.expiration ?? undefined;
@@ -252,7 +252,7 @@ export const GrantAuthorization = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GrantAuthorization>): GrantAuthorization {
+  fromPartial(object: Partial<GrantAuthorization>): GrantAuthorization {
     const message = createBaseGrantAuthorization();
     message.granter = object.granter ?? "";
     message.grantee = object.grantee ?? "";
@@ -318,7 +318,7 @@ export const GrantQueueItem = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GrantQueueItem>): GrantQueueItem {
+  fromPartial(object: Partial<GrantQueueItem>): GrantQueueItem {
     const message = createBaseGrantQueueItem();
     message.msgTypeUrls = object.msgTypeUrls?.map(e => e) || [];
     return message;

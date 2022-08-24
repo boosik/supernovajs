@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** StorageType */
 export declare enum StorageType {
     /**
@@ -79,12 +78,12 @@ export declare const ModuleSchemaDescriptor: {
     decode(input: _m0.Reader | Uint8Array, length?: number): ModuleSchemaDescriptor;
     fromJSON(object: any): ModuleSchemaDescriptor;
     toJSON(message: ModuleSchemaDescriptor): unknown;
-    fromPartial(object: DeepPartial<ModuleSchemaDescriptor>): ModuleSchemaDescriptor;
+    fromPartial(object: Partial<ModuleSchemaDescriptor>): ModuleSchemaDescriptor;
 };
 export declare const ModuleSchemaDescriptor_FileEntry: {
     encode(message: ModuleSchemaDescriptor_FileEntry, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ModuleSchemaDescriptor_FileEntry;
     fromJSON(object: any): ModuleSchemaDescriptor_FileEntry;
     toJSON(message: ModuleSchemaDescriptor_FileEntry): unknown;
-    fromPartial(object: DeepPartial<ModuleSchemaDescriptor_FileEntry>): ModuleSchemaDescriptor_FileEntry;
+    fromPartial(object: Partial<ModuleSchemaDescriptor_FileEntry>): ModuleSchemaDescriptor_FileEntry;
 };

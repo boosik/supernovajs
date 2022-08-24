@@ -103,7 +103,7 @@ export const MsgGrantAllowance = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgGrantAllowance>): MsgGrantAllowance {
+  fromPartial(object: Partial<MsgGrantAllowance>): MsgGrantAllowance {
     const message = createBaseMsgGrantAllowance();
     message.granter = object.granter ?? "";
     message.grantee = object.grantee ?? "";
@@ -149,7 +149,7 @@ export const MsgGrantAllowanceResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgGrantAllowanceResponse>): MsgGrantAllowanceResponse {
+  fromPartial(_: Partial<MsgGrantAllowanceResponse>): MsgGrantAllowanceResponse {
     const message = createBaseMsgGrantAllowanceResponse();
     return message;
   }
@@ -216,7 +216,7 @@ export const MsgRevokeAllowance = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgRevokeAllowance>): MsgRevokeAllowance {
+  fromPartial(object: Partial<MsgRevokeAllowance>): MsgRevokeAllowance {
     const message = createBaseMsgRevokeAllowance();
     message.granter = object.granter ?? "";
     message.grantee = object.grantee ?? "";
@@ -261,7 +261,7 @@ export const MsgRevokeAllowanceResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgRevokeAllowanceResponse>): MsgRevokeAllowanceResponse {
+  fromPartial(_: Partial<MsgRevokeAllowanceResponse>): MsgRevokeAllowanceResponse {
     const message = createBaseMsgRevokeAllowanceResponse();
     return message;
   }

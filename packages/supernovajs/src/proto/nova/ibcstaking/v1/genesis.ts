@@ -76,7 +76,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     return message;
@@ -199,7 +199,7 @@ export const RegisteredZone = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<RegisteredZone>): RegisteredZone {
+  fromPartial(object: Partial<RegisteredZone>): RegisteredZone {
     const message = createBaseRegisteredZone();
     message.zoneId = object.zoneId ?? "";
     message.icaConnectionInfo = object.icaConnectionInfo !== undefined && object.icaConnectionInfo !== null ? IcaConnectionInfo.fromPartial(object.icaConnectionInfo) : undefined;
@@ -284,7 +284,7 @@ export const IcaAccount = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<IcaAccount>): IcaAccount {
+  fromPartial(object: Partial<IcaAccount>): IcaAccount {
     const message = createBaseIcaAccount();
     message.daomodifierAddress = object.daomodifierAddress ?? "";
     message.hostAddress = object.hostAddress ?? "";
@@ -354,7 +354,7 @@ export const IcaConnectionInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<IcaConnectionInfo>): IcaConnectionInfo {
+  fromPartial(object: Partial<IcaConnectionInfo>): IcaConnectionInfo {
     const message = createBaseIcaConnectionInfo();
     message.connectionId = object.connectionId ?? "";
     message.portId = object.portId ?? "";

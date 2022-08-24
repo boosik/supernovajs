@@ -185,7 +185,7 @@ export const MsgDeposit = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgDeposit>): MsgDeposit {
+  fromPartial(object: Partial<MsgDeposit>): MsgDeposit {
     const message = createBaseMsgDeposit();
     message.zoneId = object.zoneId ?? "";
     message.depositor = object.depositor ?? "";
@@ -269,7 +269,7 @@ export const MsgDepositResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgDepositResponse>): MsgDepositResponse {
+  fromPartial(object: Partial<MsgDepositResponse>): MsgDepositResponse {
     const message = createBaseMsgDepositResponse();
     message.receiver = object.receiver ?? "";
     message.depositor = object.depositor ?? "";
@@ -361,7 +361,7 @@ export const MsgDelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgDelegate>): MsgDelegate {
+  fromPartial(object: Partial<MsgDelegate>): MsgDelegate {
     const message = createBaseMsgDelegate();
     message.zoneId = object.zoneId ?? "";
     message.controllerAddress = object.controllerAddress ?? "";
@@ -408,7 +408,7 @@ export const MsgDelegateResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgDelegateResponse>): MsgDelegateResponse {
+  fromPartial(_: Partial<MsgDelegateResponse>): MsgDelegateResponse {
     const message = createBaseMsgDelegateResponse();
     return message;
   }
@@ -475,7 +475,7 @@ export const MsgUndelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUndelegate>): MsgUndelegate {
+  fromPartial(object: Partial<MsgUndelegate>): MsgUndelegate {
     const message = createBaseMsgUndelegate();
     message.zoneId = object.zoneId ?? "";
     message.controllerAddress = object.controllerAddress ?? "";
@@ -555,7 +555,7 @@ export const MsgUndelegateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUndelegateResponse>): MsgUndelegateResponse {
+  fromPartial(object: Partial<MsgUndelegateResponse>): MsgUndelegateResponse {
     const message = createBaseMsgUndelegateResponse();
     message.zoneId = object.zoneId ?? "";
     message.totalBurnAsset = object.totalBurnAsset !== undefined && object.totalBurnAsset !== null ? Coin.fromPartial(object.totalBurnAsset) : undefined;
@@ -647,7 +647,7 @@ export const MsgPendingUndelegate = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgPendingUndelegate>): MsgPendingUndelegate {
+  fromPartial(object: Partial<MsgPendingUndelegate>): MsgPendingUndelegate {
     const message = createBaseMsgPendingUndelegate();
     message.zoneId = object.zoneId ?? "";
     message.delegator = object.delegator ?? "";
@@ -751,7 +751,7 @@ export const MsgPendingUndelegateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgPendingUndelegateResponse>): MsgPendingUndelegateResponse {
+  fromPartial(object: Partial<MsgPendingUndelegateResponse>): MsgPendingUndelegateResponse {
     const message = createBaseMsgPendingUndelegateResponse();
     message.zoneId = object.zoneId ?? "";
     message.delegator = object.delegator ?? "";
@@ -845,7 +845,7 @@ export const MsgWithdraw = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgWithdraw>): MsgWithdraw {
+  fromPartial(object: Partial<MsgWithdraw>): MsgWithdraw {
     const message = createBaseMsgWithdraw();
     message.zoneId = object.zoneId ?? "";
     message.withdrawer = object.withdrawer ?? "";
@@ -916,7 +916,7 @@ export const MsgWithdrawResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgWithdrawResponse>): MsgWithdrawResponse {
+  fromPartial(object: Partial<MsgWithdrawResponse>): MsgWithdrawResponse {
     const message = createBaseMsgWithdrawResponse();
     message.withdrawer = object.withdrawer ?? "";
     message.withdrawAmount = object.withdrawAmount ?? "";
@@ -1007,7 +1007,7 @@ export const MsgClaimSnAsset = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgClaimSnAsset>): MsgClaimSnAsset {
+  fromPartial(object: Partial<MsgClaimSnAsset>): MsgClaimSnAsset {
     const message = createBaseMsgClaimSnAsset();
     message.zoneId = object.zoneId ?? "";
     message.claimer = object.claimer ?? "";
@@ -1078,7 +1078,7 @@ export const MsgClaimSnAssetResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgClaimSnAssetResponse>): MsgClaimSnAssetResponse {
+  fromPartial(object: Partial<MsgClaimSnAssetResponse>): MsgClaimSnAssetResponse {
     const message = createBaseMsgClaimSnAssetResponse();
     message.claimer = object.claimer ?? "";
     message.minted = object.minted !== undefined && object.minted !== null ? Coin.fromPartial(object.minted) : undefined;
@@ -1180,7 +1180,7 @@ export const MsgPendingWithdraw = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgPendingWithdraw>): MsgPendingWithdraw {
+  fromPartial(object: Partial<MsgPendingWithdraw>): MsgPendingWithdraw {
     const message = createBaseMsgPendingWithdraw();
     message.zoneId = object.zoneId ?? "";
     message.controllerAddress = object.controllerAddress ?? "";
@@ -1228,7 +1228,7 @@ export const MsgPendingWithdrawResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgPendingWithdrawResponse>): MsgPendingWithdrawResponse {
+  fromPartial(_: Partial<MsgPendingWithdrawResponse>): MsgPendingWithdrawResponse {
     const message = createBaseMsgPendingWithdrawResponse();
     return message;
   }

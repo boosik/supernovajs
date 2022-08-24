@@ -140,7 +140,7 @@ export const DoubleValue = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DoubleValue>): DoubleValue {
+  fromPartial(object: Partial<DoubleValue>): DoubleValue {
     const message = createBaseDoubleValue();
     message.value = object.value ?? 0;
     return message;
@@ -197,7 +197,7 @@ export const FloatValue = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<FloatValue>): FloatValue {
+  fromPartial(object: Partial<FloatValue>): FloatValue {
     const message = createBaseFloatValue();
     message.value = object.value ?? 0;
     return message;
@@ -254,7 +254,7 @@ export const Int64Value = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Int64Value>): Int64Value {
+  fromPartial(object: Partial<Int64Value>): Int64Value {
     const message = createBaseInt64Value();
     message.value = object.value !== undefined && object.value !== null ? Long.fromValue(object.value) : Long.ZERO;
     return message;
@@ -311,7 +311,7 @@ export const UInt64Value = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<UInt64Value>): UInt64Value {
+  fromPartial(object: Partial<UInt64Value>): UInt64Value {
     const message = createBaseUInt64Value();
     message.value = object.value !== undefined && object.value !== null ? Long.fromValue(object.value) : Long.UZERO;
     return message;
@@ -368,7 +368,7 @@ export const Int32Value = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Int32Value>): Int32Value {
+  fromPartial(object: Partial<Int32Value>): Int32Value {
     const message = createBaseInt32Value();
     message.value = object.value ?? 0;
     return message;
@@ -425,7 +425,7 @@ export const UInt32Value = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<UInt32Value>): UInt32Value {
+  fromPartial(object: Partial<UInt32Value>): UInt32Value {
     const message = createBaseUInt32Value();
     message.value = object.value ?? 0;
     return message;
@@ -482,7 +482,7 @@ export const BoolValue = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BoolValue>): BoolValue {
+  fromPartial(object: Partial<BoolValue>): BoolValue {
     const message = createBaseBoolValue();
     message.value = object.value ?? false;
     return message;
@@ -539,7 +539,7 @@ export const StringValue = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<StringValue>): StringValue {
+  fromPartial(object: Partial<StringValue>): StringValue {
     const message = createBaseStringValue();
     message.value = object.value ?? "";
     return message;
@@ -596,7 +596,7 @@ export const BytesValue = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BytesValue>): BytesValue {
+  fromPartial(object: Partial<BytesValue>): BytesValue {
     const message = createBaseBytesValue();
     message.value = object.value ?? new Uint8Array();
     return message;

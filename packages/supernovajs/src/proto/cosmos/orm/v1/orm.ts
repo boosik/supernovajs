@@ -174,7 +174,7 @@ export const TableDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<TableDescriptor>): TableDescriptor {
+  fromPartial(object: Partial<TableDescriptor>): TableDescriptor {
     const message = createBaseTableDescriptor();
     message.primaryKey = object.primaryKey !== undefined && object.primaryKey !== null ? PrimaryKeyDescriptor.fromPartial(object.primaryKey) : undefined;
     message.index = object.index?.map(e => SecondaryIndexDescriptor.fromPartial(e)) || [];
@@ -244,7 +244,7 @@ export const PrimaryKeyDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PrimaryKeyDescriptor>): PrimaryKeyDescriptor {
+  fromPartial(object: Partial<PrimaryKeyDescriptor>): PrimaryKeyDescriptor {
     const message = createBasePrimaryKeyDescriptor();
     message.fields = object.fields ?? "";
     message.autoIncrement = object.autoIncrement ?? false;
@@ -324,7 +324,7 @@ export const SecondaryIndexDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SecondaryIndexDescriptor>): SecondaryIndexDescriptor {
+  fromPartial(object: Partial<SecondaryIndexDescriptor>): SecondaryIndexDescriptor {
     const message = createBaseSecondaryIndexDescriptor();
     message.fields = object.fields ?? "";
     message.id = object.id ?? 0;
@@ -383,7 +383,7 @@ export const SingletonDescriptor = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SingletonDescriptor>): SingletonDescriptor {
+  fromPartial(object: Partial<SingletonDescriptor>): SingletonDescriptor {
     const message = createBaseSingletonDescriptor();
     message.id = object.id ?? 0;
     return message;

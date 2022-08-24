@@ -117,7 +117,7 @@ export const AminoConverter = {
         },
         value: {
           denom: value.denom,
-          amount: Long.fromNumber(value.amount).toString()
+          amount: Long.fromString(value.amount).toString()
         }
       };
     },
@@ -210,7 +210,7 @@ export const AminoConverter = {
         validator_address: validatorAddress,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },
@@ -243,7 +243,7 @@ export const AminoConverter = {
         validator_dst_address: validatorDstAddress,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },
@@ -276,7 +276,7 @@ export const AminoConverter = {
         validator_address: validatorAddress,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },

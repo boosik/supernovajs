@@ -78,7 +78,7 @@ export const LegacyAminoPubKey = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<LegacyAminoPubKey>): LegacyAminoPubKey {
+  fromPartial(object: Partial<LegacyAminoPubKey>): LegacyAminoPubKey {
     const message = createBaseLegacyAminoPubKey();
     message.threshold = object.threshold ?? 0;
     message.publicKeys = object.publicKeys?.map(e => Any.fromPartial(e)) || [];

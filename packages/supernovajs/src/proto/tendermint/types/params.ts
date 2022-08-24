@@ -168,7 +168,7 @@ export const ConsensusParams = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ConsensusParams>): ConsensusParams {
+  fromPartial(object: Partial<ConsensusParams>): ConsensusParams {
     const message = createBaseConsensusParams();
     message.block = object.block !== undefined && object.block !== null ? BlockParams.fromPartial(object.block) : undefined;
     message.evidence = object.evidence !== undefined && object.evidence !== null ? EvidenceParams.fromPartial(object.evidence) : undefined;
@@ -250,7 +250,7 @@ export const BlockParams = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BlockParams>): BlockParams {
+  fromPartial(object: Partial<BlockParams>): BlockParams {
     const message = createBaseBlockParams();
     message.maxBytes = object.maxBytes !== undefined && object.maxBytes !== null ? Long.fromValue(object.maxBytes) : Long.ZERO;
     message.maxGas = object.maxGas !== undefined && object.maxGas !== null ? Long.fromValue(object.maxGas) : Long.ZERO;
@@ -331,7 +331,7 @@ export const EvidenceParams = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<EvidenceParams>): EvidenceParams {
+  fromPartial(object: Partial<EvidenceParams>): EvidenceParams {
     const message = createBaseEvidenceParams();
     message.maxAgeNumBlocks = object.maxAgeNumBlocks !== undefined && object.maxAgeNumBlocks !== null ? Long.fromValue(object.maxAgeNumBlocks) : Long.ZERO;
     message.maxAgeDuration = object.maxAgeDuration ?? undefined;
@@ -396,7 +396,7 @@ export const ValidatorParams = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ValidatorParams>): ValidatorParams {
+  fromPartial(object: Partial<ValidatorParams>): ValidatorParams {
     const message = createBaseValidatorParams();
     message.pubKeyTypes = object.pubKeyTypes?.map(e => e) || [];
     return message;
@@ -453,7 +453,7 @@ export const VersionParams = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<VersionParams>): VersionParams {
+  fromPartial(object: Partial<VersionParams>): VersionParams {
     const message = createBaseVersionParams();
     message.appVersion = object.appVersion !== undefined && object.appVersion !== null ? Long.fromValue(object.appVersion) : Long.UZERO;
     return message;
@@ -521,7 +521,7 @@ export const HashedParams = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<HashedParams>): HashedParams {
+  fromPartial(object: Partial<HashedParams>): HashedParams {
     const message = createBaseHashedParams();
     message.blockMaxBytes = object.blockMaxBytes !== undefined && object.blockMaxBytes !== null ? Long.fromValue(object.blockMaxBytes) : Long.ZERO;
     message.blockMaxGas = object.blockMaxGas !== undefined && object.blockMaxGas !== null ? Long.fromValue(object.blockMaxGas) : Long.ZERO;

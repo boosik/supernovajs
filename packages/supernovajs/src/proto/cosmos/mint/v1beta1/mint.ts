@@ -91,7 +91,7 @@ export const Minter = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Minter>): Minter {
+  fromPartial(object: Partial<Minter>): Minter {
     const message = createBaseMinter();
     message.inflation = object.inflation ?? "";
     message.annualProvisions = object.annualProvisions ?? "";
@@ -204,7 +204,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.mintDenom = object.mintDenom ?? "";
     message.inflationRateChange = object.inflationRateChange ?? "";

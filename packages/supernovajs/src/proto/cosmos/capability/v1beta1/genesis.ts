@@ -83,7 +83,7 @@ export const GenesisOwners = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisOwners>): GenesisOwners {
+  fromPartial(object: Partial<GenesisOwners>): GenesisOwners {
     const message = createBaseGenesisOwners();
     message.index = object.index !== undefined && object.index !== null ? Long.fromValue(object.index) : Long.UZERO;
     message.indexOwners = object.indexOwners !== undefined && object.indexOwners !== null ? CapabilityOwners.fromPartial(object.indexOwners) : undefined;
@@ -158,7 +158,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.index = object.index !== undefined && object.index !== null ? Long.fromValue(object.index) : Long.UZERO;
     message.owners = object.owners?.map(e => GenesisOwners.fromPartial(e)) || [];

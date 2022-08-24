@@ -76,7 +76,7 @@ export const Params_WhiteListedTokenDenomsEntry = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params_WhiteListedTokenDenomsEntry>): Params_WhiteListedTokenDenomsEntry {
+  fromPartial(object: Partial<Params_WhiteListedTokenDenomsEntry>): Params_WhiteListedTokenDenomsEntry {
     const message = createBaseParams_WhiteListedTokenDenomsEntry();
     message.key = object.key ?? "";
     message.value = object.value ?? "";
@@ -165,7 +165,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.whiteListedTokenDenoms = Object.entries(object.whiteListedTokenDenoms ?? {}).reduce<{
       [key: string]: string;

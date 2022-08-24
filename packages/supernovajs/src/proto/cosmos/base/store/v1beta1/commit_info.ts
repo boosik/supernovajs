@@ -94,7 +94,7 @@ export const CommitInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CommitInfo>): CommitInfo {
+  fromPartial(object: Partial<CommitInfo>): CommitInfo {
     const message = createBaseCommitInfo();
     message.version = object.version !== undefined && object.version !== null ? Long.fromValue(object.version) : Long.ZERO;
     message.storeInfos = object.storeInfos?.map(e => StoreInfo.fromPartial(e)) || [];
@@ -163,7 +163,7 @@ export const StoreInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<StoreInfo>): StoreInfo {
+  fromPartial(object: Partial<StoreInfo>): StoreInfo {
     const message = createBaseStoreInfo();
     message.name = object.name ?? "";
     message.commitId = object.commitId !== undefined && object.commitId !== null ? CommitID.fromPartial(object.commitId) : undefined;
@@ -232,7 +232,7 @@ export const CommitID = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CommitID>): CommitID {
+  fromPartial(object: Partial<CommitID>): CommitID {
     const message = createBaseCommitID();
     message.version = object.version !== undefined && object.version !== null ? Long.fromValue(object.version) : Long.ZERO;
     message.hash = object.hash ?? new Uint8Array();

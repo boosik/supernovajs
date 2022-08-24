@@ -28,7 +28,7 @@ export const AminoConverter = {
       return {
         coin: {
           denom: coin.denom,
-          amount: Long.fromNumber(coin.amount).toString()
+          amount: Long.fromString(coin.amount).toString()
         },
         operator,
         block_height: blockHeight.toString(),

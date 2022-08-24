@@ -159,7 +159,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     message.codes = object.codes?.map(e => Code.fromPartial(e)) || [];
@@ -242,7 +242,7 @@ export const GenesisState_GenMsgs = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState_GenMsgs>): GenesisState_GenMsgs {
+  fromPartial(object: Partial<GenesisState_GenMsgs>): GenesisState_GenMsgs {
     const message = createBaseGenesisState_GenMsgs();
     message.storeCode = object.storeCode !== undefined && object.storeCode !== null ? MsgStoreCode.fromPartial(object.storeCode) : undefined;
     message.instantiateContract = object.instantiateContract !== undefined && object.instantiateContract !== null ? MsgInstantiateContract.fromPartial(object.instantiateContract) : undefined;
@@ -334,7 +334,7 @@ export const Code = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Code>): Code {
+  fromPartial(object: Partial<Code>): Code {
     const message = createBaseCode();
     message.codeId = object.codeId !== undefined && object.codeId !== null ? Long.fromValue(object.codeId) : Long.UZERO;
     message.codeInfo = object.codeInfo !== undefined && object.codeInfo !== null ? CodeInfo.fromPartial(object.codeInfo) : undefined;
@@ -422,7 +422,7 @@ export const Contract = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Contract>): Contract {
+  fromPartial(object: Partial<Contract>): Contract {
     const message = createBaseContract();
     message.contractAddress = object.contractAddress ?? "";
     message.contractInfo = object.contractInfo !== undefined && object.contractInfo !== null ? ContractInfo.fromPartial(object.contractInfo) : undefined;
@@ -492,7 +492,7 @@ export const Sequence = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Sequence>): Sequence {
+  fromPartial(object: Partial<Sequence>): Sequence {
     const message = createBaseSequence();
     message.idKey = object.idKey ?? new Uint8Array();
     message.value = object.value !== undefined && object.value !== null ? Long.fromValue(object.value) : Long.UZERO;

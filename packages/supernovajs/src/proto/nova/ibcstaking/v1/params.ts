@@ -81,7 +81,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.daoModifiers = object.daoModifiers?.map(e => e) || [];
     message.commission = object.commission?.map(e => CommissionInfo.fromPartial(e)) || [];
@@ -150,7 +150,7 @@ export const CommissionInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<CommissionInfo>): CommissionInfo {
+  fromPartial(object: Partial<CommissionInfo>): CommissionInfo {
     const message = createBaseCommissionInfo();
     message.treasuryAddress = object.treasuryAddress ?? "";
     message.commissionRate = object.commissionRate ?? "";

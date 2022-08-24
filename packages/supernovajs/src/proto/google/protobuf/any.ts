@@ -178,7 +178,7 @@ export const Any = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Any>): Any {
+  fromPartial(object: Partial<Any>): Any {
     const message = createBaseAny();
     message.typeUrl = object.typeUrl ?? "";
     message.value = object.value ?? new Uint8Array();

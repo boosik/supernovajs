@@ -199,7 +199,7 @@ export const MsgConnectionOpenInit = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgConnectionOpenInit>): MsgConnectionOpenInit {
+  fromPartial(object: Partial<MsgConnectionOpenInit>): MsgConnectionOpenInit {
     const message = createBaseMsgConnectionOpenInit();
     message.clientId = object.clientId ?? "";
     message.counterparty = object.counterparty !== undefined && object.counterparty !== null ? Counterparty.fromPartial(object.counterparty) : undefined;
@@ -247,7 +247,7 @@ export const MsgConnectionOpenInitResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgConnectionOpenInitResponse>): MsgConnectionOpenInitResponse {
+  fromPartial(_: Partial<MsgConnectionOpenInitResponse>): MsgConnectionOpenInitResponse {
     const message = createBaseMsgConnectionOpenInitResponse();
     return message;
   }
@@ -430,7 +430,7 @@ export const MsgConnectionOpenTry = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgConnectionOpenTry>): MsgConnectionOpenTry {
+  fromPartial(object: Partial<MsgConnectionOpenTry>): MsgConnectionOpenTry {
     const message = createBaseMsgConnectionOpenTry();
     message.clientId = object.clientId ?? "";
     message.previousConnectionId = object.previousConnectionId ?? "";
@@ -485,7 +485,7 @@ export const MsgConnectionOpenTryResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgConnectionOpenTryResponse>): MsgConnectionOpenTryResponse {
+  fromPartial(_: Partial<MsgConnectionOpenTryResponse>): MsgConnectionOpenTryResponse {
     const message = createBaseMsgConnectionOpenTryResponse();
     return message;
   }
@@ -640,7 +640,7 @@ export const MsgConnectionOpenAck = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgConnectionOpenAck>): MsgConnectionOpenAck {
+  fromPartial(object: Partial<MsgConnectionOpenAck>): MsgConnectionOpenAck {
     const message = createBaseMsgConnectionOpenAck();
     message.connectionId = object.connectionId ?? "";
     message.counterpartyConnectionId = object.counterpartyConnectionId ?? "";
@@ -693,7 +693,7 @@ export const MsgConnectionOpenAckResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgConnectionOpenAckResponse>): MsgConnectionOpenAckResponse {
+  fromPartial(_: Partial<MsgConnectionOpenAckResponse>): MsgConnectionOpenAckResponse {
     const message = createBaseMsgConnectionOpenAckResponse();
     return message;
   }
@@ -782,7 +782,7 @@ export const MsgConnectionOpenConfirm = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgConnectionOpenConfirm>): MsgConnectionOpenConfirm {
+  fromPartial(object: Partial<MsgConnectionOpenConfirm>): MsgConnectionOpenConfirm {
     const message = createBaseMsgConnectionOpenConfirm();
     message.connectionId = object.connectionId ?? "";
     message.proofAck = object.proofAck ?? new Uint8Array();
@@ -829,7 +829,7 @@ export const MsgConnectionOpenConfirmResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgConnectionOpenConfirmResponse>): MsgConnectionOpenConfirmResponse {
+  fromPartial(_: Partial<MsgConnectionOpenConfirmResponse>): MsgConnectionOpenConfirmResponse {
     const message = createBaseMsgConnectionOpenConfirmResponse();
     return message;
   }

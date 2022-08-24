@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * Coin defines a token with a denomination and an amount.
  *
@@ -33,26 +32,26 @@ export declare const Coin: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Coin;
     fromJSON(object: any): Coin;
     toJSON(message: Coin): unknown;
-    fromPartial(object: DeepPartial<Coin>): Coin;
+    fromPartial(object: Partial<Coin>): Coin;
 };
 export declare const DecCoin: {
     encode(message: DecCoin, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DecCoin;
     fromJSON(object: any): DecCoin;
     toJSON(message: DecCoin): unknown;
-    fromPartial(object: DeepPartial<DecCoin>): DecCoin;
+    fromPartial(object: Partial<DecCoin>): DecCoin;
 };
 export declare const IntProto: {
     encode(message: IntProto, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): IntProto;
     fromJSON(object: any): IntProto;
     toJSON(message: IntProto): unknown;
-    fromPartial(object: DeepPartial<IntProto>): IntProto;
+    fromPartial(object: Partial<IntProto>): IntProto;
 };
 export declare const DecProto: {
     encode(message: DecProto, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DecProto;
     fromJSON(object: any): DecProto;
     toJSON(message: DecProto): unknown;
-    fromPartial(object: DeepPartial<DecProto>): DecProto;
+    fromPartial(object: Partial<DecProto>): DecProto;
 };

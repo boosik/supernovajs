@@ -102,7 +102,7 @@ export const FungibleTokenPacketData = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<FungibleTokenPacketData>): FungibleTokenPacketData {
+  fromPartial(object: Partial<FungibleTokenPacketData>): FungibleTokenPacketData {
     const message = createBaseFungibleTokenPacketData();
     message.denom = object.denom ?? "";
     message.amount = object.amount ?? "";

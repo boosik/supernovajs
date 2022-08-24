@@ -159,7 +159,7 @@ export const Class = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Class>): Class {
+  fromPartial(object: Partial<Class>): Class {
     const message = createBaseClass();
     message.id = object.id ?? "";
     message.name = object.name ?? "";
@@ -266,7 +266,7 @@ export const NFT = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<NFT>): NFT {
+  fromPartial(object: Partial<NFT>): NFT {
     const message = createBaseNFT();
     message.classId = object.classId ?? "";
     message.id = object.id ?? "";

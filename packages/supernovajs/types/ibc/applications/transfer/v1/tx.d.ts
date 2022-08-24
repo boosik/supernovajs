@@ -1,7 +1,7 @@
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
 import { Height } from "../../../core/client/v1/client";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * MsgTransfer defines a msg to transfer fungible tokens (i.e Coins) between
  * ICS20 enabled chains. See ICS Spec here:
@@ -37,12 +37,12 @@ export declare const MsgTransfer: {
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgTransfer;
     fromJSON(object: any): MsgTransfer;
     toJSON(message: MsgTransfer): unknown;
-    fromPartial(object: DeepPartial<MsgTransfer>): MsgTransfer;
+    fromPartial(object: Partial<MsgTransfer>): MsgTransfer;
 };
 export declare const MsgTransferResponse: {
     encode(_: MsgTransferResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgTransferResponse;
     fromJSON(_: any): MsgTransferResponse;
     toJSON(_: MsgTransferResponse): unknown;
-    fromPartial(_: DeepPartial<MsgTransferResponse>): MsgTransferResponse;
+    fromPartial(_: Partial<MsgTransferResponse>): MsgTransferResponse;
 };

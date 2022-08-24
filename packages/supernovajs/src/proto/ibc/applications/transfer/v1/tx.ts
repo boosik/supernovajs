@@ -155,7 +155,7 @@ export const MsgTransfer = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgTransfer>): MsgTransfer {
+  fromPartial(object: Partial<MsgTransfer>): MsgTransfer {
     const message = createBaseMsgTransfer();
     message.sourcePort = object.sourcePort ?? "";
     message.sourceChannel = object.sourceChannel ?? "";
@@ -205,7 +205,7 @@ export const MsgTransferResponse = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<MsgTransferResponse>): MsgTransferResponse {
+  fromPartial(_: Partial<MsgTransferResponse>): MsgTransferResponse {
     const message = createBaseMsgTransferResponse();
     return message;
   }

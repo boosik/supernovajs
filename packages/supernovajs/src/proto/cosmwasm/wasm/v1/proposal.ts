@@ -261,7 +261,7 @@ export const StoreCodeProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<StoreCodeProposal>): StoreCodeProposal {
+  fromPartial(object: Partial<StoreCodeProposal>): StoreCodeProposal {
     const message = createBaseStoreCodeProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -405,7 +405,7 @@ export const InstantiateContractProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<InstantiateContractProposal>): InstantiateContractProposal {
+  fromPartial(object: Partial<InstantiateContractProposal>): InstantiateContractProposal {
     const message = createBaseInstantiateContractProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -513,7 +513,7 @@ export const MigrateContractProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MigrateContractProposal>): MigrateContractProposal {
+  fromPartial(object: Partial<MigrateContractProposal>): MigrateContractProposal {
     const message = createBaseMigrateContractProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -607,7 +607,7 @@ export const SudoContractProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SudoContractProposal>): SudoContractProposal {
+  fromPartial(object: Partial<SudoContractProposal>): SudoContractProposal {
     const message = createBaseSudoContractProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -728,7 +728,7 @@ export const ExecuteContractProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ExecuteContractProposal>): ExecuteContractProposal {
+  fromPartial(object: Partial<ExecuteContractProposal>): ExecuteContractProposal {
     const message = createBaseExecuteContractProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -823,7 +823,7 @@ export const UpdateAdminProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<UpdateAdminProposal>): UpdateAdminProposal {
+  fromPartial(object: Partial<UpdateAdminProposal>): UpdateAdminProposal {
     const message = createBaseUpdateAdminProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -905,7 +905,7 @@ export const ClearAdminProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ClearAdminProposal>): ClearAdminProposal {
+  fromPartial(object: Partial<ClearAdminProposal>): ClearAdminProposal {
     const message = createBaseClearAdminProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -1004,7 +1004,7 @@ export const PinCodesProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PinCodesProposal>): PinCodesProposal {
+  fromPartial(object: Partial<PinCodesProposal>): PinCodesProposal {
     const message = createBasePinCodesProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";
@@ -1103,7 +1103,7 @@ export const UnpinCodesProposal = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<UnpinCodesProposal>): UnpinCodesProposal {
+  fromPartial(object: Partial<UnpinCodesProposal>): UnpinCodesProposal {
     const message = createBaseUnpinCodesProposal();
     message.title = object.title ?? "";
     message.description = object.description ?? "";

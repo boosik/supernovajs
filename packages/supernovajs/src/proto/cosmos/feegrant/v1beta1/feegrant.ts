@@ -139,7 +139,7 @@ export const BasicAllowance = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<BasicAllowance>): BasicAllowance {
+  fromPartial(object: Partial<BasicAllowance>): BasicAllowance {
     const message = createBaseBasicAllowance();
     message.spendLimit = object.spendLimit?.map(e => Coin.fromPartial(e)) || [];
     message.expiration = object.expiration ?? undefined;
@@ -252,7 +252,7 @@ export const PeriodicAllowance = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PeriodicAllowance>): PeriodicAllowance {
+  fromPartial(object: Partial<PeriodicAllowance>): PeriodicAllowance {
     const message = createBasePeriodicAllowance();
     message.basic = object.basic !== undefined && object.basic !== null ? BasicAllowance.fromPartial(object.basic) : undefined;
     message.period = object.period ?? undefined;
@@ -330,7 +330,7 @@ export const AllowedMsgAllowance = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<AllowedMsgAllowance>): AllowedMsgAllowance {
+  fromPartial(object: Partial<AllowedMsgAllowance>): AllowedMsgAllowance {
     const message = createBaseAllowedMsgAllowance();
     message.allowance = object.allowance !== undefined && object.allowance !== null ? Any.fromPartial(object.allowance) : undefined;
     message.allowedMessages = object.allowedMessages?.map(e => e) || [];
@@ -410,7 +410,7 @@ export const Grant = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Grant>): Grant {
+  fromPartial(object: Partial<Grant>): Grant {
     const message = createBaseGrant();
     message.granter = object.granter ?? "";
     message.grantee = object.grantee ?? "";

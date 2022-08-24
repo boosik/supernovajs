@@ -94,7 +94,7 @@ export const Config = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Config>): Config {
+  fromPartial(object: Partial<Config>): Config {
     const message = createBaseConfig();
     message.modules = object.modules?.map(e => ModuleConfig.fromPartial(e)) || [];
     return message;
@@ -162,7 +162,7 @@ export const ModuleConfig = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ModuleConfig>): ModuleConfig {
+  fromPartial(object: Partial<ModuleConfig>): ModuleConfig {
     const message = createBaseModuleConfig();
     message.name = object.name ?? "";
     message.config = object.config !== undefined && object.config !== null ? Any.fromPartial(object.config) : undefined;

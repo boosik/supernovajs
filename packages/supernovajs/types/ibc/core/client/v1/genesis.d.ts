@@ -1,6 +1,6 @@
 import { IdentifiedClientState, ClientConsensusStates, Params } from "./client";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** GenesisState defines the ibc client submodule's genesis state. */
 export interface GenesisState {
     /** client states with their corresponding identifiers */
@@ -38,19 +38,19 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };
 export declare const GenesisMetadata: {
     encode(message: GenesisMetadata, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisMetadata;
     fromJSON(object: any): GenesisMetadata;
     toJSON(message: GenesisMetadata): unknown;
-    fromPartial(object: DeepPartial<GenesisMetadata>): GenesisMetadata;
+    fromPartial(object: Partial<GenesisMetadata>): GenesisMetadata;
 };
 export declare const IdentifiedGenesisMetadata: {
     encode(message: IdentifiedGenesisMetadata, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): IdentifiedGenesisMetadata;
     fromJSON(object: any): IdentifiedGenesisMetadata;
     toJSON(message: IdentifiedGenesisMetadata): unknown;
-    fromPartial(object: DeepPartial<IdentifiedGenesisMetadata>): IdentifiedGenesisMetadata;
+    fromPartial(object: Partial<IdentifiedGenesisMetadata>): IdentifiedGenesisMetadata;
 };

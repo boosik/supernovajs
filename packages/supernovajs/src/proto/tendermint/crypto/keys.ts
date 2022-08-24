@@ -67,7 +67,7 @@ export const PublicKey = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PublicKey>): PublicKey {
+  fromPartial(object: Partial<PublicKey>): PublicKey {
     const message = createBasePublicKey();
     message.ed25519 = object.ed25519 ?? undefined;
     message.secp256k1 = object.secp256k1 ?? undefined;

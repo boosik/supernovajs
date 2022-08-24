@@ -162,7 +162,7 @@ export const Timestamp = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Timestamp>): Timestamp {
+  fromPartial(object: Partial<Timestamp>): Timestamp {
     const message = createBaseTimestamp();
     message.seconds = object.seconds !== undefined && object.seconds !== null ? Long.fromValue(object.seconds) : Long.ZERO;
     message.nanos = object.nanos ?? 0;

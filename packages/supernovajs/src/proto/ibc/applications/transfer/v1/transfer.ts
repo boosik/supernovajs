@@ -96,7 +96,7 @@ export const DenomTrace = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<DenomTrace>): DenomTrace {
+  fromPartial(object: Partial<DenomTrace>): DenomTrace {
     const message = createBaseDenomTrace();
     message.path = object.path ?? "";
     message.baseDenom = object.baseDenom ?? "";
@@ -165,7 +165,7 @@ export const Params = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Params>): Params {
+  fromPartial(object: Partial<Params>): Params {
     const message = createBaseParams();
     message.sendEnabled = object.sendEnabled ?? false;
     message.receiveEnabled = object.receiveEnabled ?? false;

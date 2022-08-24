@@ -2,7 +2,6 @@ import { Coin } from "../../base/v1beta1/coin";
 import { Duration } from "../../../google/protobuf/duration";
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * BasicAllowance implements Allowance with a one-time grant of tokens
  * that optionally expires. The grantee can use up to SpendLimit to cover fees.
@@ -64,26 +63,26 @@ export declare const BasicAllowance: {
     decode(input: _m0.Reader | Uint8Array, length?: number): BasicAllowance;
     fromJSON(object: any): BasicAllowance;
     toJSON(message: BasicAllowance): unknown;
-    fromPartial(object: DeepPartial<BasicAllowance>): BasicAllowance;
+    fromPartial(object: Partial<BasicAllowance>): BasicAllowance;
 };
 export declare const PeriodicAllowance: {
     encode(message: PeriodicAllowance, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PeriodicAllowance;
     fromJSON(object: any): PeriodicAllowance;
     toJSON(message: PeriodicAllowance): unknown;
-    fromPartial(object: DeepPartial<PeriodicAllowance>): PeriodicAllowance;
+    fromPartial(object: Partial<PeriodicAllowance>): PeriodicAllowance;
 };
 export declare const AllowedMsgAllowance: {
     encode(message: AllowedMsgAllowance, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): AllowedMsgAllowance;
     fromJSON(object: any): AllowedMsgAllowance;
     toJSON(message: AllowedMsgAllowance): unknown;
-    fromPartial(object: DeepPartial<AllowedMsgAllowance>): AllowedMsgAllowance;
+    fromPartial(object: Partial<AllowedMsgAllowance>): AllowedMsgAllowance;
 };
 export declare const Grant: {
     encode(message: Grant, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Grant;
     fromJSON(object: any): Grant;
     toJSON(message: Grant): unknown;
-    fromPartial(object: DeepPartial<Grant>): Grant;
+    fromPartial(object: Partial<Grant>): Grant;
 };

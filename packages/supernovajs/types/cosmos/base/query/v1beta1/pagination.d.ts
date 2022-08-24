@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * PageRequest is to be embedded in gRPC request messages for efficient
  * pagination. Ex:
@@ -68,12 +68,12 @@ export declare const PageRequest: {
     decode(input: _m0.Reader | Uint8Array, length?: number): PageRequest;
     fromJSON(object: any): PageRequest;
     toJSON(message: PageRequest): unknown;
-    fromPartial(object: DeepPartial<PageRequest>): PageRequest;
+    fromPartial(object: Partial<PageRequest>): PageRequest;
 };
 export declare const PageResponse: {
     encode(message: PageResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): PageResponse;
     fromJSON(object: any): PageResponse;
     toJSON(message: PageResponse): unknown;
-    fromPartial(object: DeepPartial<PageResponse>): PageResponse;
+    fromPartial(object: Partial<PageResponse>): PageResponse;
 };

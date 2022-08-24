@@ -122,7 +122,7 @@ export const QueryAppVersionRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryAppVersionRequest>): QueryAppVersionRequest {
+  fromPartial(object: Partial<QueryAppVersionRequest>): QueryAppVersionRequest {
     const message = createBaseQueryAppVersionRequest();
     message.portId = object.portId ?? "";
     message.connectionId = object.connectionId ?? "";
@@ -194,7 +194,7 @@ export const QueryAppVersionResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryAppVersionResponse>): QueryAppVersionResponse {
+  fromPartial(object: Partial<QueryAppVersionResponse>): QueryAppVersionResponse {
     const message = createBaseQueryAppVersionResponse();
     message.portId = object.portId ?? "";
     message.version = object.version ?? "";

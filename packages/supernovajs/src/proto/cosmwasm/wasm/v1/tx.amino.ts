@@ -8,7 +8,7 @@ export interface AminoMsgStoreCode extends AminoMsg {
   type: "wasm/MsgStoreCode";
   value: {
     sender: string;
-    wasm_byte_code: string;
+    wasm_byte_code: Uint8Array;
     instantiate_permission: {
       permission: number;
       address: string;

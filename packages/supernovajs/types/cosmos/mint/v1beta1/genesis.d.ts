@@ -1,6 +1,5 @@
 import { Minter, Params } from "./mint";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** GenesisState defines the mint module's genesis state. */
 export interface GenesisState {
     /** minter is a space for holding current inflation information. */
@@ -13,5 +12,5 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };

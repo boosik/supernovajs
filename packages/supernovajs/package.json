@@ -1,9 +1,16 @@
 {
   "name": "supernovajs",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "description": "Typescript Protobuf Messages for Supernova",
   "main": "main/index.js",
+  "module": "module/index.js",
   "typings": "types/index.d.ts",
+  "files": [
+    "src",
+    "main",
+    "module",
+    "types"
+  ],
   "scripts": {
     "build:main": "cross-env BABEL_ENV=production babel src --out-dir main --delete-dir-on-start --extensions \".tsx,.ts,.js\"",
     "build:module": "cross-env MODULE=true babel src --out-dir module --delete-dir-on-start  --extensions \".tsx,.ts,.js\"",
@@ -86,6 +93,7 @@
     "@osmonauts/helpers": "^0.4.3",
     "@osmonauts/lcd": "^0.4.0",
     "long": "^5.2.0",
-    "protobufjs": "^6.11.3"
+    "protobufjs": "^6.11.3",
+    "yarn": "^1.22.19"
   }
 }

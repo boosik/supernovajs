@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * `FieldMask` represents a set of symbolic field paths, for example:
  *
@@ -210,5 +209,5 @@ export declare const FieldMask: {
     decode(input: _m0.Reader | Uint8Array, length?: number): FieldMask;
     fromJSON(object: any): FieldMask;
     toJSON(message: FieldMask): unknown;
-    fromPartial(object: DeepPartial<FieldMask>): FieldMask;
+    fromPartial(object: Partial<FieldMask>): FieldMask;
 };

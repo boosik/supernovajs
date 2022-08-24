@@ -114,7 +114,7 @@ export const MsgUpdateChainState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUpdateChainState>): MsgUpdateChainState {
+  fromPartial(object: Partial<MsgUpdateChainState>): MsgUpdateChainState {
     const message = createBaseMsgUpdateChainState();
     message.coin = object.coin !== undefined && object.coin !== null ? Coin.fromPartial(object.coin) : undefined;
     message.operator = object.operator ?? "";
@@ -175,7 +175,7 @@ export const MsgUpdateChainStateResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgUpdateChainStateResponse>): MsgUpdateChainStateResponse {
+  fromPartial(object: Partial<MsgUpdateChainStateResponse>): MsgUpdateChainStateResponse {
     const message = createBaseMsgUpdateChainStateResponse();
     message.success = object.success ?? false;
     return message;

@@ -1,6 +1,6 @@
 import { Params, Validator, Delegation, UnbondingDelegation, Redelegation } from "./staking";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** GenesisState defines the staking module's genesis state. */
 export interface GenesisState {
     /** params defines all the paramaters of related to deposit. */
@@ -37,12 +37,12 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };
 export declare const LastValidatorPower: {
     encode(message: LastValidatorPower, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): LastValidatorPower;
     fromJSON(object: any): LastValidatorPower;
     toJSON(message: LastValidatorPower): unknown;
-    fromPartial(object: DeepPartial<LastValidatorPower>): LastValidatorPower;
+    fromPartial(object: Partial<LastValidatorPower>): LastValidatorPower;
 };

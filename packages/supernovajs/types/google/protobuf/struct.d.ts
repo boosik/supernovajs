@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * `NullValue` is a singleton enumeration to represent the null value for the
  * `Value` type union.
@@ -69,26 +68,26 @@ export declare const Struct_FieldsEntry: {
     decode(input: _m0.Reader | Uint8Array, length?: number): Struct_FieldsEntry;
     fromJSON(object: any): Struct_FieldsEntry;
     toJSON(message: Struct_FieldsEntry): unknown;
-    fromPartial(object: DeepPartial<Struct_FieldsEntry>): Struct_FieldsEntry;
+    fromPartial(object: Partial<Struct_FieldsEntry>): Struct_FieldsEntry;
 };
 export declare const Struct: {
     encode(message: Struct, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Struct;
     fromJSON(object: any): Struct;
     toJSON(message: Struct): unknown;
-    fromPartial(object: DeepPartial<Struct>): Struct;
+    fromPartial(object: Partial<Struct>): Struct;
 };
 export declare const Value: {
     encode(message: Value, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Value;
     fromJSON(object: any): Value;
     toJSON(message: Value): unknown;
-    fromPartial(object: DeepPartial<Value>): Value;
+    fromPartial(object: Partial<Value>): Value;
 };
 export declare const ListValue: {
     encode(message: ListValue, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): ListValue;
     fromJSON(object: any): ListValue;
     toJSON(message: ListValue): unknown;
-    fromPartial(object: DeepPartial<ListValue>): ListValue;
+    fromPartial(object: Partial<ListValue>): ListValue;
 };

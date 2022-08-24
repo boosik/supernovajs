@@ -1,6 +1,6 @@
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * ValidatorSigningInfo defines a validator's signing info for monitoring their
  * liveness activity.
@@ -41,12 +41,12 @@ export declare const ValidatorSigningInfo: {
     decode(input: _m0.Reader | Uint8Array, length?: number): ValidatorSigningInfo;
     fromJSON(object: any): ValidatorSigningInfo;
     toJSON(message: ValidatorSigningInfo): unknown;
-    fromPartial(object: DeepPartial<ValidatorSigningInfo>): ValidatorSigningInfo;
+    fromPartial(object: Partial<ValidatorSigningInfo>): ValidatorSigningInfo;
 };
 export declare const Params: {
     encode(message: Params, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Params;
     fromJSON(object: any): Params;
     toJSON(message: Params): unknown;
-    fromPartial(object: DeepPartial<Params>): Params;
+    fromPartial(object: Partial<Params>): Params;
 };

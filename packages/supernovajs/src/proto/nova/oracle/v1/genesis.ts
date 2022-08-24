@@ -93,7 +93,7 @@ export const GenesisState = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<GenesisState>): GenesisState {
+  fromPartial(object: Partial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     message.states = object.states?.map(e => ChainInfo.fromPartial(e)) || [];
@@ -206,7 +206,7 @@ export const ChainInfo = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ChainInfo>): ChainInfo {
+  fromPartial(object: Partial<ChainInfo>): ChainInfo {
     const message = createBaseChainInfo();
     message.coin = object.coin !== undefined && object.coin !== null ? Coin.fromPartial(object.coin) : undefined;
     message.operatorAddress = object.operatorAddress ?? "";

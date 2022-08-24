@@ -1,6 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /**
  * GenericAuthorization gives the grantee unrestricted permissions to execute
  * the provided method on behalf of the granter's account.
@@ -42,26 +41,26 @@ export declare const GenericAuthorization: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenericAuthorization;
     fromJSON(object: any): GenericAuthorization;
     toJSON(message: GenericAuthorization): unknown;
-    fromPartial(object: DeepPartial<GenericAuthorization>): GenericAuthorization;
+    fromPartial(object: Partial<GenericAuthorization>): GenericAuthorization;
 };
 export declare const Grant: {
     encode(message: Grant, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Grant;
     fromJSON(object: any): Grant;
     toJSON(message: Grant): unknown;
-    fromPartial(object: DeepPartial<Grant>): Grant;
+    fromPartial(object: Partial<Grant>): Grant;
 };
 export declare const GrantAuthorization: {
     encode(message: GrantAuthorization, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): GrantAuthorization;
     fromJSON(object: any): GrantAuthorization;
     toJSON(message: GrantAuthorization): unknown;
-    fromPartial(object: DeepPartial<GrantAuthorization>): GrantAuthorization;
+    fromPartial(object: Partial<GrantAuthorization>): GrantAuthorization;
 };
 export declare const GrantQueueItem: {
     encode(message: GrantQueueItem, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): GrantQueueItem;
     fromJSON(object: any): GrantQueueItem;
     toJSON(message: GrantQueueItem): unknown;
-    fromPartial(object: DeepPartial<GrantQueueItem>): GrantQueueItem;
+    fromPartial(object: Partial<GrantQueueItem>): GrantQueueItem;
 };

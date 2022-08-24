@@ -65,7 +65,7 @@ export const PubKey = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PubKey>): PubKey {
+  fromPartial(object: Partial<PubKey>): PubKey {
     const message = createBasePubKey();
     message.key = object.key ?? new Uint8Array();
     return message;
@@ -122,7 +122,7 @@ export const PrivKey = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<PrivKey>): PrivKey {
+  fromPartial(object: Partial<PrivKey>): PrivKey {
     const message = createBasePrivKey();
     message.secret = object.secret ?? new Uint8Array();
     return message;

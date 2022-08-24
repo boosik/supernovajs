@@ -67,7 +67,7 @@ export const Pairs = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Pairs>): Pairs {
+  fromPartial(object: Partial<Pairs>): Pairs {
     const message = createBasePairs();
     message.pairs = object.pairs?.map(e => Pair.fromPartial(e)) || [];
     return message;
@@ -135,7 +135,7 @@ export const Pair = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Pair>): Pair {
+  fromPartial(object: Partial<Pair>): Pair {
     const message = createBasePair();
     message.key = object.key ?? new Uint8Array();
     message.value = object.value ?? new Uint8Array();

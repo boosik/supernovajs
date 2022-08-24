@@ -46,7 +46,7 @@ export const QueryAllZonesRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryAllZonesRequest>): QueryAllZonesRequest {
+  fromPartial(_: Partial<QueryAllZonesRequest>): QueryAllZonesRequest {
     const message = createBaseQueryAllZonesRequest();
     return message;
   }
@@ -108,7 +108,7 @@ export const QueryAllZonesResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryAllZonesResponse>): QueryAllZonesResponse {
+  fromPartial(object: Partial<QueryAllZonesResponse>): QueryAllZonesResponse {
     const message = createBaseQueryAllZonesResponse();
     message.zones = object.zones?.map(e => RegisteredZone.fromPartial(e)) || [];
     return message;

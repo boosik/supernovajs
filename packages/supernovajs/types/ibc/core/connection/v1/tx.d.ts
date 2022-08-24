@@ -2,7 +2,7 @@ import { Counterparty, Version } from "./connection";
 import { Any } from "../../../../google/protobuf/any";
 import { Height } from "../../client/v1/client";
 import * as _m0 from "protobufjs/minimal";
-import { Long, DeepPartial } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /**
  * MsgConnectionOpenInit defines the msg sent by an account on Chain A to
  * initialize a connection with Chain B.
@@ -98,54 +98,54 @@ export declare const MsgConnectionOpenInit: {
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenInit;
     fromJSON(object: any): MsgConnectionOpenInit;
     toJSON(message: MsgConnectionOpenInit): unknown;
-    fromPartial(object: DeepPartial<MsgConnectionOpenInit>): MsgConnectionOpenInit;
+    fromPartial(object: Partial<MsgConnectionOpenInit>): MsgConnectionOpenInit;
 };
 export declare const MsgConnectionOpenInitResponse: {
     encode(_: MsgConnectionOpenInitResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenInitResponse;
     fromJSON(_: any): MsgConnectionOpenInitResponse;
     toJSON(_: MsgConnectionOpenInitResponse): unknown;
-    fromPartial(_: DeepPartial<MsgConnectionOpenInitResponse>): MsgConnectionOpenInitResponse;
+    fromPartial(_: Partial<MsgConnectionOpenInitResponse>): MsgConnectionOpenInitResponse;
 };
 export declare const MsgConnectionOpenTry: {
     encode(message: MsgConnectionOpenTry, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenTry;
     fromJSON(object: any): MsgConnectionOpenTry;
     toJSON(message: MsgConnectionOpenTry): unknown;
-    fromPartial(object: DeepPartial<MsgConnectionOpenTry>): MsgConnectionOpenTry;
+    fromPartial(object: Partial<MsgConnectionOpenTry>): MsgConnectionOpenTry;
 };
 export declare const MsgConnectionOpenTryResponse: {
     encode(_: MsgConnectionOpenTryResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenTryResponse;
     fromJSON(_: any): MsgConnectionOpenTryResponse;
     toJSON(_: MsgConnectionOpenTryResponse): unknown;
-    fromPartial(_: DeepPartial<MsgConnectionOpenTryResponse>): MsgConnectionOpenTryResponse;
+    fromPartial(_: Partial<MsgConnectionOpenTryResponse>): MsgConnectionOpenTryResponse;
 };
 export declare const MsgConnectionOpenAck: {
     encode(message: MsgConnectionOpenAck, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenAck;
     fromJSON(object: any): MsgConnectionOpenAck;
     toJSON(message: MsgConnectionOpenAck): unknown;
-    fromPartial(object: DeepPartial<MsgConnectionOpenAck>): MsgConnectionOpenAck;
+    fromPartial(object: Partial<MsgConnectionOpenAck>): MsgConnectionOpenAck;
 };
 export declare const MsgConnectionOpenAckResponse: {
     encode(_: MsgConnectionOpenAckResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenAckResponse;
     fromJSON(_: any): MsgConnectionOpenAckResponse;
     toJSON(_: MsgConnectionOpenAckResponse): unknown;
-    fromPartial(_: DeepPartial<MsgConnectionOpenAckResponse>): MsgConnectionOpenAckResponse;
+    fromPartial(_: Partial<MsgConnectionOpenAckResponse>): MsgConnectionOpenAckResponse;
 };
 export declare const MsgConnectionOpenConfirm: {
     encode(message: MsgConnectionOpenConfirm, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenConfirm;
     fromJSON(object: any): MsgConnectionOpenConfirm;
     toJSON(message: MsgConnectionOpenConfirm): unknown;
-    fromPartial(object: DeepPartial<MsgConnectionOpenConfirm>): MsgConnectionOpenConfirm;
+    fromPartial(object: Partial<MsgConnectionOpenConfirm>): MsgConnectionOpenConfirm;
 };
 export declare const MsgConnectionOpenConfirmResponse: {
     encode(_: MsgConnectionOpenConfirmResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): MsgConnectionOpenConfirmResponse;
     fromJSON(_: any): MsgConnectionOpenConfirmResponse;
     toJSON(_: MsgConnectionOpenConfirmResponse): unknown;
-    fromPartial(_: DeepPartial<MsgConnectionOpenConfirmResponse>): MsgConnectionOpenConfirmResponse;
+    fromPartial(_: Partial<MsgConnectionOpenConfirmResponse>): MsgConnectionOpenConfirmResponse;
 };

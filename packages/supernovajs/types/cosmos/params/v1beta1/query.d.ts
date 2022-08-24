@@ -1,6 +1,5 @@
 import { ParamChange } from "./params";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 /** QueryParamsRequest is request type for the Query/Params RPC method. */
 export interface QueryParamsRequest {
     /** subspace defines the module to query the parameter for. */
@@ -39,33 +38,33 @@ export declare const QueryParamsRequest: {
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryParamsRequest;
     fromJSON(object: any): QueryParamsRequest;
     toJSON(message: QueryParamsRequest): unknown;
-    fromPartial(object: DeepPartial<QueryParamsRequest>): QueryParamsRequest;
+    fromPartial(object: Partial<QueryParamsRequest>): QueryParamsRequest;
 };
 export declare const QueryParamsResponse: {
     encode(message: QueryParamsResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QueryParamsResponse;
     fromJSON(object: any): QueryParamsResponse;
     toJSON(message: QueryParamsResponse): unknown;
-    fromPartial(object: DeepPartial<QueryParamsResponse>): QueryParamsResponse;
+    fromPartial(object: Partial<QueryParamsResponse>): QueryParamsResponse;
 };
 export declare const QuerySubspacesRequest: {
     encode(_: QuerySubspacesRequest, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QuerySubspacesRequest;
     fromJSON(_: any): QuerySubspacesRequest;
     toJSON(_: QuerySubspacesRequest): unknown;
-    fromPartial(_: DeepPartial<QuerySubspacesRequest>): QuerySubspacesRequest;
+    fromPartial(_: Partial<QuerySubspacesRequest>): QuerySubspacesRequest;
 };
 export declare const QuerySubspacesResponse: {
     encode(message: QuerySubspacesResponse, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): QuerySubspacesResponse;
     fromJSON(object: any): QuerySubspacesResponse;
     toJSON(message: QuerySubspacesResponse): unknown;
-    fromPartial(object: DeepPartial<QuerySubspacesResponse>): QuerySubspacesResponse;
+    fromPartial(object: Partial<QuerySubspacesResponse>): QuerySubspacesResponse;
 };
 export declare const Subspace: {
     encode(message: Subspace, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): Subspace;
     fromJSON(object: any): Subspace;
     toJSON(message: Subspace): unknown;
-    fromPartial(object: DeepPartial<Subspace>): Subspace;
+    fromPartial(object: Partial<Subspace>): Subspace;
 };

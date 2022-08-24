@@ -139,7 +139,7 @@ export const AminoConverter = {
           host_address: icaAccount.hostAddress,
           balance: {
             denom: icaAccount.balance.denom,
-            amount: Long.fromNumber(icaAccount.balance.amount).toString()
+            amount: Long.fromString(icaAccount.balance.amount).toString()
           }
         },
         validator_address: validatorAddress,
@@ -189,7 +189,7 @@ export const AminoConverter = {
         daomodifier_address: daomodifierAddress,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },
@@ -224,7 +224,7 @@ export const AminoConverter = {
         daomodifier_address: daomodifierAddress,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },
@@ -265,7 +265,7 @@ export const AminoConverter = {
         ica_transfer_channel_id: icaTransferChannelId,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },
@@ -306,7 +306,7 @@ export const AminoConverter = {
         daomodifier_address: daomodifierAddress,
         amount: {
           denom: amount.denom,
-          amount: Long.fromNumber(amount.amount).toString()
+          amount: Long.fromString(amount.amount).toString()
         }
       };
     },
@@ -340,7 +340,7 @@ export const AminoConverter = {
           host_address: accountInfo.hostAddress,
           balance: {
             denom: accountInfo.balance.denom,
-            amount: Long.fromNumber(accountInfo.balance.amount).toString()
+            amount: Long.fromString(accountInfo.balance.amount).toString()
           }
         }
       };
@@ -404,7 +404,7 @@ export const AminoConverter = {
           host_address: icaAccount.hostAddress,
           balance: {
             denom: icaAccount.balance.denom,
-            amount: Long.fromNumber(icaAccount.balance.amount).toString()
+            amount: Long.fromString(icaAccount.balance.amount).toString()
           }
         },
         validator_address: validatorAddress,

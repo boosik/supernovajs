@@ -148,7 +148,7 @@ export const Record = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Record>): Record {
+  fromPartial(object: Partial<Record>): Record {
     const message = createBaseRecord();
     message.name = object.name ?? "";
     message.pubKey = object.pubKey !== undefined && object.pubKey !== null ? Any.fromPartial(object.pubKey) : undefined;
@@ -221,7 +221,7 @@ export const Record_Local = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Record_Local>): Record_Local {
+  fromPartial(object: Partial<Record_Local>): Record_Local {
     const message = createBaseRecord_Local();
     message.privKey = object.privKey !== undefined && object.privKey !== null ? Any.fromPartial(object.privKey) : undefined;
     message.privKeyType = object.privKeyType ?? "";
@@ -279,7 +279,7 @@ export const Record_Ledger = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Record_Ledger>): Record_Ledger {
+  fromPartial(object: Partial<Record_Ledger>): Record_Ledger {
     const message = createBaseRecord_Ledger();
     message.path = object.path !== undefined && object.path !== null ? BIP44Params.fromPartial(object.path) : undefined;
     return message;
@@ -323,7 +323,7 @@ export const Record_Multi = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<Record_Multi>): Record_Multi {
+  fromPartial(_: Partial<Record_Multi>): Record_Multi {
     const message = createBaseRecord_Multi();
     return message;
   }
@@ -366,7 +366,7 @@ export const Record_Offline = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<Record_Offline>): Record_Offline {
+  fromPartial(_: Partial<Record_Offline>): Record_Offline {
     const message = createBaseRecord_Offline();
     return message;
   }

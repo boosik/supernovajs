@@ -112,7 +112,7 @@ export const MsgIBCSend = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgIBCSend>): MsgIBCSend {
+  fromPartial(object: Partial<MsgIBCSend>): MsgIBCSend {
     const message = createBaseMsgIBCSend();
     message.channel = object.channel ?? "";
     message.timeoutHeight = object.timeoutHeight !== undefined && object.timeoutHeight !== null ? Long.fromValue(object.timeoutHeight) : Long.UZERO;
@@ -172,7 +172,7 @@ export const MsgIBCCloseChannel = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MsgIBCCloseChannel>): MsgIBCCloseChannel {
+  fromPartial(object: Partial<MsgIBCCloseChannel>): MsgIBCCloseChannel {
     const message = createBaseMsgIBCCloseChannel();
     message.channel = object.channel ?? "";
     return message;

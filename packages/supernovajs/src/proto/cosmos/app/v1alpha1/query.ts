@@ -47,7 +47,7 @@ export const QueryConfigRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryConfigRequest>): QueryConfigRequest {
+  fromPartial(_: Partial<QueryConfigRequest>): QueryConfigRequest {
     const message = createBaseQueryConfigRequest();
     return message;
   }
@@ -103,7 +103,7 @@ export const QueryConfigResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryConfigResponse>): QueryConfigResponse {
+  fromPartial(object: Partial<QueryConfigResponse>): QueryConfigResponse {
     const message = createBaseQueryConfigResponse();
     message.config = object.config !== undefined && object.config !== null ? Config.fromPartial(object.config) : undefined;
     return message;

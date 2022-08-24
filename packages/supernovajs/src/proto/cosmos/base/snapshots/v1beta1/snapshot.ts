@@ -158,7 +158,7 @@ export const Snapshot = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Snapshot>): Snapshot {
+  fromPartial(object: Partial<Snapshot>): Snapshot {
     const message = createBaseSnapshot();
     message.height = object.height !== undefined && object.height !== null ? Long.fromValue(object.height) : Long.UZERO;
     message.format = object.format ?? 0;
@@ -225,7 +225,7 @@ export const Metadata = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Metadata>): Metadata {
+  fromPartial(object: Partial<Metadata>): Metadata {
     const message = createBaseMetadata();
     message.chunkHashes = object.chunkHashes?.map(e => e) || [];
     return message;
@@ -337,7 +337,7 @@ export const SnapshotItem = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SnapshotItem>): SnapshotItem {
+  fromPartial(object: Partial<SnapshotItem>): SnapshotItem {
     const message = createBaseSnapshotItem();
     message.store = object.store !== undefined && object.store !== null ? SnapshotStoreItem.fromPartial(object.store) : undefined;
     message.iavl = object.iavl !== undefined && object.iavl !== null ? SnapshotIAVLItem.fromPartial(object.iavl) : undefined;
@@ -399,7 +399,7 @@ export const SnapshotStoreItem = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SnapshotStoreItem>): SnapshotStoreItem {
+  fromPartial(object: Partial<SnapshotStoreItem>): SnapshotStoreItem {
     const message = createBaseSnapshotStoreItem();
     message.name = object.name ?? "";
     return message;
@@ -489,7 +489,7 @@ export const SnapshotIAVLItem = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SnapshotIAVLItem>): SnapshotIAVLItem {
+  fromPartial(object: Partial<SnapshotIAVLItem>): SnapshotIAVLItem {
     const message = createBaseSnapshotIAVLItem();
     message.key = object.key ?? new Uint8Array();
     message.value = object.value ?? new Uint8Array();
@@ -560,7 +560,7 @@ export const SnapshotExtensionMeta = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SnapshotExtensionMeta>): SnapshotExtensionMeta {
+  fromPartial(object: Partial<SnapshotExtensionMeta>): SnapshotExtensionMeta {
     const message = createBaseSnapshotExtensionMeta();
     message.name = object.name ?? "";
     message.format = object.format ?? 0;
@@ -618,7 +618,7 @@ export const SnapshotExtensionPayload = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SnapshotExtensionPayload>): SnapshotExtensionPayload {
+  fromPartial(object: Partial<SnapshotExtensionPayload>): SnapshotExtensionPayload {
     const message = createBaseSnapshotExtensionPayload();
     message.payload = object.payload ?? new Uint8Array();
     return message;
@@ -686,7 +686,7 @@ export const SnapshotKVItem = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SnapshotKVItem>): SnapshotKVItem {
+  fromPartial(object: Partial<SnapshotKVItem>): SnapshotKVItem {
     const message = createBaseSnapshotKVItem();
     message.key = object.key ?? new Uint8Array();
     message.value = object.value ?? new Uint8Array();
@@ -750,7 +750,7 @@ export const SnapshotSchema = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<SnapshotSchema>): SnapshotSchema {
+  fromPartial(object: Partial<SnapshotSchema>): SnapshotSchema {
     const message = createBaseSnapshotSchema();
     message.keys = object.keys?.map(e => e) || [];
     return message;

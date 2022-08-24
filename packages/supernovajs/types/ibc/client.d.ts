@@ -1,11 +1,5 @@
-import { OfflineSigner, GeneratedType, Registry } from "@cosmjs/proto-signing";
-import { AminoTypes, SigningStargateClient } from "@cosmjs/stargate";
-export declare const getSigningIbcClientOptions: ({ defaultTypes }?: {
-    defaultTypes?: ReadonlyArray<[string, GeneratedType]>;
-}) => {
-    registry: Registry;
-    aminoTypes: AminoTypes;
-};
+import { OfflineSigner, GeneratedType } from "@cosmjs/proto-signing";
+import { SigningStargateClient } from "@cosmjs/stargate";
 export declare const getSigningIbcClient: ({ rpcEndpoint, signer, defaultTypes }: {
     rpcEndpoint: string;
     signer: OfflineSigner;

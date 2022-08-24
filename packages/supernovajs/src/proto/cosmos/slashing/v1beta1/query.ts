@@ -83,7 +83,7 @@ export const QueryParamsRequest = {
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryParamsRequest>): QueryParamsRequest {
+  fromPartial(_: Partial<QueryParamsRequest>): QueryParamsRequest {
     const message = createBaseQueryParamsRequest();
     return message;
   }
@@ -139,7 +139,7 @@ export const QueryParamsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryParamsResponse>): QueryParamsResponse {
+  fromPartial(object: Partial<QueryParamsResponse>): QueryParamsResponse {
     const message = createBaseQueryParamsResponse();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     return message;
@@ -196,7 +196,7 @@ export const QuerySigningInfoRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QuerySigningInfoRequest>): QuerySigningInfoRequest {
+  fromPartial(object: Partial<QuerySigningInfoRequest>): QuerySigningInfoRequest {
     const message = createBaseQuerySigningInfoRequest();
     message.consAddress = object.consAddress ?? "";
     return message;
@@ -253,7 +253,7 @@ export const QuerySigningInfoResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QuerySigningInfoResponse>): QuerySigningInfoResponse {
+  fromPartial(object: Partial<QuerySigningInfoResponse>): QuerySigningInfoResponse {
     const message = createBaseQuerySigningInfoResponse();
     message.valSigningInfo = object.valSigningInfo !== undefined && object.valSigningInfo !== null ? ValidatorSigningInfo.fromPartial(object.valSigningInfo) : undefined;
     return message;
@@ -310,7 +310,7 @@ export const QuerySigningInfosRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QuerySigningInfosRequest>): QuerySigningInfosRequest {
+  fromPartial(object: Partial<QuerySigningInfosRequest>): QuerySigningInfosRequest {
     const message = createBaseQuerySigningInfosRequest();
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageRequest.fromPartial(object.pagination) : undefined;
     return message;
@@ -384,7 +384,7 @@ export const QuerySigningInfosResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QuerySigningInfosResponse>): QuerySigningInfosResponse {
+  fromPartial(object: Partial<QuerySigningInfosResponse>): QuerySigningInfosResponse {
     const message = createBaseQuerySigningInfosResponse();
     message.info = object.info?.map(e => ValidatorSigningInfo.fromPartial(e)) || [];
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageResponse.fromPartial(object.pagination) : undefined;

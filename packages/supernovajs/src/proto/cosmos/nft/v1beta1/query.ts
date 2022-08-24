@@ -141,7 +141,7 @@ export const QueryBalanceRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryBalanceRequest>): QueryBalanceRequest {
+  fromPartial(object: Partial<QueryBalanceRequest>): QueryBalanceRequest {
     const message = createBaseQueryBalanceRequest();
     message.classId = object.classId ?? "";
     message.owner = object.owner ?? "";
@@ -199,7 +199,7 @@ export const QueryBalanceResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryBalanceResponse>): QueryBalanceResponse {
+  fromPartial(object: Partial<QueryBalanceResponse>): QueryBalanceResponse {
     const message = createBaseQueryBalanceResponse();
     message.amount = object.amount !== undefined && object.amount !== null ? Long.fromValue(object.amount) : Long.UZERO;
     return message;
@@ -267,7 +267,7 @@ export const QueryOwnerRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryOwnerRequest>): QueryOwnerRequest {
+  fromPartial(object: Partial<QueryOwnerRequest>): QueryOwnerRequest {
     const message = createBaseQueryOwnerRequest();
     message.classId = object.classId ?? "";
     message.id = object.id ?? "";
@@ -325,7 +325,7 @@ export const QueryOwnerResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryOwnerResponse>): QueryOwnerResponse {
+  fromPartial(object: Partial<QueryOwnerResponse>): QueryOwnerResponse {
     const message = createBaseQueryOwnerResponse();
     message.owner = object.owner ?? "";
     return message;
@@ -382,7 +382,7 @@ export const QuerySupplyRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QuerySupplyRequest>): QuerySupplyRequest {
+  fromPartial(object: Partial<QuerySupplyRequest>): QuerySupplyRequest {
     const message = createBaseQuerySupplyRequest();
     message.classId = object.classId ?? "";
     return message;
@@ -439,7 +439,7 @@ export const QuerySupplyResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QuerySupplyResponse>): QuerySupplyResponse {
+  fromPartial(object: Partial<QuerySupplyResponse>): QuerySupplyResponse {
     const message = createBaseQuerySupplyResponse();
     message.amount = object.amount !== undefined && object.amount !== null ? Long.fromValue(object.amount) : Long.UZERO;
     return message;
@@ -518,7 +518,7 @@ export const QueryNFTsRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryNFTsRequest>): QueryNFTsRequest {
+  fromPartial(object: Partial<QueryNFTsRequest>): QueryNFTsRequest {
     const message = createBaseQueryNFTsRequest();
     message.classId = object.classId ?? "";
     message.owner = object.owner ?? "";
@@ -594,7 +594,7 @@ export const QueryNFTsResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryNFTsResponse>): QueryNFTsResponse {
+  fromPartial(object: Partial<QueryNFTsResponse>): QueryNFTsResponse {
     const message = createBaseQueryNFTsResponse();
     message.nfts = object.nfts?.map(e => NFT.fromPartial(e)) || [];
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageResponse.fromPartial(object.pagination) : undefined;
@@ -663,7 +663,7 @@ export const QueryNFTRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryNFTRequest>): QueryNFTRequest {
+  fromPartial(object: Partial<QueryNFTRequest>): QueryNFTRequest {
     const message = createBaseQueryNFTRequest();
     message.classId = object.classId ?? "";
     message.id = object.id ?? "";
@@ -721,7 +721,7 @@ export const QueryNFTResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryNFTResponse>): QueryNFTResponse {
+  fromPartial(object: Partial<QueryNFTResponse>): QueryNFTResponse {
     const message = createBaseQueryNFTResponse();
     message.nft = object.nft !== undefined && object.nft !== null ? NFT.fromPartial(object.nft) : undefined;
     return message;
@@ -778,7 +778,7 @@ export const QueryClassRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryClassRequest>): QueryClassRequest {
+  fromPartial(object: Partial<QueryClassRequest>): QueryClassRequest {
     const message = createBaseQueryClassRequest();
     message.classId = object.classId ?? "";
     return message;
@@ -835,7 +835,7 @@ export const QueryClassResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryClassResponse>): QueryClassResponse {
+  fromPartial(object: Partial<QueryClassResponse>): QueryClassResponse {
     const message = createBaseQueryClassResponse();
     message.class = object.class !== undefined && object.class !== null ? Class.fromPartial(object.class) : undefined;
     return message;
@@ -892,7 +892,7 @@ export const QueryClassesRequest = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryClassesRequest>): QueryClassesRequest {
+  fromPartial(object: Partial<QueryClassesRequest>): QueryClassesRequest {
     const message = createBaseQueryClassesRequest();
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageRequest.fromPartial(object.pagination) : undefined;
     return message;
@@ -966,7 +966,7 @@ export const QueryClassesResponse = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryClassesResponse>): QueryClassesResponse {
+  fromPartial(object: Partial<QueryClassesResponse>): QueryClassesResponse {
     const message = createBaseQueryClassesResponse();
     message.classes = object.classes?.map(e => Class.fromPartial(e)) || [];
     message.pagination = object.pagination !== undefined && object.pagination !== null ? PageResponse.fromPartial(object.pagination) : undefined;

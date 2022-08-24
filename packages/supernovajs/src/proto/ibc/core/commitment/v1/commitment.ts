@@ -88,7 +88,7 @@ export const MerkleRoot = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MerkleRoot>): MerkleRoot {
+  fromPartial(object: Partial<MerkleRoot>): MerkleRoot {
     const message = createBaseMerkleRoot();
     message.hash = object.hash ?? new Uint8Array();
     return message;
@@ -145,7 +145,7 @@ export const MerklePrefix = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MerklePrefix>): MerklePrefix {
+  fromPartial(object: Partial<MerklePrefix>): MerklePrefix {
     const message = createBaseMerklePrefix();
     message.keyPrefix = object.keyPrefix ?? new Uint8Array();
     return message;
@@ -208,7 +208,7 @@ export const MerklePath = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MerklePath>): MerklePath {
+  fromPartial(object: Partial<MerklePath>): MerklePath {
     const message = createBaseMerklePath();
     message.keyPath = object.keyPath?.map(e => e) || [];
     return message;
@@ -271,7 +271,7 @@ export const MerkleProof = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<MerkleProof>): MerkleProof {
+  fromPartial(object: Partial<MerkleProof>): MerkleProof {
     const message = createBaseMerkleProof();
     message.proofs = object.proofs?.map(e => CommitmentProof.fromPartial(e)) || [];
     return message;

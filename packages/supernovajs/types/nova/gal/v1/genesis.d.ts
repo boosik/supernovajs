@@ -1,7 +1,7 @@
 import { Params } from "./params";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long } from "@osmonauts/helpers";
+import { Long } from "@osmonauts/helpers";
 /** GenesisState defines the gal module's genesis state. */
 export interface GenesisState {
     params: Params;
@@ -82,82 +82,82 @@ export declare const GenesisState: {
     decode(input: _m0.Reader | Uint8Array, length?: number): GenesisState;
     fromJSON(object: any): GenesisState;
     toJSON(message: GenesisState): unknown;
-    fromPartial(object: DeepPartial<GenesisState>): GenesisState;
+    fromPartial(object: Partial<GenesisState>): GenesisState;
 };
 export declare const DepositAccount: {
     encode(message: DepositAccount, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DepositAccount;
     fromJSON(object: any): DepositAccount;
     toJSON(message: DepositAccount): unknown;
-    fromPartial(object: DeepPartial<DepositAccount>): DepositAccount;
+    fromPartial(object: Partial<DepositAccount>): DepositAccount;
 };
 export declare const DepositInfo: {
     encode(message: DepositInfo, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DepositInfo;
     fromJSON(object: any): DepositInfo;
     toJSON(message: DepositInfo): unknown;
-    fromPartial(object: DeepPartial<DepositInfo>): DepositInfo;
+    fromPartial(object: Partial<DepositInfo>): DepositInfo;
 };
 export declare const WithdrawInfo: {
     encode(message: WithdrawInfo, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): WithdrawInfo;
     fromJSON(object: any): WithdrawInfo;
     toJSON(message: WithdrawInfo): unknown;
-    fromPartial(object: DeepPartial<WithdrawInfo>): WithdrawInfo;
+    fromPartial(object: Partial<WithdrawInfo>): WithdrawInfo;
 };
 export declare const RecordInfo: {
     encode(message: RecordInfo, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): RecordInfo;
     fromJSON(object: any): RecordInfo;
     toJSON(message: RecordInfo): unknown;
-    fromPartial(object: DeepPartial<RecordInfo>): RecordInfo;
+    fromPartial(object: Partial<RecordInfo>): RecordInfo;
 };
 export declare const DepositRecord: {
     encode(message: DepositRecord, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DepositRecord;
     fromJSON(object: any): DepositRecord;
     toJSON(message: DepositRecord): unknown;
-    fromPartial(object: DeepPartial<DepositRecord>): DepositRecord;
+    fromPartial(object: Partial<DepositRecord>): DepositRecord;
 };
 export declare const DepositRecordContent: {
     encode(message: DepositRecordContent, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): DepositRecordContent;
     fromJSON(object: any): DepositRecordContent;
     toJSON(message: DepositRecordContent): unknown;
-    fromPartial(object: DeepPartial<DepositRecordContent>): DepositRecordContent;
+    fromPartial(object: Partial<DepositRecordContent>): DepositRecordContent;
 };
 export declare const UndelegateRecord: {
     encode(message: UndelegateRecord, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): UndelegateRecord;
     fromJSON(object: any): UndelegateRecord;
     toJSON(message: UndelegateRecord): unknown;
-    fromPartial(object: DeepPartial<UndelegateRecord>): UndelegateRecord;
+    fromPartial(object: Partial<UndelegateRecord>): UndelegateRecord;
 };
 export declare const UndelegateRecordContent: {
     encode(message: UndelegateRecordContent, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): UndelegateRecordContent;
     fromJSON(object: any): UndelegateRecordContent;
     toJSON(message: UndelegateRecordContent): unknown;
-    fromPartial(object: DeepPartial<UndelegateRecordContent>): UndelegateRecordContent;
+    fromPartial(object: Partial<UndelegateRecordContent>): UndelegateRecordContent;
 };
 export declare const WithdrawRecord_RecordsEntry: {
     encode(message: WithdrawRecord_RecordsEntry, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): WithdrawRecord_RecordsEntry;
     fromJSON(object: any): WithdrawRecord_RecordsEntry;
     toJSON(message: WithdrawRecord_RecordsEntry): unknown;
-    fromPartial(object: DeepPartial<WithdrawRecord_RecordsEntry>): WithdrawRecord_RecordsEntry;
+    fromPartial(object: Partial<WithdrawRecord_RecordsEntry>): WithdrawRecord_RecordsEntry;
 };
 export declare const WithdrawRecord: {
     encode(message: WithdrawRecord, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): WithdrawRecord;
     fromJSON(object: any): WithdrawRecord;
     toJSON(message: WithdrawRecord): unknown;
-    fromPartial(object: DeepPartial<WithdrawRecord>): WithdrawRecord;
+    fromPartial(object: Partial<WithdrawRecord>): WithdrawRecord;
 };
 export declare const WithdrawRecordContent: {
     encode(message: WithdrawRecordContent, writer?: _m0.Writer): _m0.Writer;
     decode(input: _m0.Reader | Uint8Array, length?: number): WithdrawRecordContent;
     fromJSON(object: any): WithdrawRecordContent;
     toJSON(message: WithdrawRecordContent): unknown;
-    fromPartial(object: DeepPartial<WithdrawRecordContent>): WithdrawRecordContent;
+    fromPartial(object: Partial<WithdrawRecordContent>): WithdrawRecordContent;
 };

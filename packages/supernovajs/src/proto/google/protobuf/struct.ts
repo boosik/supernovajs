@@ -153,7 +153,7 @@ export const Struct_FieldsEntry = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Struct_FieldsEntry>): Struct_FieldsEntry {
+  fromPartial(object: Partial<Struct_FieldsEntry>): Struct_FieldsEntry {
     const message = createBaseStruct_FieldsEntry();
     message.key = object.key ?? "";
     message.value = object.value !== undefined && object.value !== null ? Value.fromPartial(object.value) : undefined;
@@ -230,7 +230,7 @@ export const Struct = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Struct>): Struct {
+  fromPartial(object: Partial<Struct>): Struct {
     const message = createBaseStruct();
     message.fields = Object.entries(object.fields ?? {}).reduce<{
       [key: string]: Value;
@@ -350,7 +350,7 @@ export const Value = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<Value>): Value {
+  fromPartial(object: Partial<Value>): Value {
     const message = createBaseValue();
     message.nullValue = object.nullValue ?? undefined;
     message.numberValue = object.numberValue ?? undefined;
@@ -418,7 +418,7 @@ export const ListValue = {
     return obj;
   },
 
-  fromPartial(object: DeepPartial<ListValue>): ListValue {
+  fromPartial(object: Partial<ListValue>): ListValue {
     const message = createBaseListValue();
     message.values = object.values?.map(e => Value.fromPartial(e)) || [];
     return message;
