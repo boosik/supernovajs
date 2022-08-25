@@ -1450,7 +1450,7 @@ export declare namespace ibc {
             };
         }>;
         createLCDClient: ({ restEndpoint }: {
-            restEndpoint: any;
+            restEndpoint: string;
         }) => Promise<{
             cosmos: {
                 auth: {
