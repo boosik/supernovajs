@@ -1,6 +1,6 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial } from "@osmonauts/helpers";
+import { isSet } from "@osmonauts/helpers";
 
 /**
  * MsgGrantAllowance adds permission for Grantee to spend up to Allowance

@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial } from "@osmonauts/helpers";
+import { isSet } from "@osmonauts/helpers";
 
 /**
  * Defines the HTTP configuration for an API service. It contains a list of

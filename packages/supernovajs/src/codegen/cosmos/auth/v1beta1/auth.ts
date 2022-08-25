@@ -1,6 +1,6 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet } from "@osmonauts/helpers";
 
 /**
  * BaseAccount defines a base account type. It contains all the necessary fields

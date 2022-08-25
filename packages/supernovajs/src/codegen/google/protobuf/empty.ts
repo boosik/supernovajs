@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 
 /**
  * A generic empty message that you can re-use to avoid defining duplicated

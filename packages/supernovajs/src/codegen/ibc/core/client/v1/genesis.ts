@@ -1,6 +1,6 @@
 import { IdentifiedClientState, ClientConsensusStates, Params } from "./client";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** GenesisState defines the ibc client submodule's genesis state. */
 export interface GenesisState {

@@ -1,7 +1,7 @@
 import { Any } from "../../../../google/protobuf/any";
 import { Event } from "../../../../tendermint/abci/types";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /**
  * TxResponse defines a structure containing relevant tx data and metadata. The

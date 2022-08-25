@@ -1,6 +1,6 @@
 import { Plan, ModuleVersion } from "./upgrade";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet, Long, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, Long, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /**
  * QueryCurrentPlanRequest is the request type for the Query/CurrentPlan RPC

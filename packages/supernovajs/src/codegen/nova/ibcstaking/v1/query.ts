@@ -1,6 +1,5 @@
 import { RegisteredZone } from "./genesis";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 
 /** QueryAllZonesRequest is the request type for Query/AllZones. */
 export interface QueryAllZonesRequest {}

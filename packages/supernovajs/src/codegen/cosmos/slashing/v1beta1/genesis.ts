@@ -1,6 +1,6 @@
 import { Params, ValidatorSigningInfo } from "./slashing";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long } from "@osmonauts/helpers";
+import { isSet, Long } from "@osmonauts/helpers";
 
 /** GenesisState defines the slashing module's genesis state. */
 export interface GenesisState {

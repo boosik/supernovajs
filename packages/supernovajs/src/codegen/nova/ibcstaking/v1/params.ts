@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet } from "@osmonauts/helpers";
+import { isSet } from "@osmonauts/helpers";
 export interface Params {
   /** zone register address. */
   daoModifiers: string[];

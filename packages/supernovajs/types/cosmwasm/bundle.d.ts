@@ -516,7 +516,7 @@ export declare namespace cosmwasm {
             };
         }>;
         createLCDClient: ({ restEndpoint }: {
-            restEndpoint: any;
+            restEndpoint: string;
         }) => Promise<{
             cosmos: {
                 auth: {

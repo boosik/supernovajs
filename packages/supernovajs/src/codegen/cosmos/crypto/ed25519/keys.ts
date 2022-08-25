@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { isSet, bytesFromBase64, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
+import { isSet, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /**
  * PubKey is an ed25519 public key for handling Tendermint keys in SDK.

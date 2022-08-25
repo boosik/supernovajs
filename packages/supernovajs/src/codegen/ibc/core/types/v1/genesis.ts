@@ -1,8 +1,9 @@
+//@ts-nocheck
 import { GenesisState as GenesisState1 } from "../../client/v1/genesis";
 import { GenesisState as GenesisState2 } from "../../connection/v1/genesis";
 import { GenesisState as GenesisState3 } from "../../channel/v1/genesis";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial } from "@osmonauts/helpers";
+import { isSet } from "@osmonauts/helpers";
 
 /** GenesisState defines the ibc module's genesis state. */
 export interface GenesisState {

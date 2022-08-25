@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet } from "@osmonauts/helpers";
 
 /**
  * A Timestamp represents a point in time independent of any time zone or local

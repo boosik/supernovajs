@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long, isObject } from "@osmonauts/helpers";
+import { isSet, Long, isObject } from "@osmonauts/helpers";
 export interface Params_WhiteListedTokenDenomsEntry {
   key: string;
   value: string;

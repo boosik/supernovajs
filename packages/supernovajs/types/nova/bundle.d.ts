@@ -772,7 +772,7 @@ export declare namespace nova {
             };
         }>;
         createLCDClient: ({ restEndpoint }: {
-            restEndpoint: any;
+            restEndpoint: string;
         }) => Promise<{
             cosmos: {
                 auth: {

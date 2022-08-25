@@ -1,7 +1,7 @@
 import { BaseAccount } from "../../auth/v1beta1/auth";
 import { Coin } from "../../base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet } from "@osmonauts/helpers";
 
 /**
  * BaseVestingAccount implements the VestingAccount interface. It contains all

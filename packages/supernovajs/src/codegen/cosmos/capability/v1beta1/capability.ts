@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet } from "@osmonauts/helpers";
 
 /**
  * Capability defines an implementation of an object capability. The index

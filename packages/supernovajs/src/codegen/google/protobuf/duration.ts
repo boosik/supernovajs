@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet } from "@osmonauts/helpers";
 
 /**
  * A Duration represents a signed, fixed-length span of time represented

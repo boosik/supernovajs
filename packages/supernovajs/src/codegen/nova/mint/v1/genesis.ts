@@ -1,6 +1,6 @@
 import { Minter, Params } from "./mint";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial } from "@osmonauts/helpers";
+import { isSet } from "@osmonauts/helpers";
 
 /** GenesisState defines the mint module's genesis state. */
 export interface GenesisState {

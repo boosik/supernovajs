@@ -1,5 +1,5 @@
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long } from "@osmonauts/helpers";
+import { isSet, Long } from "@osmonauts/helpers";
 
 /** Minter represents the minting state. */
 export interface Minter {

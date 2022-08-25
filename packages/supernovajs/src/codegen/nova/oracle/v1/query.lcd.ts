@@ -5,6 +5,8 @@ import { QueryParamsRequest, QueryParamsResponse, QueryStateRequest, QueryStateR
 export class LCDQueryClient extends LCDClient {
   constructor({
     restEndpoint
+  }: {
+    restEndpoint: string;
   }) {
     super({
       restEndpoint

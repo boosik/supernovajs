@@ -1,6 +1,6 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, bytesFromBase64, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 export interface MsgUpdateChainState {
   /** coin refers to the sum of owned, staked and claimable quantity of the coin */
   coin: Coin;

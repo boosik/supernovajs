@@ -2,7 +2,7 @@ import { Params } from "./params";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { DepositRecord, UndelegateRecord, WithdrawRecord } from "./genesis";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet } from "@osmonauts/helpers";
+import { isSet } from "@osmonauts/helpers";
 
 /** QueryParamsRequest is the request type for the Query/Params RPC method. */
 export interface QueryParamsRequest {}

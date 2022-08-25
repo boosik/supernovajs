@@ -1,6 +1,6 @@
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet } from "@osmonauts/helpers";
+import { isSet } from "@osmonauts/helpers";
 
 /**
  * Config represents the configuration for a Cosmos SDK ABCI app.

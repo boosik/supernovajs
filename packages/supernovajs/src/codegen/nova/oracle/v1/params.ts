@@ -1,5 +1,4 @@
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial } from "@osmonauts/helpers";
 export interface Params {
   /** oracle operator's address. */
   oracleOperators: string[];

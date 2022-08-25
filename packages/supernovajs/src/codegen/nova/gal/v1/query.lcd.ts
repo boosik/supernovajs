@@ -6,6 +6,8 @@ import { QueryParamsRequest, QueryParamsResponse, ClaimableAmountRequest, Claima
 export class LCDQueryClient extends LCDClient {
   constructor({
     restEndpoint
+  }: {
+    restEndpoint: string;
   }) {
     super({
       restEndpoint

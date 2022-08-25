@@ -1,5 +1,6 @@
+//@ts-nocheck
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet, Long, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, Long, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 export enum FieldDescriptorProto_Type {
   /**
    * TYPE_DOUBLE - 0 is reserved for errors.

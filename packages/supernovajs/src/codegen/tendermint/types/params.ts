@@ -1,6 +1,6 @@
 import { Duration } from "../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long } from "@osmonauts/helpers";
+import { isSet, Long } from "@osmonauts/helpers";
 
 /**
  * ConsensusParams contains consensus critical parameters that determine the

@@ -1,7 +1,7 @@
 import { Params } from "./params";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long } from "@osmonauts/helpers";
+import { isSet, Long } from "@osmonauts/helpers";
 export interface GenesisState {
   /** params defines all the parameters of module. */
   params: Params;
